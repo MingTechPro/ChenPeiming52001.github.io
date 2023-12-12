@@ -97,8 +97,8 @@ skill_web_keywords: [HTML, CSS, JS, JQuery,SpringBoot, MySQL, MongoDB, PHP]
 
 # LeanCloud评论设置
 valine:
-  appId: GQHKkm0dcsXF5pG93TdOlrIR-gzGzoHsz
-  appKey: rIP8P4hi1yd0Kva2xYvRDOs4
+  appId: Evlk9TNDwcQAIW9cC3NVx9bO-gzGzoHsz
+  appKey: 9TNYPTSFy6BvTeJnmxzBT7H9
   # 评论框占位提示符
   placeholder: ヾﾉ≧∀≦)o快来评论一下吧!
   # 每一页最大的评论数量
@@ -107,7 +107,7 @@ valine:
   # 头像类型
   # 空字符串'' Gravatar官方图形、 mp 神秘人(一个灰白头像)、 identicon 抽象几何图形、  
   # monsterid 小怪物、 wavatar 用不同面孔和背景组合生成的头像、 retro 八位像素复古头像、
-  #  robohash 一种具有不同颜色、面部等的机器人、 hide 不显示头像
+  # robohash 一种具有不同颜色、面部等的机器人、 hide 不显示头像
   avatar: 'robohash', 'mp' 
   # 设置评论者标签
   tagMeta:
