@@ -23,6 +23,7 @@ tags:
 ## 下载安装配置 Git
 
 - 下载 [Git官网](https://git-scm.com/) | [Git 安装配置参考以下教程](https://blog.csdn.net/m0_72983118/article/details/130546429)
+
 ![安装完成测试](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-1.png)
 
 ## GitHub 创建公共仓库
@@ -41,7 +42,7 @@ tags:
 	2. 在需要克隆的本地文件夹打开 Git 终端，粘贴的地址命令行并回车
 	![Git](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-4.png)
 	
-	3. 等待克隆完毕
+	3. 等待克隆完毕   
 	![克隆完毕](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-5.png)
 
 ## 克隆博客模板
@@ -51,7 +52,7 @@ tags:
 - 复制仓库中的 HTTPS 地址
   ![博客模板](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-6.png)
 
-- 通过 Git 终端 克隆到本地
+- 通过 Git 终端 克隆到本地    
 ![Git](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png)
 
 - 打开下载好的项目，删除根目录里面 .git 文件夹和 _posts 、images 文件夹里面的文件
@@ -119,21 +120,21 @@ tags:
 
 ## 上传 GitHub
 
-- 上传文件
+- 上传文件   
 ![上传文件](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-1.png)
 
 ```
 git add .
 ```
 
-- 添加上传添加消息
+- 添加上传添加消息  
 ![添加上传添加消息](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-2.png)
 
 ```
 git commit -m "部署博客"
 ```
 
-- 选择上传分支
+- 选择上传分支  
 ![选择上传分支](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-3.png)
 ```
 git push origin main
@@ -143,5 +144,5 @@ git push origin main
 
 参考文章：
 
-- [Markdown 博客写作指南]()
-- [Markdown 进阶写作指南]()
+- [Markdown 博客写作指南](/markdown/2023/12/12/Blog-Found.html)
+- [Markdown 进阶写作指南](/markdown/2023/12/12/Blog-Advanced-Found.html)
