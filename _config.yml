@@ -7,8 +7,6 @@
 # 网站设置
 # 标题
 title: ChenPeiming
-# 邮箱
-email: chenpeiming52001@163.com
 # 位置
 location: 广东，广州
 # 所在公司
@@ -24,7 +22,7 @@ description: 这是ChenPeiming的个人博客
 # 图标 可以自定义你想要的图标
 favicon: favicon.png # Image必须在assets/images中
 
-url: http://chenpeiming52001.github.io # 站点的基本主机名和协议
+url: https://chenpeiming52001.github.io # 站点的基本主机名和协议
 
 ## Gem
 gems:
@@ -82,6 +80,11 @@ navs:
 # 侧边栏 显示 受欢迎的仓库
 side_bar_repo_limit: 5 # 要显示的数量
 
+# 关于页设置
+# 个人介绍
+introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。我注重细节，并且有能力在面对挑战时保持冷静和灵活应对。
+# 邮箱
+email: chenpeiming52001@163.com
 # For about.html. 自由地创造你自己的需要显示的标签!
 # 软件开发标签
 skill_software_keywords: [Java,  Python]
@@ -105,15 +108,15 @@ valine:
   # 空字符串'' Gravatar官方图形、 mp 神秘人(一个灰白头像)、 identicon 抽象几何图形、  
   # monsterid 小怪物、 wavatar 用不同面孔和背景组合生成的头像、 retro 八位像素复古头像、
   #  robohash 一种具有不同颜色、面部等的机器人、 hide 不显示头像
-  avatar: 'robohash,mp' 
+  avatar: 'robohash',  
   # 设置评论者标签
   tagMeta:
     Blogger: '博主'
     friends: '小伙伴'
     visitor: '访客'
-  # md5 加密后的博主邮箱 md5加密工具：https://c.runoob.com/front-end/703/
+  # MD5 加密后的博主邮箱 MD5加密工具：https://c.runoob.com/front-end/703/
   master: ['33c0f3680c72dd299d9463a496cc7640']
-  # md5 加密后的小伙伴邮箱
+  # md5MD5 加密后的小伙伴邮箱
   friends: ['f652e9c510f5948f083d453a189b13bc', '261225df065b70eafdef4c88eecdb55d']
   # 昵称框 自动获取QQ头像 默认 false/true
   enableQQ: 'true' 
