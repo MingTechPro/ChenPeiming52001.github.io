@@ -10,29 +10,29 @@ tags:
 ---
 
 搭建流程：
-- 下载安装配置 Git
-- GitHub 创建公共仓库
-- 克隆本地仓库
-- 克隆博客模板
-- 博客基础功能设置
-- 设置评论功能
-- 上传 GitHub
+- 1.下载安装配置 Git
+- 2.GitHub 创建公共仓库
+- 3.克隆本地仓库
+- 4.克隆博客模板
+- 5.博客基础功能设置
+- 6.设置评论功能
+- 7.上传 GitHub
 
 
 
-## 下载安装配置 Git
+## 1.下载安装配置 Git
 
 - 下载 [Git官网](https://git-scm.com/) & [Git 安装配置参考以下教程](https://blog.csdn.net/m0_72983118/article/details/130546429)
 
 ![安装完成测试](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-1.png)
 
-## GitHub 创建公共仓库
+## 2.GitHub 创建公共仓库
 
 - 创建仓库名结尾为 * .github.io 的公共仓库
 - 示范：ChenPeiming52001.github.io
   ![仓库创建](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-2.png)
 
-## 克隆本地仓库
+## 3.克隆本地仓库
 
 - 将刚刚创建好的空仓库克隆到本地
 
@@ -45,7 +45,7 @@ tags:
 	3. 等待克隆完毕   
 	![克隆完毕](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-5.png)
 
-## 克隆博客模板
+## 4.克隆博客模板
 
 - 打开博客模板项目[ChenPeiming52001.github.io](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io)
 
@@ -58,7 +58,7 @@ tags:
 - 打开下载好的项目，删除根目录里面 .git 文件夹和 _posts 、images 文件夹里面的文件
 ![删除文件](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png)
 
-## 博客基础功能设置
+## 5.博客基础功能设置
 
 - 博客的基础功能都可以在根目录 <font color=SpringGreen>_config.yml</font> 文件下设置
 
@@ -88,7 +88,7 @@ tags:
 ![设置关于页](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-1.png)
 ![设置关于页](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-2.png)
 
-## 设置评论功能
+## 6.设置评论功能
 
 ### 注册 [LeanCloud](https://console-e1.leancloud.cn/register) 账号
 
@@ -118,7 +118,7 @@ tags:
 - friends: ['f652e9c510f5948f083d453a189b13bc', '261225df065b70eafdef4c88eecdb55d']		`填入 MD5 加密后小伙伴的邮箱`
 	![设置魔改Valine](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-2.png)
 
-## 上传 GitHub
+## 7.上传 GitHub
 
 - 上传文件   
 ![上传文件](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-1.png)
@@ -145,7 +145,7 @@ git push origin main
 
 ------
 
-参考文章：
+写作参考文章：
 
 - [Markdown 博客写作指南](/markdown/2023/12/12/Blog-Found.html)
 - [Markdown 进阶写作指南](/markdown/2023/12/12/Blog-Advanced-Found.html)
