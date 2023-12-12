@@ -7,8 +7,6 @@
 # 网站设置
 # 标题
 title: ChenPeiming
-# 介绍名称
-name: ChenPeiming52001
 # 邮箱
 email: chenpeiming52001@163.com
 # 位置
@@ -17,6 +15,8 @@ location: 广东，广州
 company: CSDN
 # 公司网站
 company_url: https://blog.csdn.net/cpm011023
+# Github 名称
+name: ChenPeiming52001
 # Github
 github_url: https://github.com/ChenPeiming52001
 # 描述
