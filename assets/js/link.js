@@ -6,6 +6,8 @@ class Link {
 
         // 调用初始化方法
         this.blank();
+        // 调用页面打开方法
+        this.openPage();
     }
 
     // 给 <a> 标签添加 target = '_blank' 属性
