@@ -96,8 +96,8 @@ skill_web_keywords: [HTML, CSS, JS, JQuery,SpringBoot, MySQL, MongoDB, PHP]
 
 # LeanCloud评论设置
 valine:
-  appId: Evlk9TNDwcQAIW9cC3NVx9bO-gzGzoHsz
-  appKey: 9TNYPTSFy6BvTeJnmxzBT7H9
+  appId: GQHKkm0dcsXF5pG93TdOlrIR-gzGzoHsz
+  appKey: rIP8P4hi1yd0Kva2xYvRDOs4
   # 评论框占位提示符
   placeholder: ヾﾉ≧∀≦)o快来评论一下吧!
   # 每一页最大的评论数量
