@@ -1,0 +1,121 @@
+# Welcome to Jekyll!
+#
+# 此配置文件用于影响整个博客的设置，只需要设置一次，之后很少需要编辑。
+# 由于技术原因，当您使用'jekyll serve'时，该文件*不*自动重新加载。
+# 如果您更改了该文件，请重新启动服务器进程。
+
+# 网站设置
+# 标题
+title: ChenPeiming
+# 介绍名称
+name: ChenPeiming52001
+# 邮箱
+email: chenpeiming52001@163.com
+# 位置
+location: 广东，广州
+# 所在公司
+company: CSDN
+# 公司网站
+company_url: https://blog.csdn.net/cpm011023
+# Github
+github_url: https://github.com/ChenPeiming52001
+# 描述
+description: 这是ChenPeiming的个人博客
+# 图标 可以自定义你想要的图标
+favicon: favicon.png # Image必须在assets/images中
+
+url: http://chenpeiming52001.github.io # 站点的基本主机名和协议
+
+## Gem
+gems:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
+
+# 建立设置
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+
+# Disque
+disque: 
+
+# 分页
+paginate: 10
+paginate_path: 'page:num'
+
+# 导航
+navs:
+  -
+    href: /
+    label: 主页
+
+  -
+    href: /open-source
+    label: 开源项目仓库
+
+  -
+    href: /blog
+    label: 博客档案
+
+  -
+    href: /bookmark
+    label: 书签
+
+  -
+    href: /about
+    label: 关于我
+
+# 侧边栏 显示 受欢迎的仓库
+side_bar_repo_limit: 5 # 要显示的数量
+
+# For about.html. 自由地创造你自己的需要显示的标签!
+# 软件开发标签
+skill_software_keywords: [Java,  Python]
+# J2EE 开发标签
+skill_j2ee_keywords: 
+# 手机开发标签
+skill_mobile_app_keywords: 
+# Web开发标签
+skill_web_keywords: [HTML, CSS, JS, JQuery,SpringBoot, MySQL, MongoDB, PHP]
+
+# LeanCloud评论设置
+valine:
+  appId: GQHKkm0dcsXF5pG93TdOlrIR-gzGzoHsz
+  appKey: rIP8P4hi1yd0Kva2xYvRDOs4
+  # 评论框占位提示符
+  placeholder: ヾﾉ≧∀≦)o快来评论一下吧!
+  # 每一页最大的评论数量
+  pageSize: 15
+  # 设置 Gravatar 头像展示方式
+  # 头像类型
+  # 空字符串'' Gravatar官方图形、 mp 神秘人(一个灰白头像)、 identicon 抽象几何图形、  
+  # monsterid 小怪物、 wavatar 用不同面孔和背景组合生成的头像、 retro 八位像素复古头像、
+  #  robohash 一种具有不同颜色、面部等的机器人、 hide 不显示头像
+  avatar: 'robohash' 
+  # 设置评论者标签
+  tagMeta:
+    Blogger: '博主'
+    friends: '小伙伴'
+    visitor: '访客'
+  # md5 加密后的博主邮箱 md5加密工具：https://c.runoob.com/front-end/703/
+  master: ['33c0f3680c72dd299d9463a496cc7640']
+  # md5 加密后的小伙伴邮箱
+  friends: ['f652e9c510f5948f083d453a189b13bc', '261225df065b70eafdef4c88eecdb55d']
+  # 昵称框 自动获取QQ头像 默认 false/true
+  enableQQ: 'true' 
+  # 每次访问强制拉取最新的评论列表头像
+  avatarForce: 'true' 

@@ -1,0 +1,34 @@
+<!-- 开源项目仓库 博客档案 书签 关于我 页面大轮播图 -->
+<section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>{{ page.title }}</h1>
+            <span class="meta-info">
+                {% if page.subtitle %}
+                    {{ page.subtitle }}
+                {% endif %}
+                {% if page.date %}
+                <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d" }} &emsp;
+                {% endif %}
+                {% if page.tags %}
+                <span class="octicon octicon-tag">标签：{{ page.tags | join: ', ' }}</span> &emsp;
+                {% endif %}
+                {% if page.category %}
+                <span> 类别：{{ page.category }} </span> &emsp;
+                {% endif %}
+                {% if page.author %}
+                <span> 作者：{{ page.author }} </span>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>

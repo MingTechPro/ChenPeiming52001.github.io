@@ -1,0 +1,45 @@
+<!-- 头部信息 -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 收藏夹图标 -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/{{ site.favicon }}">
+
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description"
+          content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- 第三方 CSS -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <!-- 我的 CSS -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/slider.css">
+
+    <!-- CSS 设置页面 -->
+    {% for css in page.css %}
+    <link rel="stylesheet" href="/assets/css/{{css}}">
+    {% endfor %}
+
+    <!-- CSS 设置布局 -->
+    {% for css in layout.css %}
+    <link rel="stylesheet" href="/assets/css/{{css}}">
+    {% endfor %}
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 我的 JS 添加主页诗句 -->
+    <script type="text/javascript" src="/assets/js/verse.js"></script>
+</head>
+

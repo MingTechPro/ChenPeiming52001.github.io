@@ -1,0 +1,15 @@
+<!-- 最新文章 -->
+<h3 class="sidebar-title">最新文章</h3>
+<div class="card text-center">
+    <div class="thumbnail">
+        <div class="caption">
+                
+            <ul class="content-ul" recent>
+                {% for post in site.posts limit: 8 %}
+                    <li class="post-list-title"><a class="hvr-underline-from-center" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+            
+        </div>
+    </div>
+</div>

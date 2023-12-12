@@ -1,0 +1,46 @@
+<!-- 页脚 -->
+<footer class="container">
+
+    <div class="site-footer">
+
+        <div class="copyright pull-left">
+            <!-- 请不要更改这一行 方便其他人知道模板的来源 谢谢 -->
+            <!-- Please keep this line to let others know where this theme comes from. Thank you :D -->
+            <span>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a> 
+            </span>
+                &
+            <span>
+                Revised by <a href="https://github.com/ChenPeiming52001/ChenPeiming52001.github.io">Chen Peiming</a>.
+            </span>
+        </div>
+        
+        <br>
+        <div class="copyright pull-left">
+            <p>
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </p>
+        </div>
+
+        <a href="{{ site.github_url }}" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a>
+
+        <div class="pull-right">
+            <a href="javascript:window.scrollTo(0,0)">TOP</a>
+        </div>
+
+    </div>
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/geopattern/js/geopattern.min.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <!-- 我 JS -->
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+
+    {% for javascript in page.javascript %}
+    <script src="/assets/js/{{javascript}}"></script>
+    {% endfor %}
+
+</footer>

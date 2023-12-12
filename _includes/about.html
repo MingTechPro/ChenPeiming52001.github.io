@@ -1,0 +1,77 @@
+<!-- 关于 -->
+<div class="about row">
+
+    <div class="col-md-8">
+
+        <h2>关于我</h2>
+
+        <p style="font-size: 18px;">我是一个对学习充满热情、善于思考和寻找解决方案的人。我注重细节，并且有能力在面对挑战时保持冷静和灵活应对。</p>
+
+        <h2>联系</h2>
+
+        <ul>
+            <li>📫邮箱：<a href="mailto:{{ site.email }}" target="_top">{{ site.email }}</a></li>
+            <li><span class="octicon octicon-mark-github"></span>Github：<a href="{{ site.github_url }}">{{ site.github_url }}</a></li>
+        </ul>
+
+        <h2>我的技能</h2>
+
+        {% if site.skill_software_keywords %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">软件开发标签</h3>
+            </div>
+            <div class="panel-body">
+                {% for keyword in site.skill_software_keywords %}
+                <button class="btn btn-default" type="button">{{ keyword }}</button>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if site.skill_j2ee_keywords %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">J2EE 开发标签</h3>
+            </div>
+            <div class="panel-body">
+                {% for keyword in site.skill_j2ee_keywords %}
+                <button class="btn btn-default" type="button">{{ keyword }}</button>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if site.skill_mobile_app_keywords %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">手机开发标签</h3>
+            </div>
+            <div class="panel-body">
+                {% for keyword in site.skill_mobile_app_keywords %}
+                <button class="btn btn-default" type="button">{{ keyword }}</button>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if site.skill_web_keywords %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Web开发标签</h3>
+            </div>
+            <div class="panel-body">
+                {% for keyword in site.skill_web_keywords %}
+                <button class="btn btn-default" type="button">{{ keyword }}</button>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+
+    <div class="col-md-4">
+        {% include sidebar-popular-repo.html %}
+    </div>
+
+</div>

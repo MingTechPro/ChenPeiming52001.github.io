@@ -1,0 +1,64 @@
+<!-- 文章目录 -->
+<h3>文章目录</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- 触发跳转的链接 -->
+    <!-- 由下面的 javascript 添加 -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // 获取元素的初始位置
+
+        $(window).scroll(function() {                  // 分配滚动事件监听器
+
+            var currentScroll = $(window).scrollTop(); // 获取当前位置
+
+            if (currentScroll >= fixmeTop) {           // 适用位置:如果你
+                $('#post-directory-module').css({      // 滚动到该元素或其下方
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // 适用位置: 静态
+                $('#post-directory-module').css({      // 如果你在上面滚动
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>

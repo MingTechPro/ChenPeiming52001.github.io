@@ -1,0 +1,39 @@
+{% if site.valine.appId %}
+<!-- 评论 -->
+
+<head>
+    <script type="text/javascript" src="/assets/js/Valine.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/valine.css">
+    <link rel="stylesheet" href="/assets/css/all.css">
+</head>
+
+<body>
+    <br>
+    <p>我要评论</p>
+    <div id="vcomments" style="display: grid"></div>
+    <script>
+        // LeanCloud评论设置
+        new Valine({
+            el: '#vcomments',
+            appId: '{{ site.valine.appId }}',
+            appKey: '{{ site.valine.appKey }}',
+            placeholder: '{{ site.valine.placeholder }}',
+            pageSize: '{{ site.valine.pageSize }}',
+            avatar: '{{ site.valine.avatar }}',
+            tagMeta: ['{{ site.valine.tagMeta.Blogger }}','{{ site.valine.tagMeta.friends }}','{{ site.valine.tagMeta.visitor }}'],
+            master: '[{{ site.valine.master }}]',
+            friends: '{% for friends in site.valine.friends %}[{{ friends }}],{% endfor %}',
+            enableQQ: '{{ site.valine.enableQQ }}',
+            avatarForce: '{{ site.valine.avatarForce }}',
+        });
+
+        // 点击回复直接评论
+        $(document).ready(function () {
+            $("#vcomments").on('click', 'span.vat', function () {
+                $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+                $('textarea#veditor').focus();
+            })
+        });
+    </script>
+</body>
+{% endif %}
