@@ -11,7 +11,9 @@ class Link {
     // 给a标签添加 target = '_blank' 属性
     blank() {
         for (let i = 0; i < this.alink.length; i++) {
-            this.alink[i].setAttribute('target', '_blank');
+            if (!this.alink[i].hasAttribute('target')) {
+                this.alink[i].setAttribute('target', '_blank');
+            }
         }
     }
 
