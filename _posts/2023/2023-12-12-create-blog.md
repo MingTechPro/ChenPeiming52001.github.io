@@ -90,6 +90,8 @@ tags:
 
 ## 6.设置评论功能
 
+- [LeanCloud 官网](https://console-e1.leancloud.cn/)
+
 ### 注册 [LeanCloud](https://console-e1.leancloud.cn/register) 账号
 
 ![注册LeanCloud账号](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11.png)
