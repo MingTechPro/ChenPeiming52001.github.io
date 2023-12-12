@@ -22,7 +22,7 @@ tags:
 
 ## 下载安装配置 Git
 
-- 下载 [Git官网](https://git-scm.com/) | [Git 安装配置参考以下教程](https://blog.csdn.net/m0_72983118/article/details/130546429)
+- 下载 [Git官网](https://git-scm.com/) & [Git 安装配置参考以下教程](https://blog.csdn.net/m0_72983118/article/details/130546429)
 
 ![安装完成测试](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-1.png)
 
@@ -64,26 +64,26 @@ tags:
 
 ### 设置主页
 
-- title: ChenPeiming	// 设置自己博客的名称
-- location: 广东，广州	// 设置自己所在的地区
-- company: CSDN		// 设置第三方链接名称
-- company_url: https://blog.csdn.net/cpm011023		// 设置第三方网络地址
-- name: ChenPeiming52001	// 设置自己 GitHub 的名称
-- github_url: https://github.com/ChenPeiming52001	// 设置自己 GitHub 的网络地址
-- description: 这是ChenPeiming的个人博客	// 设置博客的描述
-- url: https://chenpeiming52001.github.io	// 设置个人博客的网络协议
+- title: ChenPeiming	`设置自己博客的名称`
+- location: 广东，广州	`设置自己所在的地区`
+- company: CSDN		`设置第三方链接名称`
+- company_url: https://blog.csdn.net/cpm011023	`设置第三方网络地址`
+- name: ChenPeiming52001	`设置自己 GitHub 的名称`
+- github_url: https://github.com/ChenPeiming52001	`设置自己 GitHub 的网络地址`
+- description: 这是ChenPeiming的个人博客	`设置博客的描述`
+- url: https://chenpeiming52001.github.io	`设置个人博客的网络协议`
 
 ![设置主页标题](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-1.png)
 ![设置主页标题](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-2.png)
 
 ### 设置关于页
 
-- introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。	// 设置个人介绍
-- email: chenpeiming52001@163.com	  // 设置自己的邮箱
-- skill_software_keywords: [Java,  Python]	  // # 软件开发标签
-- skill_j2ee_keywords: 	  // J2EE 开发标签
-- skill_mobile_app_keywords: 	// 手机开发标签
-- skill_web_keywords: [HTML, CSS, JS, JQuery,SpringBoot, MySQL, MongoDB, PHP]	// Web开发标签
+- introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。	`设置个人介绍`
+- email: chenpeiming52001@163.com	`设置自己的邮箱`
+- skill_software_keywords: [Java,  Python]		`软件开发标签`
+- skill_j2ee_keywords:		`J2EE开发标签`
+- skill_mobile_app_keywords: 	`手机开发标签`
+- skill_web_keywords: [HTML, CSS, JS, JQuery,SpringBoot, MySQL, MongoDB, PHP]	`Web开发标签`
 
 ![设置关于页](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-1.png)
 ![设置关于页](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-2.png)
@@ -109,13 +109,13 @@ tags:
 	![AppKey](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-2.png)
 	
 ### 设置魔改 Valine
-- appId: Evlk9TNDwcQAIW9cC3NVx9bO-gzGzoHsz		// 填入刚刚复制的 AppID
-- appKey: 9TNYPTSFy6BvTeJnmxzBT7H9		// 填入刚刚复制的 AppKey
+- appId: Evlk9TNDwcQAIW9cC3NVx9bO-gzGzoHsz		 `填入刚刚复制的 AppID`
+- appKey: 9TNYPTSFy6BvTeJnmxzBT7H9		`填入刚刚复制的 AppKey`
 	![设置魔改Valine](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-1.png)
 	
 - [MD5加密工具](https://c.runoob.com/front-end/703/) 可以将邮箱加密为 MD5
-- master: ['33c0f3680c72dd299d9463a496cc7640']		// 填入 MD5 加密后博主`自己`的邮箱
-- friends: ['f652e9c510f5948f083d453a189b13bc', '261225df065b70eafdef4c88eecdb55d']		// 填入 MD5 加密后小伙伴的邮箱
+- master: ['33c0f3680c72dd299d9463a496cc7640']		`填入 MD5 加密后博主<font color=Red>自己</font>的邮箱`
+- friends: ['f652e9c510f5948f083d453a189b13bc', '261225df065b70eafdef4c88eecdb55d']		`填入 MD5 加密后小伙伴的邮箱`
 	![设置魔改Valine](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-2.png)
 
 ## 上传 GitHub
@@ -136,9 +136,12 @@ git commit -m "部署博客"
 
 - 选择上传分支  
 ![选择上传分支](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-3.png)
+
 ```
 git push origin main
 ```
+
+<br>
 
 ------
 
