@@ -107,7 +107,7 @@ valine:
   # 空字符串'' Gravatar官方图形、 mp 神秘人(一个灰白头像)、 identicon 抽象几何图形、  
   # monsterid 小怪物、 wavatar 用不同面孔和背景组合生成的头像、 retro 八位像素复古头像、
   # robohash 一种具有不同颜色、面部等的机器人、 hide 不显示头像
-  avatar: 'robohash', 'mp' 
+  avatar: 'robohash'
   # 设置评论者标签
   tagMeta:
     Blogger: '博主'
