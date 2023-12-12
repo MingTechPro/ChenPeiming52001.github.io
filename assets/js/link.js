@@ -1,16 +1,27 @@
-// 给所有页面 <a> 标签上添加了 target='_blank' 属性。这样就可以确保链接在单击时在新标签页中打开。
+/**
+ * 给所有页面 <a> 标签上添加了 target='_blank' 属性。
+ * 这样就可以确保链接在单击时在新标签页中打开。
+ */
 class Link {
     constructor(){
-        // 获取a标签元素
+        /**
+         * 获取a标签元素
+         */
         this.alink = document.getElementsByTagName('a');
 
-        // 调用初始化方法
+        /**
+         * 调用初始化方法
+         */
         this.blank();
-        // 调用页面打开方法
+        /**
+         * 调用页面打开方法
+         */
         this.openPage();
     }
 
-    // 给 <a> 标签添加 target = '_blank' 属性
+    /**
+     * 给 <a> 标签添加 target = '_blank' 属性
+     */
     blank() {
         for (let i = 0; i < this.alink.length; i++) {
             if (!this.alink[i].hasAttribute('target')) {
@@ -19,16 +30,22 @@ class Link {
         }
     }
 
-    // 页面打开方法，用于监听页打开
+    /**
+     * 页面打开方法，用于监听页打开
+     */
     openPage(){
         /** 
          * 添加页面打开事件监听器，当页面打开时调用blank方法，
          * 给没有  target = '_blank' 属性的 <a> 标签添加 target = '_blank' 属性
         */
-         window.addEventListener('load', this.blank());
+         window.addEventListener('load', () => {
+             this.blank();
+         });
     }
 
 }
 
-// 创建 Link 的实例
+/**
+ * 创建 Link 的实例
+ */
 const linkInstance  = new Link();
