@@ -8,7 +8,7 @@ class Link {
         this.blank();
     }
 
-    // 给a标签添加 target = '_blank' 属性
+    // 给 <a> 标签添加 target = '_blank' 属性
     blank() {
         for (let i = 0; i < this.alink.length; i++) {
             if (!this.alink[i].hasAttribute('target')) {
@@ -17,7 +17,18 @@ class Link {
         }
     }
 
+    // 页面打开方法，用于监听页打开
+    openPage(){
+        /** 
+         * 添加页面打开事件监听器，当页面打开时调用blank方法，
+         * 给没有  target = '_blank' 属性的 <a> 标签添加 target = '_blank' 属性
+        */
+         window.addEventListener('load', this.blank());
+    }
+
 }
+
+
 
 // 创建 Link 的实例
 const linkInstance  = new Link();
