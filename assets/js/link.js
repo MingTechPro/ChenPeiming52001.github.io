@@ -28,7 +28,5 @@ class Link {
 
 }
 
-
-
 // 创建 Link 的实例
 const linkInstance  = new Link();
