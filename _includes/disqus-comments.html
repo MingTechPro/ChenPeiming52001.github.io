@@ -15,6 +15,8 @@
         // LeanCloud评论设置
         new Valine({
             el: '#vcomments',
+            path: window.location.pathname,
+            verify: true,
             appId: '{{ site.valine.appId }}',
             appKey: '{{ site.valine.appKey }}',
             placeholder: '{{ site.valine.placeholder }}',
