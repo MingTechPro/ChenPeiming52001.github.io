@@ -90,7 +90,18 @@ tags:
 
 ### 设置简历
 
-- 
+- 将简历放在根目录下的 `assets\files` 件夹中
+- 在根目录下 `about.md` 里面引入简历链接
+- ` ChenPeiming_CH.pdf ` 替换为己的文件名称
+
+```html
+<h3>下载我的简历</h3>
+<a role="button" class="btn btn-primary hvr-grow-shadow" href="/assets/files/ChenPeiming_CH.pdf" target="_blanks">
+<span class="flag-icon flag-icon-cn"></span> 中文 </a>
+```
+
+[![设置简历](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-1.png)](images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-1.png)
+[![设置简历](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-2.png)](images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-2.png)
 
 ## 6.设置评论功能
 
