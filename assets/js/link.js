@@ -26,12 +26,11 @@ class Link {
         for (let i = 0; i < this.alink.length; i++) {
             const link = this.alink[i];
 
-            console.log(link);
-
             // 跳过以 "#fn:" 开头的链接
-            // if (link.href.startsWith("#")) {
-            //     continue;
-            // }
+            if (link.href.startsWith("#")) {
+                console.log(link);
+                // continue;
+            }
 
             // if (!link.hasAttribute('target')) {
             //     link.setAttribute('target', '_blank');
