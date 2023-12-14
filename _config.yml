@@ -48,7 +48,8 @@ kramdown:
   input: GFM
   enable_coderay: true
   math_engine: mathjax
-  footnote_backlink: ↩
+  footnote_nr: true
+  footnote_backlink: "&#8617;"
 
 # 分页
 paginate: 10
