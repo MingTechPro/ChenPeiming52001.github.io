@@ -1,7 +1,7 @@
 /**
-		 * 给所有页面 <a> 标签上添加了 target='_blank' 属性。
-		 * 这样就可以确保链接在单击时在新标签页中打开。
-		 */
+ * 给所有页面 <a> 标签上添加了 target='_blank' 属性。
+ * 这样就可以确保链接在单击时在新标签页中打开。
+ */
 class Link {
     constructor() {
         // 获取所有的<a>标签元素
@@ -17,7 +17,7 @@ class Link {
         this.skippedHrefs = this.getSkippedHrefs();
 
         // 添加target='_blank'属性
-        this.addBlankAttribute();
+        this.addBlankAttribute(false);
 
         // 监听页面打开事件
         this.listenPageOpen();
@@ -35,21 +35,23 @@ class Link {
     }
 
     // 给<a>标签添加target='_blank'属性
-    addBlankAttribute() {
+    addBlankAttribute(isDelayed) {
         for (let i = 0; i < this.skippedHrefs.length; i++) {
             const link = this.alink[this.skippedHrefs[i]];
             if (!link.hasAttribute('target')) {
                 link.setAttribute('target', '_blank');
             }
         }
+        if (isDelayed) {
+            window.addEventListener('load', () => {
+                this.addBlankAttribute(false);
+            });
+        }
     }
 
     // 监听页面打开事件，在页面加载完成后再次添加target='_blank'属性
     listenPageOpen() {
-        this.addBlankAttribute();
-        window.addEventListener('load', () => {
-            this.addBlankAttribute();
-        });
+        this.addBlankAttribute(true);
     }
 }
 
