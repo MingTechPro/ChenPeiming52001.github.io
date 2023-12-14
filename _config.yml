@@ -35,21 +35,18 @@ gems:
 # 建立设置
 markdown: kramdown
 highlighter: rouge
-lsi:         false
 excerpt_separator: "\n\n"
 
-source:      .
-destination: ./_site
+source: .
 
-quiet:    false
+quiet: false
 defaults: []
 
+# kramdown 编译器设置
 kramdown:
   input: GFM
   enable_coderay: true
-
-# Disque
-disque: 
+  math_engine: mathjax
 
 # 分页
 paginate: 10
