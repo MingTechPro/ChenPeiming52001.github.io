@@ -26,8 +26,8 @@ class Link {
         for (let i = 0; i < this.alink.length; i++) {
             const link = this.alink[i];
 
-            // 跳过以 "#" 开头的链接
-            if (link.href.startsWith("#") || link.getAttribute('href') === '#') {
+            // 跳过包含 href="#" 的链接
+            if (link.href === '' || link.href === '#' || link.getAttribute('href') === '#') {
                 continue;
             }
 
