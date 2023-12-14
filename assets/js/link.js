@@ -14,7 +14,7 @@ class Link {
         // 获取应该跳过的<a>标签的索引
         this.skippedHrefs = this.getSkippedHrefs();
         // 在新标签页中打开被跳过的链接
-        this.openInNewTab();
+        this.openPage();
     }
 
     // 获取应该跳过的<a>标签的索引
@@ -38,6 +38,20 @@ class Link {
             }
         }
     }
+
+    /**
+     * 页面打开方法，用于监听页打开
+     */
+    openPage() {
+        /** 
+         * 添加页面打开事件监听器，当页面打开时调用blank方法，
+         * 给没有  target = '_blank' 属性的 <a> 标签添加 target = '_blank' 属性
+        */
+        window.addEventListener('load', () => {
+            this.openInNewTab();
+        });
+    }
+
 }
 
 // 创建Link类的实例
