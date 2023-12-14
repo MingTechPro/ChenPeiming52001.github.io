@@ -37,8 +37,6 @@ markdown: kramdown
 highlighter: rouge
 excerpt_separator: "\n\n"
 
-source: .
-
 quiet: false
 defaults: []
 
