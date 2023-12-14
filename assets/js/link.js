@@ -26,8 +26,8 @@ class Link {
         for (let i = 0; i < this.alink.length; i++) {
             const link = this.alink[i];
 
-            // 跳过不以 "#fn:" 开头的链接
-            if (link.href.startsWith("#fn:")) {
+            // 跳过以 "#fn:" 开头的链接
+            if (link.href.startsWith("#")) {
                 continue;
             }
 
