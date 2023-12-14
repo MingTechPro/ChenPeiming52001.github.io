@@ -49,7 +49,7 @@ kramdown:
   enable_coderay: true
   math_engine: mathjax
   footnote_nr: true
-  footnote_backlink: "&#8617;"
+  footnote_backlink: ↩
 
 # 分页
 paginate: 10
