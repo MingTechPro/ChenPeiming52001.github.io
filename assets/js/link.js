@@ -27,7 +27,7 @@ class Link {
             const link = this.alink[i];
 
             // 跳过不以 "#fn:" 开头的链接
-            if (!link.href.startsWith("#fn:")) {
+            if (link.href.startsWith("#fn:")) {
                 continue;
             }
 
