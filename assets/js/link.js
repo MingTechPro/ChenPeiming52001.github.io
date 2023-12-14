@@ -13,7 +13,7 @@ class Link {
         }
         // 获取应该跳过的<a>标签的索引
         this.skippedHrefs = this.getSkippedHrefs();
-        // 在新标签页中打开被跳过的链接
+        // 调用监听页打开
         this.openPage();
     }
 
@@ -48,7 +48,7 @@ class Link {
          * 给没有  target = '_blank' 属性的 <a> 标签添加 target = '_blank' 属性
         */
         window.addEventListener('load', () => {
-            this.openInNewTab();
+            this.openInNewTab(); // 将函数名称更正为 openInNewTab
         });
     }
 
