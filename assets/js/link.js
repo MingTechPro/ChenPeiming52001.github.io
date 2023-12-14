@@ -24,19 +24,18 @@ class Link {
      */
     blank() {
         for (let i = 0; i < this.alink.length; i++) {
-          const link = this.alink[i];
-          
-          // 跳过以 "#fn:" 开头的链接
-          if (link.href.startsWith("#fn:")) {
-            continue;
-          }
-          
-          if (!link.hasAttribute('target')) {
-            link.setAttribute('target', '_blank');
-          }
+            const link = this.alink[i];
+
+            // 跳过不以 "#fn:" 开头的链接
+            if (!link.href.startsWith("#fn:")) {
+                continue;
+            }
+
+            if (!link.hasAttribute('target')) {
+                link.setAttribute('target', '_blank');
+            }
         }
-      }
-      
+    }
 
     /**
      * 页面打开方法，用于监听页打开
