@@ -3,7 +3,7 @@
  * 这样就可以确保链接在单击时在新标签页中打开。
  */
 class Link {
-    constructor(){
+    constructor() {
         /**
          * 获取a标签元素
          */
@@ -24,8 +24,15 @@ class Link {
      */
     blank() {
         for (let i = 0; i < this.alink.length; i++) {
-            if (!this.alink[i].hasAttribute('target')) {
-                this.alink[i].setAttribute('target', '_blank');
+            const link = this.alink[i];
+
+            // 跳过以 "#" 开头的链接
+            if (link.href.startsWith("#")) {
+                continue;
+            }
+
+            if (!link.hasAttribute('target')) {
+                link.setAttribute('target', '_blank');
             }
         }
     }
@@ -33,14 +40,14 @@ class Link {
     /**
      * 页面打开方法，用于监听页打开
      */
-    openPage(){
+    openPage() {
         /** 
          * 添加页面打开事件监听器，当页面打开时调用blank方法，
          * 给没有  target = '_blank' 属性的 <a> 标签添加 target = '_blank' 属性
         */
-         window.addEventListener('load', () => {
-             this.blank();
-         });
+        window.addEventListener('load', () => {
+            this.blank();
+        });
     }
 
 }
@@ -48,4 +55,4 @@ class Link {
 /**
  * 创建 Link 的实例
  */
-const linkInstance  = new Link();
+const linkInstance = new Link();
