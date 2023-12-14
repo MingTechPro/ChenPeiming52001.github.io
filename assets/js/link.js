@@ -27,7 +27,7 @@ class Link {
             const link = this.alink[i];
 
             // 跳过以 "#" 开头的链接
-            if (link.href.startsWith("#")) {
+            if (link.href.startsWith("#") || link.getAttribute('href') === '#') {
                 continue;
             }
 
