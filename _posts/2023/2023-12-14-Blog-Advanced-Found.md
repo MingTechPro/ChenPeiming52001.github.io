@@ -68,10 +68,6 @@ tags:
 
 演示：
 
-<font face="STKaiti">我是华文楷体</font>
-<font face="BiauKai">我是标楷体</font>
-<font face="Microsoft YaHei">微软雅黑体</font>
-
 [![字体字号](/images/2023/2023-12-14-Blog-Advanced-Found/2023-12-14-Blog-Advanced-Found-1.png)](/images/2023/2023-12-14-Blog-Advanced-Found/2023-12-14-Blog-Advanced-Found-1.png)
 
 ## 添加字体颜色和修改字体大小
