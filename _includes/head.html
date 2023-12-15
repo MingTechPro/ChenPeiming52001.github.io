@@ -1,4 +1,5 @@
 <!-- 头部信息 -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,11 @@
 
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description"
-          content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml" | prepend:
+        site.baseurl | prepend: site.url }}">
 
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -42,5 +44,9 @@
     <!-- 我的 JS -->
     <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
     <script type="text/javascript" src="/assets/js/link.js"></script>
-</head>
+    <!-- 解析数学公式 MathJax 库的引入代码 -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
 
+</head>
