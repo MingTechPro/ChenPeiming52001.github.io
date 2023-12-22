@@ -5,8 +5,8 @@ author: ChenPeiming
 category:
   - Markdown
 tags:
-  - 博客
   - Markdown
+  - 博客
 ---
 
 8个Markdown文档进阶写作技巧分享：

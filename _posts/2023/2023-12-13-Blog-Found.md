@@ -5,8 +5,8 @@ author: ChenPeiming
 category:
   - Markdown
 tags:
-  - 博客
   - Markdown
+  - 博客
 ---
 
 手把手教你如何在博客写文章，
