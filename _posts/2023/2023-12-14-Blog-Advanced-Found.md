@@ -58,17 +58,21 @@ tags:
 有时侯我们需要修改文字的字体字号，可是我们就会简单的“加粗”“斜体”等，这样子一来又觉得有点单调。<br>其实我们可以用HTML代码来改变Markdown文档的字体字号：
 
 - [CSS字体](https://www.jb51.net/css/67658.html) - 让你的Markdown文档有更多的字体
-- 通过上面的网站查询到的字体名字 `<font face="写入到这里"></font>`
+- 通过上面的网站查询到的字体名字 `<font style="font-family:写入到这里"></font>`
 
 ```html
-<font face="STKaiti">我是华文楷体</font>
-<font face="BiauKai">我是标楷体</font>
-<font face="Microsoft YaHei">微软雅黑体</font>
+<font style="font-family: STKaiti;">我是华文楷体</font>
+<font style="font-family: BiauKai;">我是标楷体</font>
+<font style="font-family: Microsoft YaHei;">微软雅黑体</font>
 ```
 
 演示：
 
-[![字体字号](/images/2023/2023-12-14-Blog-Advanced-Found/2023-12-14-Blog-Advanced-Found-1.png)](/images/2023/2023-12-14-Blog-Advanced-Found/2023-12-14-Blog-Advanced-Found-1.png)
+<font style="font-family: STKaiti;">我是华文楷体</font>
+
+<font style="font-family: STCaiyun;">我是华文彩云体</font>
+
+<font style="font-family: STXingkai;">我是华文行楷</font>
 
 ## 添加字体颜色和修改字体大小
 

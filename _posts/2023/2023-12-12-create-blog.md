@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 如何使用 Jekyll 在 GitHub 上搭建个人博客
+title: 使用 Jekyll 在 GitHub 上搭建个人博客
 author: ChenPeiming
 category:
   - Jekyll
@@ -10,13 +10,13 @@ tags:
 ---
 
 搭建流程：
-- 1.下载安装配置 Git
-- 2.GitHub 创建公共仓库
-- 3.克隆本地仓库
-- 4.克隆博客模板
-- 5.博客基础功能设置
-- 6.设置评论功能
-- 7.上传 GitHub
+- 下载安装配置Git
+- GitHub创建公共仓库
+- 克隆本地仓库
+- 克隆博客模板
+- 博客基础功能设置
+- 设置评论功能
+- 上传GitHub
 
 
 
@@ -47,7 +47,9 @@ tags:
 
 ## 4.克隆博客模板
 
-- 打开博客模板项目[ChenPeiming52001.github.io](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io)
+- 打开博客模板项目 [ChenPeiming52001.github.io](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io)
+
+- 博客模板 [ChenPeiming52001.github.io 发行版](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io/releases)
 
 - 复制仓库中的 HTTPS 地址
   [![博客模板](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-6.png)](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-6.png)
@@ -55,7 +57,7 @@ tags:
 - 通过 Git 终端 克隆到本地    
 [![Git](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png)](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png)
 
-- 打开下载好的项目，删除根目录里面 .git 文件夹和 _posts 、images 文件夹里面的文件
+- 打开下载好的项目，删除根目录里面 .git 文件夹和 _posts 、images 文件夹里面的文件 <br> `懒得删除可以下载打包好的 ChenPeiming52001.github.io 发行版`
 [![删除文件](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png)](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png)
 
 ## 5.博客基础功能设置
