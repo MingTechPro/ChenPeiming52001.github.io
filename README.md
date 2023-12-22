@@ -26,7 +26,7 @@ Power by [Yummy-Jekyll](https://github.com/DONGChuan/Yummy-Jekyll) & Revised by 
 
  - 给所有的页面设置一条好看的滑动条
 
-    [![滑动条](/assets/images/README/readme-1.png)](/assets/images/README/readme-1.png)
+    [![滑动条](/assets/images/README/readme-1.png)](/assets/images/README/readme-1.png?raw=true)
 
  - 在主页标题添加一条会随着页面刷新而变化的名言名句
 
