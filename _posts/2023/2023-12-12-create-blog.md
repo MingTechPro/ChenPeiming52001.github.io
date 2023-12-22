@@ -114,7 +114,7 @@ tags:
 
 [![设置书签](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-1.png)](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-1.png)
 
-[![设置书签](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-1.png)](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-1.png)
+[![设置书签](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-2.png)](/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-2.png)
 
 ## 设置评论功能
 
