@@ -62,16 +62,14 @@ tags:
 
 ```html
 <font style="font-family: STKaiti;">我是华文楷体</font>
-<font style="font-family: BiauKai;">我是标楷体</font>
-<font style="font-family: Microsoft YaHei;">微软雅黑体</font>
+<font style="font-family: STCaiyun;">我是华文彩云体</font>
+<font style="font-family: STXingkai;">我是华文行楷</font>
 ```
 
 演示：
 
-<font style="font-family: STKaiti;">我是华文楷体</font>
-
-<font style="font-family: STCaiyun;">我是华文彩云体</font>
-
+<font style="font-family: STKaiti;">我是华文楷体</font><br>
+<font style="font-family: STCaiyun;">我是华文彩云体</font><br>
 <font style="font-family: STXingkai;">我是华文行楷</font>
 
 ## 添加字体颜色和修改字体大小
