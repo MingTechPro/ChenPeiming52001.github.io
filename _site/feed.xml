@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChenPeiming</title>
+    <description>这是ChenPeiming的个人博客</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 28 Dec 2023 01:19:52 +0800</pubDate>
+    <lastBuildDate>Thu, 28 Dec 2023 01:19:52 +0800</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
+    
+      <item>
+        <title>Markdown 进阶写作指南</title>
+        <description>&lt;p&gt;8个Markdown文档进阶写作技巧分享：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;显示特殊符号&lt;/li&gt;
+  &lt;li&gt;添加emoji表情符号🥰&lt;/li&gt;
+  &lt;li&gt;添加字体字号&lt;/li&gt;
+  &lt;li&gt;添加字体颜色和修改字体大小&lt;/li&gt;
+  &lt;li&gt;添加文字背景色&lt;/li&gt;
+  &lt;li&gt;添加 Todo 列表&lt;/li&gt;
+  &lt;li&gt;添加常用数学公式&lt;/li&gt;
+  &lt;li&gt;添加注意事项&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;显示特殊符号&quot;&gt;显示特殊符号&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://symbl.cc/cn/&quot;&gt;SYMBL&lt;/a&gt; - 特殊字符对应的Unicode码查询&lt;/li&gt;
+  &lt;li&gt;语法符号，前面加反斜线\即可显示符号本身，例如：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;\\ 反斜杠
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;\* 星号
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;\_ 下划线
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;\{\} 括号
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;\# 井号
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;\+ 加号
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;\- 减号
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;\! 感叹号
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;演示：&lt;/p&gt;
+
+&lt;p&gt;\ 反斜杠
+* 星号
+_ 下划线
+{} 括号
+# 井号
++ 加号
+- 减号
+! 感叹号&lt;/p&gt;
+
+&lt;h2 id=&quot;添加emoji表情符号&quot;&gt;添加emoji表情符号🥰&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.webfx.com/tools/emoji-cheat-sheet/&quot;&gt;Emoji Cheat Sheet&lt;/a&gt; - 给你的Markdown文档添加表情🍁&lt;/li&gt;
+  &lt;li&gt;去上面的网站即可复制粘贴，需要的表情包🤔&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;添加字体字号&quot;&gt;添加字体字号&lt;/h2&gt;
+
+&lt;p&gt;有时侯我们需要修改文字的字体字号，可是我们就会简单的“加粗”“斜体”等，这样子一来又觉得有点单调。&lt;br /&gt;其实我们可以用HTML代码来改变Markdown文档的字体字号：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jb51.net/css/67658.html&quot;&gt;CSS字体&lt;/a&gt; - 让你的Markdown文档有更多的字体&lt;/li&gt;
+  &lt;li&gt;通过上面的网站查询到的字体名字 &lt;code&gt;&amp;lt;font style=&quot;font-family:写入到这里&quot;&amp;gt;&amp;lt;/font&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;font&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;style&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;font-family&lt;/span&gt;: &lt;span style=&quot;color:#088&quot;&gt;STKaiti&lt;/span&gt;;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;我是华文楷体&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/font&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;font&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;style&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;font-family&lt;/span&gt;: &lt;span style=&quot;color:#088&quot;&gt;STCaiyun&lt;/span&gt;;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;我是华文彩云体&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/font&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;font&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;style&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;font-family&lt;/span&gt;: &lt;span style=&quot;color:#088&quot;&gt;STXingkai&lt;/span&gt;;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;我是华文行楷&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/font&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;演示：&lt;/p&gt;
+
+&lt;font style=&quot;font-family: STKaiti;&quot;&gt;我是华文楷体&lt;/font&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;font style=&quot;font-family: STCaiyun;&quot;&gt;我是华文彩云体&lt;/font&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;font style=&quot;font-family: STXingkai;&quot;&gt;我是华文行楷&lt;/font&gt;
+
+&lt;h2 id=&quot;添加字体颜色和修改字体大小&quot;&gt;添加字体颜色和修改字体大小&lt;/h2&gt;
+
+&lt;p&gt;通过上面的学习你已经会使用HTML代码来改变Markdown文档的字体字号，同样Markdown文档也是可以通过HTML代码实现字体颜色：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://xh.5156edu.com/page/z1015m9220j18754.html&quot;&gt;CSS颜色&lt;/a&gt; - 让你的Markdown文档字体有更多的颜色&lt;/li&gt;
+  &lt;li&gt;通过上面查询到的颜色编码 &lt;code&gt;&amp;lt;font color=&quot;写入到这里&quot; size=&quot;写入数值改变字体大小&quot;&amp;gt;&amp;lt;/font&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;font&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;color&lt;/span&gt;=&lt;span style=&quot;color:#700&quot;&gt;LightSkyBlue&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;size&lt;/span&gt;=&lt;span style=&quot;color:#700&quot;&gt;72&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;亮天蓝色&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/font&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;font&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;color&lt;/span&gt;=&lt;span style=&quot;color:#700&quot;&gt;SpringGreen&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;size&lt;/span&gt;=&lt;span style=&quot;color:#700&quot;&gt;42&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;春绿色&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/font&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;font&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;color&lt;/span&gt;=&lt;span style=&quot;color:#700&quot;&gt;Red&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;size&lt;/span&gt;=&lt;span style=&quot;color:#700&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;纯红色&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/font&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;演示：&lt;/p&gt;
+
+&lt;font color=&quot;LightSkyBlue&quot; size=&quot;72&quot;&gt;亮天蓝色&lt;/font&gt;
+
+&lt;font color=&quot;SpringGreen&quot; size=&quot;42&quot;&gt;春绿色&lt;/font&gt;
+
+&lt;font color=&quot;Red&quot; size=&quot;6&quot;&gt;纯红色&lt;/font&gt;
+
+&lt;h2 id=&quot;添加文字背景色&quot;&gt;添加文字背景色&lt;/h2&gt;
+
+&lt;p&gt;Markdown本身不支持背景色设置，需要采用内置html的方式实现。&lt;br /&gt;借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。例如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://xh.5156edu.com/page/z1015m9220j18754.html&quot;&gt;CSS颜色&lt;/a&gt; - 让你的Markdown文档字体有更多的颜色&lt;/li&gt;
+  &lt;li&gt;通过上面查询到的颜色编码 &lt;code&gt;&amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td bgcolor=&quot;写入到这里&quot;&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;td&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;bgcolor&lt;/span&gt;=&lt;span style=&quot;color:#700&quot;&gt;LightSkyBlue&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;背景色是：亮天蓝色&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;td&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;bgcolor&lt;/span&gt;=&lt;span style=&quot;color:#700&quot;&gt;SpringGreen&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;背景色是：春绿色&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;td&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;bgcolor&lt;/span&gt;=&lt;span style=&quot;color:#700&quot;&gt;Red&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;背景色是：纯红色&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;演示：&lt;/p&gt;
+
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=&quot;LightSkyBlue&quot;&gt;背景色是：亮天蓝色&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=&quot;SpringGreen&quot;&gt;背景色是：春绿色&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=&quot;Red&quot;&gt;背景色是：纯红色&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h2 id=&quot;添加-todo-列表&quot;&gt;添加 Todo 列表&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用 - [ ] 和 - [x] 语法可以创建复选框，实现 todo-list 等功能&lt;/li&gt;
+  &lt;li&gt;输入顺序：- 空格 [ 空格 ] 空格&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;- [ ] 未选中状态
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;- [x] 选中状态
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;演示：&lt;/p&gt;
+
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;
+    &lt;p&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;未选中状态&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;
+    &lt;p&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;选中状态&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;添加常用数学公式&quot;&gt;添加常用数学公式&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/mingzhuo_126/article/details/82722455&quot;&gt;数学公式&lt;/a&gt; - 让你的Markdown文档添加公式&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;公式块 ，输入美元符（$）然后回车，中间输入相应代码，详细代码参考上方网站。例如：&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;$$
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;\sin x =2  \sin x \cos
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;$$
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;$$
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;e^{i\pi} + 1 = 0
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;$$
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;演示：&lt;/p&gt;
+
+\[\sin x =2  \sin x \cos\]
+
+\[e^{i\pi} + 1 = 0\]
+
+&lt;h2 id=&quot;添加注意事项&quot;&gt;添加注意事项&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;输入三个反单引号 ``` 再输入 notice 回车即可输入注意事项，例如：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;```notice
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;这个是一个注意事项
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;```
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;演示：&lt;/p&gt;
+
+&lt;div class=&quot;language-notice highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;这个是一个注意事项
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;参考文章：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.runoob.com/markdown/md-advance.html&quot;&gt;Markdown - 菜鸟教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 14 Dec 2023 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/markdown/2023/12/14/Blog-Advanced-Found.html</link>
+        <guid isPermaLink="true">http://localhost:4000/markdown/2023/12/14/Blog-Advanced-Found.html</guid>
+        
+        <category>Markdown</category>
+        
+        <category>博客</category>
+        
+        
+        <category>Markdown</category>
+        
+      </item>
+    
+      <item>
+        <title>Markdown 博客写作指南</title>
+        <description>&lt;p&gt;手把手教你如何在博客写文章，
+流程比较简单，主要分以下4步：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;创建Markdown文件&lt;/li&gt;
+  &lt;li&gt;添加页面信息&lt;/li&gt;
+  &lt;li&gt;写入博客文章内容&lt;/li&gt;
+  &lt;li&gt;上传GitHub&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1创建markdown文件&quot;&gt;1.创建Markdown文件&lt;/h2&gt;
+
+&lt;p&gt;先在博客本地 GitHub 仓库的 \_posts 文件下创建 一个以年份的文件夹 \2023 这个文件夹将放你一整年的文章。然后在 \2023 的文件夹里面创建命名为 “时间-文章名称.md” 的文件&lt;/p&gt;
+
+&lt;p&gt;.md 文件的命名规则：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;以时间开头：2023-12-13&lt;/li&gt;
+  &lt;li&gt;后加上文章名称：blog-found 文章名称需要是英文的&lt;/li&gt;
+  &lt;li&gt;在加上：.md&lt;/li&gt;
+  &lt;li&gt;完整名称：2023-12-13-blog-found.md&lt;/li&gt;
+  &lt;li&gt;命名有问题页面会渲染不出来&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2添加页面信息&quot;&gt;2.添加页面信息&lt;/h2&gt;
+
+&lt;h3 id=&quot;标签含义&quot;&gt;标签含义&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;layout: 布局 “默认是post”&lt;/li&gt;
+  &lt;li&gt;title: “标题”&lt;/li&gt;
+  &lt;li&gt;author: 作者&lt;/li&gt;
+  &lt;li&gt;category: 分类&lt;/li&gt;
+  &lt;li&gt;tags: 标签&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;写完通过这个网站验证一下格式，网站会帮我们优化。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.yamllint.com/&quot;&gt;YAML验证器&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;---
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;layout: post
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;title: &amp;quot;Markdown 博客写作指南&amp;quot;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;author: Chenpeiming
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;categories: Markdown
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;tags: [博客] 单个标签使用这个方式
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;tags:   多标签使用这种
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;  - 博客
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;  - Markdown
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;---
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;在文章需要被渲染到主页的内容后面，插入两个换行即可停止渲染。否则将整篇文章渲染到主页面！
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;3写入博客文章内容&quot;&gt;3.写入博客文章内容&lt;/h2&gt;
+
+&lt;h3 id=&quot;1两种标题格式&quot;&gt;1.两种标题格式：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用两个以上 = 标记一级标题 和 使用两个以上 - 标记二级标题&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;一级标题
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;=======
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;二级标题
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;-------
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;h1 id=&quot;一级标题&quot;&gt;一级标题&lt;/h1&gt;
+
+    &lt;h2 id=&quot;二级标题&quot;&gt;二级标题&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用 &lt;code&gt;#&lt;/code&gt; 来表示标题，其中 &lt;code&gt;#&lt;/code&gt; 的数量代表标题级别，共有六个级别。写文章建议使用二级标题、 三级标题来写，这样子会在文章的侧边栏生成目录（二级标题生成主标题、三级标题生成副标题）。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;# 一级标题
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;## 二级标题
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;### 三级标题
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;#### 四级标题
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;##### 五级标题
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;###### 六级标题
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;h2 id=&quot;二级标题-1&quot;&gt;二级标题&lt;/h2&gt;
+
+    &lt;h3 id=&quot;三级标题&quot;&gt;三级标题&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2三种设置段落格式&quot;&gt;2.三种设置段落格式：&lt;/h3&gt;
+
+&lt;p&gt;直接连续输入文字即可自动生成段落，也可以使用以下三种方式设置段落。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用两个以上空格加上回车&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;使用  
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;两个以说空格加上回车可以换行
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;使用&lt;br /&gt;
+两个以说空格加上回车可以换行&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用一个空行进行换行&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;使用
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;一个空行进行换行
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;使用&lt;/p&gt;
+
+    &lt;p&gt;一个空行进行换行&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; 换行标签进行换行&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;使用 &amp;lt;br&amp;gt; `&amp;lt;br&amp;gt;` 换行标签进行换行
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;使用 &lt;br /&gt; &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; 换行标签进行换行&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3斜体文本粗体文本和粗斜体文本&quot;&gt;3.斜体文本、粗体文本和粗斜体文本：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用 &lt;code&gt;*斜体文本*&lt;/code&gt; 或 &lt;code&gt;_斜体文本_&lt;/code&gt; 可以使文本变为斜体。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;*斜体文本*
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;_斜体文本_
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;斜体文本&lt;/em&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;斜体文本&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用 &lt;code&gt;**粗体文本**&lt;/code&gt; 或 &lt;code&gt;__粗体文本__&lt;/code&gt; 可以使文本加粗&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;**粗体文本**
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;__粗体文本__
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;粗体文本&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;粗体文本&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用 &lt;code&gt;***粗斜体文本***&lt;/code&gt; 或 &lt;code&gt;___粗斜体文本___&lt;/code&gt; 可以使文本变为斜体。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;***粗斜体文本***
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;___粗斜体文本___
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;&lt;em&gt;粗斜体文本&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;&lt;em&gt;粗斜体文本&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4分隔线删除线和下划线&quot;&gt;4.分隔线、删除线和下划线:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;分隔线&lt;/p&gt;
+
+    &lt;p&gt;使用三个以上的 &lt;code&gt;-&lt;/code&gt; 、&lt;code&gt;_&lt;/code&gt; 或 &lt;code&gt;*&lt;/code&gt; 可以生成分隔线,也可以使用  &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt;  标签。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;---
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;___
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;***
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;&amp;lt;hr&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;删除线&lt;/p&gt;
+
+    &lt;p&gt;使用两个 &lt;code&gt;~&lt;/code&gt; 在文字的两端加上两个波浪线 &lt;code&gt;~~删除线~~&lt;/code&gt; 。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;~~删除线~~
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;&lt;del&gt;删除线&lt;/del&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;下划线&lt;/p&gt;
+
+    &lt;p&gt;使用 &lt;code&gt;&amp;lt;u&amp;gt;&lt;/code&gt; 标签来实现&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&amp;lt;u&amp;gt;下划线文本&amp;lt;/u&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;&lt;u&gt;下划线文本&lt;/u&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5脚注&quot;&gt;5.脚注：&lt;/h3&gt;
+
+&lt;p&gt;脚注是对文本的补充说明，使用 &lt;code&gt;[^文本]&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;这是一个带有脚注的文本[^1]。
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;[^1]: 这是一个脚注。
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;演示：&lt;/p&gt;
+
+&lt;p&gt;这是一个带有脚注的文本&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;6列表和列表嵌套&quot;&gt;6.列表和列表嵌套：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;列表&lt;/p&gt;
+
+    &lt;p&gt;使用 &lt;code&gt;+&lt;/code&gt; 加号、 &lt;code&gt;-&lt;/code&gt; 减号或 &lt;code&gt;*&lt;/code&gt; 星号可以创建无序列表，使用 &lt;code&gt;1.&lt;/code&gt; 数字加点可以创建有序列表。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;+ 无序列表项1
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;+ 无序列表项2
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;- 无序列表项1
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;- 无序列表项2
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;* 无序列表项1
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;* 无序列表项2
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;1. 有序列表项1
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;2. 有序列表项2
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;无序列表项1&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;无序列表项2&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;无序列表项1&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;无序列表项2&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;无序列表项1&lt;/li&gt;
+      &lt;li&gt;无序列表项2&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;有序列表项1&lt;/li&gt;
+      &lt;li&gt;有序列表项2&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;列表嵌套&lt;/p&gt;
+
+    &lt;p&gt;只需在子列表中的选项前面添加个四个空格即可&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;1. 第一项：
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    - 第一项嵌套的第一个元素
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    - 第一项嵌套的第二个元素
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;2. 第二项：
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    - 第二项嵌套的第一个元素
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;    - 第二项嵌套的第二个元素
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;第一项：
+        &lt;ul&gt;
+          &lt;li&gt;第一项嵌套的第一个元素&lt;/li&gt;
+          &lt;li&gt;第一项嵌套的第二个元素&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;第二项：
+        &lt;ul&gt;
+          &lt;li&gt;第二项嵌套的第一个元素&lt;/li&gt;
+          &lt;li&gt;第二项嵌套的第二个元素&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;7引用块嵌套引用块引用块列表和列表引用块&quot;&gt;7.引用块、嵌套引用块、引用块列表和列表引用块：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;引用块&lt;/p&gt;
+
+    &lt;p&gt;使用 &lt;code&gt;&amp;gt;&lt;/code&gt; 符号来表示引用块。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&amp;gt; 这是引用的文本块。
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;这是引用的文本块。&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;嵌套引用块&lt;/p&gt;
+
+    &lt;p&gt;使用 &lt;code&gt;&amp;gt;&lt;/code&gt; 、 &lt;code&gt;&amp;gt; &amp;gt;&lt;/code&gt; 、 &lt;code&gt;&amp;gt; &amp;gt; &amp;gt;&lt;/code&gt; 多个符号来表示嵌套引用块的层级关系。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&amp;gt; 最外层
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&amp;gt; &amp;gt; 第一层嵌套
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&amp;gt; &amp;gt; &amp;gt; 第二层嵌套
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;最外层&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;第一层嵌套&lt;/p&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;第二层嵌套&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;引用块列表&lt;/p&gt;
+
+    &lt;p&gt;使用 &lt;code&gt;&amp;gt;&lt;/code&gt; 符号加 &lt;code&gt;-&lt;/code&gt; 无序列表或 &lt;code&gt;1.&lt;/code&gt; 有序列表来实现。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&amp;gt; 区块中使用列表
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&amp;gt; - 第一项
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&amp;gt; - 第二项
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;&amp;gt; - 第三项
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;&amp;gt; 1. 第一项
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;&amp;gt; 2. 第二项
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;区块中使用列表&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;第一项&lt;/li&gt;
+        &lt;li&gt;第二项&lt;/li&gt;
+        &lt;li&gt;第三项
+          &lt;ol&gt;
+            &lt;li&gt;第一项&lt;/li&gt;
+            &lt;li&gt;第二项&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;列表引用块&lt;/p&gt;
+
+    &lt;p&gt;使用 &lt;code&gt;-&lt;/code&gt; 无序列表或 &lt;code&gt;2.&lt;/code&gt; 有序列表加 &lt;code&gt;&amp;gt;&lt;/code&gt; 符号实现。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;- 第一项
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    &amp;gt; 第一项的第一个元素
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;    &amp;gt; 第一项的第二个元素
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;2. 第二项
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;    &amp;gt; 第二项的第一个元素
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;    &amp;gt; 第二项的第二个元素
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;第一项
+        &lt;blockquote&gt;
+          &lt;p&gt;第一项的第一个元素&lt;/p&gt;
+        &lt;/blockquote&gt;
+
+        &lt;blockquote&gt;
+          &lt;p&gt;第一项的第二个元素
+      2. 第二项
+第二项的第一个元素&lt;/p&gt;
+        &lt;/blockquote&gt;
+
+        &lt;blockquote&gt;
+          &lt;p&gt;第二项的第二个元素&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;8两种设置代码块&quot;&gt;8.两种设置代码块：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用 4 个空格或者一个制表符（Tab 键）。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    print(&amp;quot;Hello, world!&amp;quot;)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;print(&amp;quot;Hello, world!&amp;quot;)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用三个反引号```包裹代码，并指定语言（可选）以进行语法高亮。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;```python
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;def hello_world():
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    print(&amp;quot;Hello, world!&amp;quot;)
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;```
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;div class=&quot;language-python highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;def&lt;/span&gt; &lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;hello_world&lt;/span&gt;():
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    print(&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;Hello, world!&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;9链接和高级链接&quot;&gt;9.链接和高级链接：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;链接&lt;/p&gt;
+
+    &lt;p&gt;使用&lt;code&gt;[链接文字](链接地址)&lt;/code&gt;的形式插入链接。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;[百度](https://www.baidu.com)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.baidu.com&quot;&gt;百度&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;高级链接&lt;/p&gt;
+
+    &lt;p&gt;使用变量来设置一个链接，变量赋值在文档末尾。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;这个链接用 1 作为网址变量 [百度][1]
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;这个链接用 runoob 作为网址变量 [搜狗][runoob]
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;然后在文档的结尾为变量赋值（网址）
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;[1]: https://www.baidu.com
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;[runoob]: http://www.runoob.com/
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;这个链接用 1 作为网址变量 &lt;a href=&quot;https://www.baidu.com&quot;&gt;百度&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;这个链接用 sogou 作为网址变量 &lt;a href=&quot;https://www.sogou.com//&quot;&gt;搜狗&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;10图片标题图片和高级图片&quot;&gt;10.图片、标题图片和高级图片：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;图片&lt;/p&gt;
+
+    &lt;p&gt;使用 &lt;code&gt;![图片描述](图片链接或路径)&lt;/code&gt; 可以插入图片。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;![示例图片](https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg&quot; alt=&quot;示例图片&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;标题图片&lt;/p&gt;
+
+    &lt;p&gt;使用 &lt;code&gt;![图片描述](图片链接或路径 &quot;可选标题&quot;)&lt;/code&gt; 可以加上选择性的 &lt;code&gt;title&lt;/code&gt; 属性的文字。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;![示例图片](https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg &amp;quot;示例图片&amp;quot;)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg&quot; alt=&quot;示例图片&quot; title=&quot;示例图片&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;高级图片&lt;/p&gt;
+
+    &lt;p&gt;使用 &lt;code&gt;[链接文字](链接地址)&lt;/code&gt; 链接来嵌套 &lt;code&gt;![图片描述](图片链接或路径)&lt;/code&gt; 图片可以实现点击图片打开链接或者图片&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;点击示例图片打开图片
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;[ ![示例图片](https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg) ](https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg)
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;点击百度logo打开百度网站
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;[ ![百度logo](https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png) ](https://www.baidu.com)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;点击示例图片打开图片&lt;/p&gt;
+
+        &lt;p&gt;&lt;a href=&quot;https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg&quot;&gt; &lt;img src=&quot;https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg&quot; alt=&quot;示例图片&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;点击百度logo打开百度网站&lt;/p&gt;
+
+        &lt;p&gt;&lt;a href=&quot;https://www.baidu.com&quot;&gt; &lt;img src=&quot;https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png&quot; alt=&quot;百度logo&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;11表格&quot;&gt;11.表格&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用 &lt;code&gt;|&lt;/code&gt; 来分隔不同的单元格，使用 &lt;code&gt;-&lt;/code&gt; 来分隔表头和其他行。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;|  表头   | 表头  |
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;|  ----  | ----  |
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;| 单元格  | 单元格 |
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;| 单元格  | 单元格 |
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;表头&lt;/th&gt;
+          &lt;th&gt;表头&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;单元格&lt;/td&gt;
+          &lt;td&gt;单元格&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;单元格&lt;/td&gt;
+          &lt;td&gt;单元格&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用 &lt;code&gt;:----&lt;/code&gt; 居左对齐、&lt;code&gt;:---:&lt;/code&gt; 居中对齐和 &lt;code&gt;----:&lt;/code&gt; 居右对齐来设置内容和标题栏对齐方式。&lt;/p&gt;
+
+    &lt;p&gt;例如：&lt;/p&gt;
+
+    &lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;| 居左对齐 | 居中对齐 | 居右对齐 |
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;|  :----  |  :---:  |  ----:  |
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;|    左   |    中    |    右    |
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;演示：&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;居左对齐&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;居中对齐&lt;/th&gt;
+          &lt;th style=&quot;text-align: right&quot;&gt;居右对齐&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;左&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;中&lt;/td&gt;
+          &lt;td style=&quot;text-align: right&quot;&gt;右&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12标签&quot;&gt;12.标签：&lt;/h3&gt;
+
+&lt;p&gt;使用两个反引号 ` 将文字包裹。&lt;/p&gt;
+
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;  `这是一个标签`
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;演示：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;这是一个标签&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4上传github&quot;&gt;4.上传GitHub&lt;/h2&gt;
+
+&lt;p&gt;在博客本地 GitHub 仓库 运行下面命令上传博客文章&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;git add .
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;git commit -m &amp;quot;添加文章&amp;quot;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;git push origin main
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;参考文章：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.runoob.com/markdown/md-tutorial.html&quot;&gt;Markdown 教程 - 菜鸟教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;这是一个脚注。 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 13 Dec 2023 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/markdown/2023/12/13/Blog-Found.html</link>
+        <guid isPermaLink="true">http://localhost:4000/markdown/2023/12/13/Blog-Found.html</guid>
+        
+        <category>Markdown</category>
+        
+        <category>博客</category>
+        
+        
+        <category>Markdown</category>
+        
+      </item>
+    
+      <item>
+        <title>使用 Jekyll 在 GitHub 上搭建个人博客</title>
+        <description>&lt;p&gt;搭建流程：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;下载安装配置Git&lt;/li&gt;
+  &lt;li&gt;GitHub创建公共仓库&lt;/li&gt;
+  &lt;li&gt;克隆本地仓库&lt;/li&gt;
+  &lt;li&gt;克隆博客模板&lt;/li&gt;
+  &lt;li&gt;博客基础功能设置&lt;/li&gt;
+  &lt;li&gt;设置评论功能&lt;/li&gt;
+  &lt;li&gt;上传GitHub&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;下载安装配置-git&quot;&gt;下载安装配置 Git&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;下载 &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git官网&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://blog.csdn.net/m0_72983118/article/details/130546429&quot;&gt;Git 安装配置参考以下教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-1.png&quot; alt=&quot;完成测试&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;github-创建公共仓库&quot;&gt;GitHub 创建公共仓库&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;创建仓库名结尾为 * .github.io 的公共仓库&lt;/li&gt;
+  &lt;li&gt;示范：ChenPeiming52001.github.io
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-2.png&quot; alt=&quot;仓库创建&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;克隆本地仓库&quot;&gt;克隆本地仓库&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;将刚刚创建好的空仓库克隆到本地&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;复制仓库中的 HTTPS 地址
+  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-3.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-3.png&quot; alt=&quot;HTTPS&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;在需要克隆的本地文件夹打开 Git 终端，粘贴的地址命令行并回车
+  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-4.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-4.png&quot; alt=&quot;Git&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;等待克隆完毕 &lt;br /&gt;
+  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-5.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-5.png&quot; alt=&quot;克隆完毕&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;克隆博客模板&quot;&gt;克隆博客模板&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;打开博客模板项目 &lt;a href=&quot;https://github.com/ChenPeiming52001/ChenPeiming52001.github.io&quot;&gt;ChenPeiming52001.github.io&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;博客模板 &lt;a href=&quot;https://github.com/ChenPeiming52001/ChenPeiming52001.github.io/releases&quot;&gt;ChenPeiming52001.github.io 发行版&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;复制仓库中的 HTTPS 地址
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-6.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-6.png&quot; alt=&quot;博客模板&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;通过 Git 终端 克隆到本地  &lt;br /&gt;
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png&quot; alt=&quot;Git&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;打开下载好的项目，删除根目录里面 .git 文件夹和 _posts 、images 文件夹里面的文件 &lt;br /&gt; &lt;code&gt;懒得删除可以下载打包好的 ChenPeiming52001.github.io 发行版&lt;/code&gt;
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png&quot; alt=&quot;删除文件&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;博客基础功能设置&quot;&gt;博客基础功能设置&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;博客的基础功能都可以在根目录 &lt;font color=&quot;SpringGreen&quot;&gt;_config.yml&lt;/font&gt; 文件下设置&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;设置主页&quot;&gt;设置主页&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;title: ChenPeiming	&lt;code&gt;设置自己博客的名称&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;location: 广东，广州	&lt;code&gt;设置自己所在的地区&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;company: CSDN		&lt;code&gt;设置第三方链接名称&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;company_url: https://blog.csdn.net/cpm011023	&lt;code&gt;设置第三方网络地址&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;name: ChenPeiming52001	&lt;code&gt;设置自己 GitHub 的名称&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;github_url: https://github.com/ChenPeiming52001	&lt;code&gt;设置自己 GitHub 的网络地址&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;description: 这是ChenPeiming的个人博客	&lt;code&gt;设置博客的描述&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;url: https://chenpeiming52001.github.io	&lt;code&gt;设置个人博客的网络协议&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-1.png&quot; alt=&quot;设置主页标题&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-2.png&quot; alt=&quot;设置主页标题&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;设置关于页&quot;&gt;设置关于页&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。	&lt;code&gt;设置个人介绍&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;email: chenpeiming52001@163.com	&lt;code&gt;设置自己的邮箱&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;skill_software_keywords: [Java,  Python]		&lt;code&gt;软件开发标签&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;skill_j2ee_keywords:		&lt;code&gt;J2EE开发标签&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;skill_mobile_app_keywords: 	&lt;code&gt;手机开发标签&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;skill_web_keywords: [HTML, CSS, JS, JQuery,SpringBoot, MySQL, MongoDB, PHP]	&lt;code&gt;Web开发标签&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-1.png&quot; alt=&quot;设置关于页&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-2.png&quot; alt=&quot;设置关于页&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;设置简历&quot;&gt;设置简历&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;将简历放在根目录下的 &lt;code&gt;assets\files&lt;/code&gt; 件夹中&lt;/li&gt;
+  &lt;li&gt;在根目录下 &lt;code&gt;about.md&lt;/code&gt; 里面引入简历链接&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;ChenPeiming_CH.pdf&lt;/code&gt; 替换为己的文件名称&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;下载我的简历&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;role&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;button&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;btn btn-primary hvr-grow-shadow&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;   &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/files/ChenPeiming_CH.pdf&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;target&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;_blanks&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;flag-icon flag-icon-cn&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; 中文 &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-1.png&quot; alt=&quot;设置简历&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-2.png&quot; alt=&quot;设置简历&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;设置书签&quot;&gt;设置书签&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;书签🔖用于快速标记您喜欢使用的资源库/工具/书籍&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;书签展示内容可以在根目录 &lt;font color=&quot;SpringGreen&quot;&gt;bookmark.md&lt;/font&gt; 文件下设置&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-1.png&quot; alt=&quot;设置书签&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-2.png&quot; alt=&quot;设置书签&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;设置评论功能&quot;&gt;设置评论功能&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://console-e1.leancloud.cn/&quot;&gt;LeanCloud 官网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;注册-leancloud-账号&quot;&gt;注册 &lt;a href=&quot;https://console-e1.leancloud.cn/register&quot;&gt;LeanCloud&lt;/a&gt; 账号&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13.png&quot; alt=&quot;注册LeanCloud账号&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;创建-leancloud--应用&quot;&gt;创建 LeanCloud  应用&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-1.png&quot; alt=&quot;创建 LeanCloud  应用&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-2.png&quot; alt=&quot;创建 LeanCloud  应用&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;设置-leancloud--应用&quot;&gt;设置 LeanCloud  应用&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;设置 Web 安全域名
+  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-1.png&quot; alt=&quot;设置Web安全域名&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-2.png&quot; alt=&quot;设置Web安全域名&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;获取 LeanCloud  应用凭证 AppID &amp;amp; AppKey
+  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-1.png&quot; alt=&quot;AppID&quot; /&gt;&lt;/a&gt;
+  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-2.png&quot; alt=&quot;AppKey&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;设置魔改-valine&quot;&gt;设置魔改 Valine&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;appId: Evlk9TNDwcQAIW9cC3NVx9bO-gzGzoHsz		 &lt;code&gt;填入刚刚复制的 AppID&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;appKey: 9TNYPTSFy6BvTeJnmxzBT7H9		&lt;code&gt;填入刚刚复制的 AppKey&lt;/code&gt;
+  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-1.png&quot; alt=&quot;设置魔改Valine&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://c.runoob.com/front-end/703/&quot;&gt;MD5加密工具&lt;/a&gt; 可以将邮箱加密为 MD5&lt;/li&gt;
+  &lt;li&gt;master: [‘33c0f3680c72dd299d9463a496cc7640’]		&lt;code&gt;填入 MD5 加密后博主(自己)的邮箱&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;friends: [‘f652e9c510f5948f083d453a189b13bc’, ‘261225df065b70eafdef4c88eecdb55d’]		&lt;code&gt;填入 MD5 加密后小伙伴的邮箱&lt;/code&gt;
+  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-2.png&quot; alt=&quot;设置魔改Valine&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;上传-github&quot;&gt;上传 GitHub&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;上传文件 &lt;br /&gt;
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-1.png&quot; alt=&quot;上传文件&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;git add .
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;添加上传添加消息&lt;br /&gt;
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-2.png&quot; alt=&quot;添加上传添加消息&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;git commit -m &amp;quot;部署博客&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;选择上传分支&lt;br /&gt;
+&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-3.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-3.png&quot; alt=&quot;选择上传分支&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;git push origin main
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;写作参考文章：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/markdown/2023/12/13/Blog-Found.html&quot;&gt;Markdown 博客写作指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/markdown/2023/12/14/Blog-Advanced-Found.html&quot;&gt;Markdown 进阶写作指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 12 Dec 2023 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/jekyll/2023/12/12/create-blog.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2023/12/12/create-blog.html</guid>
+        
+        <category>Jekyll</category>
+        
+        <category>博客</category>
+        
+        
+        <category>Jekyll</category>
+        
+      </item>
+    
+  </channel>
+</rss>

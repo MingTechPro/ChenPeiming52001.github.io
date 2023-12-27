@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 头部信息 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 收藏夹图标 -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <title>博客档案</title>
+    <meta name="description"
+        content="这是ChenPeiming的个人博客">
+
+    <link rel="canonical" href="http://localhost:4000/blog.html">
+    <link rel="alternate" type="application/rss+xml" title="ChenPeiming" href="http://localhost:4000 /feed.xml">
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- 第三方 CSS -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <!-- 我的 CSS -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/slider.css">
+
+    <!-- CSS 设置页面 -->
+    
+    <link rel="stylesheet" href="/assets/css/blog-page.css">
+    
+
+    <!-- CSS 设置布局 -->
+    
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 我的 JS -->
+    <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
+    <script type="text/javascript" src="/assets/js/link.js"></script>
+    <!-- 解析数学公式 MathJax 库的引入代码 -->
+    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+</head>
+
+    <body>
+
+    <!-- 主页头部信息 -->
+<header class="site-header">
+    <div class="container">
+        <a id="site-header-brand" href="/" target="_self" title="ChenPeiming">
+            <span class="octicon octicon-mark-github"></span> ChenPeiming
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <a href="/"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="主页">
+                主页
+            </a>
+            
+            <a href="/open-source"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="开源项目仓库">
+                开源项目仓库
+            </a>
+            
+            <a href="/blog"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="博客档案">
+                博客档案
+            </a>
+            
+            <a href="/bookmark"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="书签">
+                书签
+            </a>
+            
+            <a href="/about"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="关于我">
+                关于我
+            </a>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <!-- 开源项目仓库 博客档案 书签 关于我 页面大轮播图 -->
+<section class="jumbotron geopattern" data-pattern-id="博客档案">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>博客档案</h1>
+            <span class="meta-info">
+                
+                    <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 记录所有文章
+                
+                
+                
+                
+                
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container">
+
+    <div class="row">
+
+    <div class="col-md-8">
+
+        <!-- 博客列表 -->
+        <ul id="posts-list">
+            
+            <li class="posts-list-item">
+                <div class="posts-content">
+                    <span class="posts-list-meta">2023-12-14</span>
+                    <a class="posts-list-name bubble-float-left" href="http://localhost:4000/markdown/2023/12/14/Blog-Advanced-Found.html">Markdown 进阶写作指南</a>
+                    <span class="circle"></span>
+                </div>
+            </li>
+            
+            <li class="posts-list-item">
+                <div class="posts-content">
+                    <span class="posts-list-meta">2023-12-13</span>
+                    <a class="posts-list-name bubble-float-left" href="http://localhost:4000/markdown/2023/12/13/Blog-Found.html">Markdown 博客写作指南</a>
+                    <span class="circle"></span>
+                </div>
+            </li>
+            
+            <li class="posts-list-item">
+                <div class="posts-content">
+                    <span class="posts-list-meta">2023-12-12</span>
+                    <a class="posts-list-name bubble-float-left" href="http://localhost:4000/jekyll/2023/12/12/create-blog.html">使用 Jekyll 在 GitHub 上搭建个人博客</a>
+                    <span class="circle"></span>
+                </div>
+            </li>
+            
+        </ul>
+
+        <!-- 分页 -->
+        <!-- 分页 -->
+<div class="pagination text-align">
+    <div class="btn-group">
+
+        
+        <button disabled="disabled" href="javascript:;" class="btn btn-outline">&laquo;</button>
+        
+
+        
+        <a href="/" class="btn btn-outline">1</a>
+        
+
+        
+
+        
+        <button disabled="disabled" href="javascript:;" class="btn btn-outline">&raquo;</button>
+        
+
+    </div>
+</div>
+
+        <!-- 评论 -->
+        
+<!-- 评论 -->
+
+<head>
+    <script type="text/javascript" src="/assets/js/Valine.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/valine.css" />
+    <link rel="stylesheet" href="/assets/css/all.css" />
+</head>
+
+<body>
+    <br />
+    <p>我要评论</p>
+    <div id="vcomments" style="display: grid"></div>
+    <script>
+        // LeanCloud评论设置
+        new Valine({
+            el: '#vcomments',
+            verify: 'true',
+            appId: 'GQHKkm0dcsXF5pG93TdOlrIR-gzGzoHsz',
+            appKey: 'rIP8P4hi1yd0Kva2xYvRDOs4',
+            placeholder: 'ヾﾉ≧∀≦)o快来评论一下吧!',
+            pageSize: '15',
+            avatar: 'wavatar',
+            tagMeta: ['博主','小伙伴','访客'],
+            master: '[33c0f3680c72dd299d9463a496cc7640]',
+            friends: '[f652e9c510f5948f083d453a189b13bc],[261225df065b70eafdef4c88eecdb55d],',
+            enableQQ: 'true',
+            avatarForce: 'true',
+        });
+
+        // 点击回复直接评论
+        $(document).ready(function () {
+            $("#vcomments").on('click', 'span.vat', function () {
+                $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+                $('textarea#veditor').focus();
+            })
+        });
+    </script>
+</body>
+
+
+    </div>
+
+    <div class="col-md-4">
+        <!-- 标签 -->
+<h3 class="sidebar-title">标签</h3>
+<div id="blog-categories">
+    <ul class="list-group">
+        
+        <li class="list-group-item">
+            Jekyll
+            <span class="badge">1</span>
+        </li>
+        
+        <li class="list-group-item">
+            Markdown
+            <span class="badge">2</span>
+        </li>
+        
+    </ul>
+
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#blog-categories li").css('text-transform','capitalize')
+    });
+
+</script>
+    </div>
+
+</div>
+<script>
+    $(document).ready(function(){
+
+        // Enable bootstrap tooltip
+        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+
+    });
+</script>
+
+
+
+</article>
+
+        </div>
+
+    <!-- 页脚 -->
+<footer class="container">
+
+    <div class="site-footer">
+
+        <div class="copyright pull-left">
+            <!-- 请不要更改这一行 方便其他人知道模板的来源 谢谢 -->
+            <!-- Please keep this line to let others know where this theme comes from. Thank you :D -->
+            <span>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll" target="_blank">Yummy Jekyll</a> 
+            </span>
+                &
+            <span>
+                Revised by <a href="https://github.com/ChenPeiming52001/ChenPeiming52001.github.io" target="_blank">Chen Peiming</a>.
+            </span>
+        </div>
+        
+        <br>
+        <div class="copyright pull-left">
+            <p>
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </p>
+        </div>
+
+        <a href="https://github.com/ChenPeiming52001" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a>
+
+        <div class="pull-right">
+            <a href="javascript:window.scrollTo(0,0)" target="_self">TOP</a>
+        </div>
+
+    </div>
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/geopattern/js/geopattern.min.js"></script>
+    <script async src="/assets/js/busuanzi.pure.mini.js"></script>
+
+    <!-- 我 JS -->
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+
+    
+
+</footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 头部信息 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 收藏夹图标 -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <title>使用 Jekyll 在 GitHub 上搭建个人博客</title>
+    <meta name="description"
+        content="搭建流程：  下载安装配置Git  GitHub创建公共仓库  克隆本地仓库  克隆博客模板  博客基础功能设置  设置评论功能  上传GitHub">
+
+    <link rel="canonical" href="http://localhost:4000/jekyll/2023/12/12/create-blog.html">
+    <link rel="alternate" type="application/rss+xml" title="ChenPeiming" href="http://localhost:4000 /feed.xml">
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- 第三方 CSS -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <!-- 我的 CSS -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/slider.css">
+
+    <!-- CSS 设置页面 -->
+    
+
+    <!-- CSS 设置布局 -->
+    
+    <link rel="stylesheet" href="/assets/css/sidebar-post-nav.css">
+    
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 我的 JS -->
+    <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
+    <script type="text/javascript" src="/assets/js/link.js"></script>
+    <!-- 解析数学公式 MathJax 库的引入代码 -->
+    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+</head>
+
+    <body>
+
+    <!-- 主页头部信息 -->
+<header class="site-header">
+    <div class="container">
+        <a id="site-header-brand" href="/" target="_self" title="ChenPeiming">
+            <span class="octicon octicon-mark-github"></span> ChenPeiming
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <a href="/"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="主页">
+                主页
+            </a>
+            
+            <a href="/open-source"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="开源项目仓库">
+                开源项目仓库
+            </a>
+            
+            <a href="/blog"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="博客档案">
+                博客档案
+            </a>
+            
+            <a href="/bookmark"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="书签">
+                书签
+            </a>
+            
+            <a href="/about"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="关于我">
+                关于我
+            </a>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <!-- 开源项目仓库 博客档案 书签 关于我 页面大轮播图 -->
+<section class="jumbotron geopattern" data-pattern-id="使用 Jekyll 在 GitHub 上搭建个人博客">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>使用 Jekyll 在 GitHub 上搭建个人博客</h1>
+            <span class="meta-info">
+                
+                
+                <span class="octicon octicon-calendar"></span> 2023/12/12 &emsp;
+                
+                
+                <span class="octicon octicon-tag">标签：Jekyll, 博客</span> &emsp;
+                
+                
+                <span> 类别：Jekyll </span> &emsp;
+                
+                
+                <span> 作者：ChenPeiming </span>
+                
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-8 markdown-body">
+
+            <p>搭建流程：</p>
+<ul>
+  <li>下载安装配置Git</li>
+  <li>GitHub创建公共仓库</li>
+  <li>克隆本地仓库</li>
+  <li>克隆博客模板</li>
+  <li>博客基础功能设置</li>
+  <li>设置评论功能</li>
+  <li>上传GitHub</li>
+</ul>
+
+<h2 id="下载安装配置-git">下载安装配置 Git</h2>
+
+<ul>
+  <li>下载 <a href="https://git-scm.com/">Git官网</a> &amp; <a href="https://blog.csdn.net/m0_72983118/article/details/130546429">Git 安装配置参考以下教程</a></li>
+</ul>
+
+<p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-1.png" alt="完成测试" /></a></p>
+
+<h2 id="github-创建公共仓库">GitHub 创建公共仓库</h2>
+
+<ul>
+  <li>创建仓库名结尾为 * .github.io 的公共仓库</li>
+  <li>示范：ChenPeiming52001.github.io
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-2.png" alt="仓库创建" /></a></li>
+</ul>
+
+<h2 id="克隆本地仓库">克隆本地仓库</h2>
+
+<ul>
+  <li>
+    <p>将刚刚创建好的空仓库克隆到本地</p>
+
+    <ol>
+      <li>
+        <p>复制仓库中的 HTTPS 地址
+  <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-3.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-3.png" alt="HTTPS" /></a></p>
+      </li>
+      <li>
+        <p>在需要克隆的本地文件夹打开 Git 终端，粘贴的地址命令行并回车
+  <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-4.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-4.png" alt="Git" /></a></p>
+      </li>
+      <li>
+        <p>等待克隆完毕 <br />
+  <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-5.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-5.png" alt="克隆完毕" /></a></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="克隆博客模板">克隆博客模板</h2>
+
+<ul>
+  <li>
+    <p>打开博客模板项目 <a href="https://github.com/ChenPeiming52001/ChenPeiming52001.github.io">ChenPeiming52001.github.io</a></p>
+  </li>
+  <li>
+    <p>博客模板 <a href="https://github.com/ChenPeiming52001/ChenPeiming52001.github.io/releases">ChenPeiming52001.github.io 发行版</a></p>
+  </li>
+  <li>
+    <p>复制仓库中的 HTTPS 地址
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-6.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-6.png" alt="博客模板" /></a></p>
+  </li>
+  <li>
+    <p>通过 Git 终端 克隆到本地  <br />
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png" alt="Git" /></a></p>
+  </li>
+  <li>
+    <p>打开下载好的项目，删除根目录里面 .git 文件夹和 _posts 、images 文件夹里面的文件 <br /> <code>懒得删除可以下载打包好的 ChenPeiming52001.github.io 发行版</code>
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png" alt="删除文件" /></a></p>
+  </li>
+</ul>
+
+<h2 id="博客基础功能设置">博客基础功能设置</h2>
+
+<ul>
+  <li>博客的基础功能都可以在根目录 <font color="SpringGreen">_config.yml</font> 文件下设置</li>
+</ul>
+
+<h3 id="设置主页">设置主页</h3>
+
+<ul>
+  <li>title: ChenPeiming	<code>设置自己博客的名称</code></li>
+  <li>location: 广东，广州	<code>设置自己所在的地区</code></li>
+  <li>company: CSDN		<code>设置第三方链接名称</code></li>
+  <li>company_url: https://blog.csdn.net/cpm011023	<code>设置第三方网络地址</code></li>
+  <li>name: ChenPeiming52001	<code>设置自己 GitHub 的名称</code></li>
+  <li>github_url: https://github.com/ChenPeiming52001	<code>设置自己 GitHub 的网络地址</code></li>
+  <li>description: 这是ChenPeiming的个人博客	<code>设置博客的描述</code></li>
+  <li>url: https://chenpeiming52001.github.io	<code>设置个人博客的网络协议</code></li>
+</ul>
+
+<p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-1.png" alt="设置主页标题" /></a>
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-2.png" alt="设置主页标题" /></a></p>
+
+<h3 id="设置关于页">设置关于页</h3>
+
+<ul>
+  <li>introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。	<code>设置个人介绍</code></li>
+  <li>email: chenpeiming52001@163.com	<code>设置自己的邮箱</code></li>
+  <li>skill_software_keywords: [Java,  Python]		<code>软件开发标签</code></li>
+  <li>skill_j2ee_keywords:		<code>J2EE开发标签</code></li>
+  <li>skill_mobile_app_keywords: 	<code>手机开发标签</code></li>
+  <li>skill_web_keywords: [HTML, CSS, JS, JQuery,SpringBoot, MySQL, MongoDB, PHP]	<code>Web开发标签</code></li>
+</ul>
+
+<p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-1.png" alt="设置关于页" /></a>
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-2.png" alt="设置关于页" /></a></p>
+
+<h3 id="设置简历">设置简历</h3>
+
+<ul>
+  <li>将简历放在根目录下的 <code>assets\files</code> 件夹中</li>
+  <li>在根目录下 <code>about.md</code> 里面引入简历链接</li>
+  <li><code>ChenPeiming_CH.pdf</code> 替换为己的文件名称</li>
+</ul>
+
+<div class="language-html highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#070;font-weight:bold">&lt;h3&gt;</span>下载我的简历<span style="color:#070;font-weight:bold">&lt;/h3&gt;</span>
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span><span style="color:#070;font-weight:bold">&lt;a</span> <span style="color:#b48">role</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">button</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">btn btn-primary hvr-grow-shadow</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>   <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/files/ChenPeiming_CH.pdf</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">target</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">_blanks</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span><span style="color:#070;font-weight:bold">&lt;span</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">flag-icon flag-icon-cn</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/span&gt;</span> 中文 <span style="color:#070;font-weight:bold">&lt;/a&gt;</span>
+</pre></div>
+</div>
+</div>
+
+<p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-1.png" alt="设置简历" /></a>
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-2.png" alt="设置简历" /></a></p>
+
+<h3 id="设置书签">设置书签</h3>
+
+<ul>
+  <li>
+    <p>书签🔖用于快速标记您喜欢使用的资源库/工具/书籍</p>
+  </li>
+  <li>
+    <p>书签展示内容可以在根目录 <font color="SpringGreen">bookmark.md</font> 文件下设置</p>
+  </li>
+</ul>
+
+<p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-1.png" alt="设置书签" /></a></p>
+
+<p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-2.png" alt="设置书签" /></a></p>
+
+<h2 id="设置评论功能">设置评论功能</h2>
+
+<ul>
+  <li><a href="https://console-e1.leancloud.cn/">LeanCloud 官网</a></li>
+</ul>
+
+<h3 id="注册-leancloud-账号">注册 <a href="https://console-e1.leancloud.cn/register">LeanCloud</a> 账号</h3>
+
+<p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13.png" alt="注册LeanCloud账号" /></a></p>
+
+<h3 id="创建-leancloud--应用">创建 LeanCloud  应用</h3>
+
+<p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-1.png" alt="创建 LeanCloud  应用" /></a>
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-2.png" alt="创建 LeanCloud  应用" /></a></p>
+
+<h3 id="设置-leancloud--应用">设置 LeanCloud  应用</h3>
+<ul>
+  <li>
+    <p>设置 Web 安全域名
+  <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-1.png" alt="设置Web安全域名" /></a>
+  <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-2.png" alt="设置Web安全域名" /></a></p>
+  </li>
+  <li>
+    <p>获取 LeanCloud  应用凭证 AppID &amp; AppKey
+  <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-1.png" alt="AppID" /></a>
+  <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-2.png" alt="AppKey" /></a></p>
+  </li>
+</ul>
+
+<h3 id="设置魔改-valine">设置魔改 Valine</h3>
+<ul>
+  <li>appId: Evlk9TNDwcQAIW9cC3NVx9bO-gzGzoHsz		 <code>填入刚刚复制的 AppID</code></li>
+  <li>
+    <p>appKey: 9TNYPTSFy6BvTeJnmxzBT7H9		<code>填入刚刚复制的 AppKey</code>
+  <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-1.png" alt="设置魔改Valine" /></a></p>
+  </li>
+  <li><a href="https://c.runoob.com/front-end/703/">MD5加密工具</a> 可以将邮箱加密为 MD5</li>
+  <li>master: [‘33c0f3680c72dd299d9463a496cc7640’]		<code>填入 MD5 加密后博主(自己)的邮箱</code></li>
+  <li>friends: [‘f652e9c510f5948f083d453a189b13bc’, ‘261225df065b70eafdef4c88eecdb55d’]		<code>填入 MD5 加密后小伙伴的邮箱</code>
+  <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-2.png" alt="设置魔改Valine" /></a></li>
+</ul>
+
+<h2 id="上传-github">上传 GitHub</h2>
+
+<ul>
+  <li>上传文件 <br />
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-1.png" alt="上传文件" /></a></li>
+</ul>
+
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>git add .
+</pre></div>
+</div>
+</div>
+
+<ul>
+  <li>添加上传添加消息<br />
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-2.png" alt="添加上传添加消息" /></a></li>
+</ul>
+
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>git commit -m &quot;部署博客&quot;
+</pre></div>
+</div>
+</div>
+
+<ul>
+  <li>选择上传分支<br />
+<a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-3.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-3.png" alt="选择上传分支" /></a></li>
+</ul>
+
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>git push origin main
+</pre></div>
+</div>
+</div>
+
+<p><br /></p>
+
+<hr />
+
+<p>写作参考文章：</p>
+
+<ul>
+  <li><a href="/markdown/2023/12/13/Blog-Found.html">Markdown 博客写作指南</a></li>
+  <li><a href="/markdown/2023/12/14/Blog-Advanced-Found.html">Markdown 进阶写作指南</a></li>
+</ul>
+
+
+            <!-- 评论 -->
+            
+<!-- 评论 -->
+
+<head>
+    <script type="text/javascript" src="/assets/js/Valine.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/valine.css">
+    <link rel="stylesheet" href="/assets/css/all.css">
+</head>
+
+<body>
+    <br>
+    <p>我要评论</p>
+    <div id="vcomments" style="display: grid"></div>
+    <script>
+        // LeanCloud评论设置
+        new Valine({
+            el: '#vcomments',
+            verify: 'true',
+            appId: 'GQHKkm0dcsXF5pG93TdOlrIR-gzGzoHsz',
+            appKey: 'rIP8P4hi1yd0Kva2xYvRDOs4',
+            placeholder: 'ヾﾉ≧∀≦)o快来评论一下吧!',
+            pageSize: '15',
+            avatar: 'wavatar',
+            tagMeta: ['博主','小伙伴','访客'],
+            master: '[33c0f3680c72dd299d9463a496cc7640]',
+            friends: '[f652e9c510f5948f083d453a189b13bc],[261225df065b70eafdef4c88eecdb55d],',
+            enableQQ: 'true',
+            avatarForce: 'true',
+        });
+
+        // 点击回复直接评论
+        $(document).ready(function () {
+            $("#vcomments").on('click', 'span.vat', function () {
+                $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+                $('textarea#veditor').focus();
+            })
+        });
+    </script>
+</body>
+
+        </div>
+
+        <!-- 文章目录 -->
+        <div class="col-md-4">
+            <!-- 文章目录 -->
+<h3>文章目录</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- 触发跳转的链接 -->
+    <!-- 由下面的 javascript 添加 -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // 获取元素的初始位置
+
+        $(window).scroll(function() {                  // 分配滚动事件监听器
+
+            var currentScroll = $(window).scrollTop(); // 获取当前位置
+
+            if (currentScroll >= fixmeTop) {           // 适用位置:如果你
+                $('#post-directory-module').css({      // 滚动到该元素或其下方
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // 适用位置: 静态
+                $('#post-directory-module').css({      // 如果你在上面滚动
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+        </div>
+
+    <!-- 页脚 -->
+<footer class="container">
+
+    <div class="site-footer">
+
+        <div class="copyright pull-left">
+            <!-- 请不要更改这一行 方便其他人知道模板的来源 谢谢 -->
+            <!-- Please keep this line to let others know where this theme comes from. Thank you :D -->
+            <span>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll" target="_blank">Yummy Jekyll</a> 
+            </span>
+                &
+            <span>
+                Revised by <a href="https://github.com/ChenPeiming52001/ChenPeiming52001.github.io" target="_blank">Chen Peiming</a>.
+            </span>
+        </div>
+        
+        <br>
+        <div class="copyright pull-left">
+            <p>
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </p>
+        </div>
+
+        <a href="https://github.com/ChenPeiming52001" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a>
+
+        <div class="pull-right">
+            <a href="javascript:window.scrollTo(0,0)" target="_self">TOP</a>
+        </div>
+
+    </div>
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/geopattern/js/geopattern.min.js"></script>
+    <script async src="/assets/js/busuanzi.pure.mini.js"></script>
+
+    <!-- 我 JS -->
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+
+    
+
+</footer>
+
+    </body>
+
+</html>

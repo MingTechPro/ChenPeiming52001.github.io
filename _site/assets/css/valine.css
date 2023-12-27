@@ -1,0 +1,44 @@
+/* 设置评论框背景图片 */
+#veditor {
+    background-image: url(/assets/images/valineBg.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: vertical
+}
+
+/* 鼠标聚焦，背景图消失 */
+#veditor:focus{
+    background-position-y: 200px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+/*卡片式背景*/
+#vcomments .vcards .vcard {
+    padding: 15px 20px 0 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
+    transition: all .3s
+}
+#vcomments .vcards .vcard:hover {
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+}
+#vcomments .vcards .vcard .vh .vcard {
+    border: none;
+    box-shadow: none;
+}
+
+/*鼠标放置头像旋转*/
+img.vimg {
+    /* 旋转时间为 1s */
+    transition: all 1s
+}
+img.vimg:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}

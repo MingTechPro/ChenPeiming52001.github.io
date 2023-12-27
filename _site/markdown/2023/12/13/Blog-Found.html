@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 头部信息 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 收藏夹图标 -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <title>Markdown 博客写作指南</title>
+    <meta name="description"
+        content="手把手教你如何在博客写文章，流程比较简单，主要分以下4步：  创建Markdown文件  添加页面信息  写入博客文章内容  上传GitHub">
+
+    <link rel="canonical" href="http://localhost:4000/markdown/2023/12/13/Blog-Found.html">
+    <link rel="alternate" type="application/rss+xml" title="ChenPeiming" href="http://localhost:4000 /feed.xml">
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- 第三方 CSS -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <!-- 我的 CSS -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/slider.css">
+
+    <!-- CSS 设置页面 -->
+    
+
+    <!-- CSS 设置布局 -->
+    
+    <link rel="stylesheet" href="/assets/css/sidebar-post-nav.css">
+    
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 我的 JS -->
+    <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
+    <script type="text/javascript" src="/assets/js/link.js"></script>
+    <!-- 解析数学公式 MathJax 库的引入代码 -->
+    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+</head>
+
+    <body>
+
+    <!-- 主页头部信息 -->
+<header class="site-header">
+    <div class="container">
+        <a id="site-header-brand" href="/" target="_self" title="ChenPeiming">
+            <span class="octicon octicon-mark-github"></span> ChenPeiming
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <a href="/"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="主页">
+                主页
+            </a>
+            
+            <a href="/open-source"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="开源项目仓库">
+                开源项目仓库
+            </a>
+            
+            <a href="/blog"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="博客档案">
+                博客档案
+            </a>
+            
+            <a href="/bookmark"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="书签">
+                书签
+            </a>
+            
+            <a href="/about"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="关于我">
+                关于我
+            </a>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <!-- 开源项目仓库 博客档案 书签 关于我 页面大轮播图 -->
+<section class="jumbotron geopattern" data-pattern-id="Markdown 博客写作指南">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>Markdown 博客写作指南</h1>
+            <span class="meta-info">
+                
+                
+                <span class="octicon octicon-calendar"></span> 2023/12/13 &emsp;
+                
+                
+                <span class="octicon octicon-tag">标签：Markdown, 博客</span> &emsp;
+                
+                
+                <span> 类别：Markdown </span> &emsp;
+                
+                
+                <span> 作者：ChenPeiming </span>
+                
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-8 markdown-body">
+
+            <p>手把手教你如何在博客写文章，
+流程比较简单，主要分以下4步：</p>
+<ul>
+  <li>创建Markdown文件</li>
+  <li>添加页面信息</li>
+  <li>写入博客文章内容</li>
+  <li>上传GitHub</li>
+</ul>
+
+<h2 id="1创建markdown文件">1.创建Markdown文件</h2>
+
+<p>先在博客本地 GitHub 仓库的 \_posts 文件下创建 一个以年份的文件夹 \2023 这个文件夹将放你一整年的文章。然后在 \2023 的文件夹里面创建命名为 “时间-文章名称.md” 的文件</p>
+
+<p>.md 文件的命名规则：</p>
+
+<ul>
+  <li>以时间开头：2023-12-13</li>
+  <li>后加上文章名称：blog-found 文章名称需要是英文的</li>
+  <li>在加上：.md</li>
+  <li>完整名称：2023-12-13-blog-found.md</li>
+  <li>命名有问题页面会渲染不出来</li>
+</ul>
+
+<h2 id="2添加页面信息">2.添加页面信息</h2>
+
+<h3 id="标签含义">标签含义</h3>
+<ul>
+  <li>layout: 布局 “默认是post”</li>
+  <li>title: “标题”</li>
+  <li>author: 作者</li>
+  <li>category: 分类</li>
+  <li>tags: 标签</li>
+</ul>
+
+<p>写完通过这个网站验证一下格式，网站会帮我们优化。</p>
+
+<p><a href="https://www.yamllint.com/">YAML验证器</a></p>
+
+<div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>---
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>layout: post
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>title: &quot;Markdown 博客写作指南&quot;
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>author: Chenpeiming
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>categories: Markdown
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>tags: [博客] 单个标签使用这个方式
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>tags:   多标签使用这种
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>  - 博客
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>  - Markdown
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>---
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span>在文章需要被渲染到主页的内容后面，插入两个换行即可停止渲染。否则将整篇文章渲染到主页面！
+</pre></div>
+</div>
+</div>
+
+<h2 id="3写入博客文章内容">3.写入博客文章内容</h2>
+
+<h3 id="1两种标题格式">1.两种标题格式：</h3>
+
+<ul>
+  <li>
+    <p>使用两个以上 = 标记一级标题 和 使用两个以上 - 标记二级标题</p>
+
+    <p>例如：</p>
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>一级标题
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>=======
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>二级标题
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>-------
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <h1 id="一级标题">一级标题</h1>
+
+    <h2 id="二级标题">二级标题</h2>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>使用 <code>#</code> 来表示标题，其中 <code>#</code> 的数量代表标题级别，共有六个级别。写文章建议使用二级标题、 三级标题来写，这样子会在文章的侧边栏生成目录（二级标题生成主标题、三级标题生成副标题）。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span># 一级标题
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>## 二级标题
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>### 三级标题
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>#### 四级标题
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>##### 五级标题
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span>###### 六级标题
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <h2 id="二级标题-1">二级标题</h2>
+
+    <h3 id="三级标题">三级标题</h3>
+  </li>
+</ul>
+
+<h3 id="2三种设置段落格式">2.三种设置段落格式：</h3>
+
+<p>直接连续输入文字即可自动生成段落，也可以使用以下三种方式设置段落。</p>
+
+<ul>
+  <li>
+    <p>使用两个以上空格加上回车</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>使用  
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>两个以说空格加上回车可以换行
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p>使用<br />
+两个以说空格加上回车可以换行</p>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>使用一个空行进行换行</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>使用
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>一个空行进行换行
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p>使用</p>
+
+    <p>一个空行进行换行</p>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>使用 <code>&lt;br&gt;</code> 换行标签进行换行</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>使用 &lt;br&gt; `&lt;br&gt;` 换行标签进行换行
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p>使用 <br /> <code>&lt;br&gt;</code> 换行标签进行换行</p>
+  </li>
+</ul>
+
+<h3 id="3斜体文本粗体文本和粗斜体文本">3.斜体文本、粗体文本和粗斜体文本：</h3>
+
+<ul>
+  <li>
+    <p>使用 <code>*斜体文本*</code> 或 <code>_斜体文本_</code> 可以使文本变为斜体。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>*斜体文本*
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>_斜体文本_
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p><em>斜体文本</em></p>
+
+    <p><em>斜体文本</em></p>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>使用 <code>**粗体文本**</code> 或 <code>__粗体文本__</code> 可以使文本加粗</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>**粗体文本**
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>__粗体文本__
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p><strong>粗体文本</strong></p>
+
+    <p><strong>粗体文本</strong></p>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>使用 <code>***粗斜体文本***</code> 或 <code>___粗斜体文本___</code> 可以使文本变为斜体。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>***粗斜体文本***
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>___粗斜体文本___
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p><strong><em>粗斜体文本</em></strong></p>
+
+    <p><strong><em>粗斜体文本</em></strong></p>
+  </li>
+</ul>
+
+<h3 id="4分隔线删除线和下划线">4.分隔线、删除线和下划线:</h3>
+
+<ul>
+  <li>
+    <p>分隔线</p>
+
+    <p>使用三个以上的 <code>-</code> 、<code>_</code> 或 <code>*</code> 可以生成分隔线,也可以使用  <code>&lt;hr&gt;</code>  标签。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>---
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>___
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>***
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>&lt;hr&gt;
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+  </li>
+</ul>
+
+<hr />
+
+<hr />
+
+<hr />
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>删除线</p>
+
+    <p>使用两个 <code>~</code> 在文字的两端加上两个波浪线 <code>~~删除线~~</code> 。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>~~删除线~~
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p><del>删除线</del></p>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>下划线</p>
+
+    <p>使用 <code>&lt;u&gt;</code> 标签来实现</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>&lt;u&gt;下划线文本&lt;/u&gt;
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p><u>下划线文本</u></p>
+  </li>
+</ul>
+
+<h3 id="5脚注">5.脚注：</h3>
+
+<p>脚注是对文本的补充说明，使用 <code>[^文本]</code> 。</p>
+
+<p>例如：</p>
+
+<div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>这是一个带有脚注的文本[^1]。
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>[^1]: 这是一个脚注。
+</pre></div>
+</div>
+</div>
+
+<p>演示：</p>
+
+<p>这是一个带有脚注的文本<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>。</p>
+
+<h3 id="6列表和列表嵌套">6.列表和列表嵌套：</h3>
+
+<ul>
+  <li>
+    <p>列表</p>
+
+    <p>使用 <code>+</code> 加号、 <code>-</code> 减号或 <code>*</code> 星号可以创建无序列表，使用 <code>1.</code> 数字加点可以创建有序列表。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>+ 无序列表项1
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>+ 无序列表项2
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>- 无序列表项1
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>- 无序列表项2
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>* 无序列表项1
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>* 无序列表项2
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>1. 有序列表项1
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>2. 有序列表项2
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <ul>
+      <li>无序列表项1</li>
+      <li>
+        <p>无序列表项2</p>
+      </li>
+      <li>无序列表项1</li>
+      <li>
+        <p>无序列表项2</p>
+      </li>
+      <li>无序列表项1</li>
+      <li>无序列表项2</li>
+    </ul>
+
+    <ol>
+      <li>有序列表项1</li>
+      <li>有序列表项2</li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>列表嵌套</p>
+
+    <p>只需在子列表中的选项前面添加个四个空格即可</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>1. 第一项：
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>    - 第一项嵌套的第一个元素
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>    - 第一项嵌套的第二个元素
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>2. 第二项：
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>    - 第二项嵌套的第一个元素
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span>    - 第二项嵌套的第二个元素
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <ol>
+      <li>第一项：
+        <ul>
+          <li>第一项嵌套的第一个元素</li>
+          <li>第一项嵌套的第二个元素</li>
+        </ul>
+      </li>
+      <li>第二项：
+        <ul>
+          <li>第二项嵌套的第一个元素</li>
+          <li>第二项嵌套的第二个元素</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="7引用块嵌套引用块引用块列表和列表引用块">7.引用块、嵌套引用块、引用块列表和列表引用块：</h3>
+
+<ul>
+  <li>
+    <p>引用块</p>
+
+    <p>使用 <code>&gt;</code> 符号来表示引用块。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>&gt; 这是引用的文本块。
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <blockquote>
+      <p>这是引用的文本块。</p>
+    </blockquote>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>嵌套引用块</p>
+
+    <p>使用 <code>&gt;</code> 、 <code>&gt; &gt;</code> 、 <code>&gt; &gt; &gt;</code> 多个符号来表示嵌套引用块的层级关系。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>&gt; 最外层
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>&gt; &gt; 第一层嵌套
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>&gt; &gt; &gt; 第二层嵌套
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <blockquote>
+      <p>最外层</p>
+      <blockquote>
+        <p>第一层嵌套</p>
+        <blockquote>
+          <p>第二层嵌套</p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>引用块列表</p>
+
+    <p>使用 <code>&gt;</code> 符号加 <code>-</code> 无序列表或 <code>1.</code> 有序列表来实现。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>&gt; 区块中使用列表
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>&gt; - 第一项
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>&gt; - 第二项
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>&gt; - 第三项
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>&gt; 1. 第一项
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span>&gt; 2. 第二项
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <blockquote>
+      <p>区块中使用列表</p>
+      <ul>
+        <li>第一项</li>
+        <li>第二项</li>
+        <li>第三项
+          <ol>
+            <li>第一项</li>
+            <li>第二项</li>
+          </ol>
+        </li>
+      </ul>
+    </blockquote>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>列表引用块</p>
+
+    <p>使用 <code>-</code> 无序列表或 <code>2.</code> 有序列表加 <code>&gt;</code> 符号实现。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>- 第一项
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>    &gt; 第一项的第一个元素
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>    &gt; 第一项的第二个元素
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>2. 第二项
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span>    &gt; 第二项的第一个元素
+<span class="line-numbers"><a href="#n7" name="n7">7</a></span>
+<span class="line-numbers"><a href="#n8" name="n8">8</a></span>    &gt; 第二项的第二个元素
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <ul>
+      <li>第一项
+        <blockquote>
+          <p>第一项的第一个元素</p>
+        </blockquote>
+
+        <blockquote>
+          <p>第一项的第二个元素
+      2. 第二项
+第二项的第一个元素</p>
+        </blockquote>
+
+        <blockquote>
+          <p>第二项的第二个元素</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="8两种设置代码块">8.两种设置代码块：</h3>
+
+<ul>
+  <li>
+    <p>使用 4 个空格或者一个制表符（Tab 键）。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    print(&quot;Hello, world!&quot;)
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>print(&quot;Hello, world!&quot;)
+</pre></div>
+</div>
+    </div>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>使用三个反引号```包裹代码，并指定语言（可选）以进行语法高亮。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>```python
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>def hello_world():
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>    print(&quot;Hello, world!&quot;)
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>```
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <div class="language-python highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">hello_world</span>():
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>    print(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Hello, world!</span><span style="color:#710">&quot;</span></span>)
+</pre></div>
+</div>
+    </div>
+  </li>
+</ul>
+
+<h3 id="9链接和高级链接">9.链接和高级链接：</h3>
+
+<ul>
+  <li>
+    <p>链接</p>
+
+    <p>使用<code>[链接文字](链接地址)</code>的形式插入链接。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>[百度](https://www.baidu.com)
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p><a href="https://www.baidu.com">百度</a></p>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>高级链接</p>
+
+    <p>使用变量来设置一个链接，变量赋值在文档末尾。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>这个链接用 1 作为网址变量 [百度][1]
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>这个链接用 runoob 作为网址变量 [搜狗][runoob]
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>然后在文档的结尾为变量赋值（网址）
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span>[1]: https://www.baidu.com
+<span class="line-numbers"><a href="#n7" name="n7">7</a></span>[runoob]: http://www.runoob.com/
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p>这个链接用 1 作为网址变量 <a href="https://www.baidu.com">百度</a></p>
+
+    <p>这个链接用 sogou 作为网址变量 <a href="https://www.sogou.com//">搜狗</a></p>
+
+  </li>
+</ul>
+
+<h3 id="10图片标题图片和高级图片">10.图片、标题图片和高级图片：</h3>
+
+<ul>
+  <li>
+    <p>图片</p>
+
+    <p>使用 <code>![图片描述](图片链接或路径)</code> 可以插入图片。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>![示例图片](https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg)
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p><img src="https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg" alt="示例图片" /></p>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>标题图片</p>
+
+    <p>使用 <code>![图片描述](图片链接或路径 "可选标题")</code> 可以加上选择性的 <code>title</code> 属性的文字。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>![示例图片](https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg &quot;示例图片&quot;)
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <p><img src="https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg" alt="示例图片" title="示例图片" /></p>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>高级图片</p>
+
+    <p>使用 <code>[链接文字](链接地址)</code> 链接来嵌套 <code>![图片描述](图片链接或路径)</code> 图片可以实现点击图片打开链接或者图片</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>点击示例图片打开图片
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>[ ![示例图片](https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg) ](https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg)
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>点击百度logo打开百度网站
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span>
+<span class="line-numbers"><a href="#n7" name="n7">7</a></span>[ ![百度logo](https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png) ](https://www.baidu.com)
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <ul>
+      <li>
+        <p>点击示例图片打开图片</p>
+
+        <p><a href="https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg"> <img src="https://foruda.gitee.com/images/1683356304790177332/3b3e34db_12518707.jpeg" alt="示例图片" /> </a></p>
+      </li>
+      <li>
+        <p>点击百度logo打开百度网站</p>
+
+        <p><a href="https://www.baidu.com"> <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="百度logo" /> </a></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="11表格">11.表格</h3>
+
+<ul>
+  <li>
+    <p>使用 <code>|</code> 来分隔不同的单元格，使用 <code>-</code> 来分隔表头和其他行。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>|  表头   | 表头  |
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>|  ----  | ----  |
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>| 单元格  | 单元格 |
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>| 单元格  | 单元格 |
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>表头</th>
+          <th>表头</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>单元格</td>
+          <td>单元格</td>
+        </tr>
+        <tr>
+          <td>单元格</td>
+          <td>单元格</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<hr />
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>使用 <code>:----</code> 居左对齐、<code>:---:</code> 居中对齐和 <code>----:</code> 居右对齐来设置内容和标题栏对齐方式。</p>
+
+    <p>例如：</p>
+
+    <div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>| 居左对齐 | 居中对齐 | 居右对齐 |
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>|  :----  |  :---:  |  ----:  |
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>|    左   |    中    |    右    |
+</pre></div>
+</div>
+    </div>
+
+    <p>演示：</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left">居左对齐</th>
+          <th style="text-align: center">居中对齐</th>
+          <th style="text-align: right">居右对齐</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left">左</td>
+          <td style="text-align: center">中</td>
+          <td style="text-align: right">右</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="12标签">12.标签：</h3>
+
+<p>使用两个反引号 ` 将文字包裹。</p>
+
+<p>例如：</p>
+
+<div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>  `这是一个标签`
+</pre></div>
+</div>
+</div>
+
+<p>演示：</p>
+
+<p><code>这是一个标签</code></p>
+
+<h2 id="4上传github">4.上传GitHub</h2>
+
+<p>在博客本地 GitHub 仓库 运行下面命令上传博客文章</p>
+
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>git add .
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>git commit -m &quot;添加文章&quot;
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>git push origin main
+</pre></div>
+</div>
+</div>
+
+<p><br /></p>
+
+<hr />
+
+<p>参考文章：</p>
+
+<ul>
+  <li><a href="https://www.runoob.com/markdown/md-tutorial.html">Markdown 教程 - 菜鸟教程</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>这是一个脚注。 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+
+            <!-- 评论 -->
+            
+<!-- 评论 -->
+
+<head>
+    <script type="text/javascript" src="/assets/js/Valine.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/valine.css">
+    <link rel="stylesheet" href="/assets/css/all.css">
+</head>
+
+<body>
+    <br>
+    <p>我要评论</p>
+    <div id="vcomments" style="display: grid"></div>
+    <script>
+        // LeanCloud评论设置
+        new Valine({
+            el: '#vcomments',
+            verify: 'true',
+            appId: 'GQHKkm0dcsXF5pG93TdOlrIR-gzGzoHsz',
+            appKey: 'rIP8P4hi1yd0Kva2xYvRDOs4',
+            placeholder: 'ヾﾉ≧∀≦)o快来评论一下吧!',
+            pageSize: '15',
+            avatar: 'wavatar',
+            tagMeta: ['博主','小伙伴','访客'],
+            master: '[33c0f3680c72dd299d9463a496cc7640]',
+            friends: '[f652e9c510f5948f083d453a189b13bc],[261225df065b70eafdef4c88eecdb55d],',
+            enableQQ: 'true',
+            avatarForce: 'true',
+        });
+
+        // 点击回复直接评论
+        $(document).ready(function () {
+            $("#vcomments").on('click', 'span.vat', function () {
+                $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+                $('textarea#veditor').focus();
+            })
+        });
+    </script>
+</body>
+
+        </div>
+
+        <!-- 文章目录 -->
+        <div class="col-md-4">
+            <!-- 文章目录 -->
+<h3>文章目录</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- 触发跳转的链接 -->
+    <!-- 由下面的 javascript 添加 -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // 获取元素的初始位置
+
+        $(window).scroll(function() {                  // 分配滚动事件监听器
+
+            var currentScroll = $(window).scrollTop(); // 获取当前位置
+
+            if (currentScroll >= fixmeTop) {           // 适用位置:如果你
+                $('#post-directory-module').css({      // 滚动到该元素或其下方
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // 适用位置: 静态
+                $('#post-directory-module').css({      // 如果你在上面滚动
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+        </div>
+
+    <!-- 页脚 -->
+<footer class="container">
+
+    <div class="site-footer">
+
+        <div class="copyright pull-left">
+            <!-- 请不要更改这一行 方便其他人知道模板的来源 谢谢 -->
+            <!-- Please keep this line to let others know where this theme comes from. Thank you :D -->
+            <span>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll" target="_blank">Yummy Jekyll</a> 
+            </span>
+                &
+            <span>
+                Revised by <a href="https://github.com/ChenPeiming52001/ChenPeiming52001.github.io" target="_blank">Chen Peiming</a>.
+            </span>
+        </div>
+        
+        <br>
+        <div class="copyright pull-left">
+            <p>
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </p>
+        </div>
+
+        <a href="https://github.com/ChenPeiming52001" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a>
+
+        <div class="pull-right">
+            <a href="javascript:window.scrollTo(0,0)" target="_self">TOP</a>
+        </div>
+
+    </div>
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/geopattern/js/geopattern.min.js"></script>
+    <script async src="/assets/js/busuanzi.pure.mini.js"></script>
+
+    <!-- 我 JS -->
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+
+    
+
+</footer>
+
+    </body>
+
+</html>

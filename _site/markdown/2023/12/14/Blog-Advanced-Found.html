@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 头部信息 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 收藏夹图标 -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <title>Markdown 进阶写作指南</title>
+    <meta name="description"
+        content="8个Markdown文档进阶写作技巧分享：  显示特殊符号  添加emoji表情符号🥰  添加字体字号  添加字体颜色和修改字体大小  添加文字背景色  添加 Todo 列表  添加常用数学公式  添加注意事项">
+
+    <link rel="canonical" href="http://localhost:4000/markdown/2023/12/14/Blog-Advanced-Found.html">
+    <link rel="alternate" type="application/rss+xml" title="ChenPeiming" href="http://localhost:4000 /feed.xml">
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- 第三方 CSS -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <!-- 我的 CSS -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/slider.css">
+
+    <!-- CSS 设置页面 -->
+    
+
+    <!-- CSS 设置布局 -->
+    
+    <link rel="stylesheet" href="/assets/css/sidebar-post-nav.css">
+    
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 我的 JS -->
+    <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
+    <script type="text/javascript" src="/assets/js/link.js"></script>
+    <!-- 解析数学公式 MathJax 库的引入代码 -->
+    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+</head>
+
+    <body>
+
+    <!-- 主页头部信息 -->
+<header class="site-header">
+    <div class="container">
+        <a id="site-header-brand" href="/" target="_self" title="ChenPeiming">
+            <span class="octicon octicon-mark-github"></span> ChenPeiming
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <a href="/"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="主页">
+                主页
+            </a>
+            
+            <a href="/open-source"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="开源项目仓库">
+                开源项目仓库
+            </a>
+            
+            <a href="/blog"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="博客档案">
+                博客档案
+            </a>
+            
+            <a href="/bookmark"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="书签">
+                书签
+            </a>
+            
+            <a href="/about"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="关于我">
+                关于我
+            </a>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <!-- 开源项目仓库 博客档案 书签 关于我 页面大轮播图 -->
+<section class="jumbotron geopattern" data-pattern-id="Markdown 进阶写作指南">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>Markdown 进阶写作指南</h1>
+            <span class="meta-info">
+                
+                
+                <span class="octicon octicon-calendar"></span> 2023/12/14 &emsp;
+                
+                
+                <span class="octicon octicon-tag">标签：Markdown, 博客</span> &emsp;
+                
+                
+                <span> 类别：Markdown </span> &emsp;
+                
+                
+                <span> 作者：ChenPeiming </span>
+                
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-8 markdown-body">
+
+            <p>8个Markdown文档进阶写作技巧分享：</p>
+<ul>
+  <li>显示特殊符号</li>
+  <li>添加emoji表情符号🥰</li>
+  <li>添加字体字号</li>
+  <li>添加字体颜色和修改字体大小</li>
+  <li>添加文字背景色</li>
+  <li>添加 Todo 列表</li>
+  <li>添加常用数学公式</li>
+  <li>添加注意事项</li>
+</ul>
+
+<h2 id="显示特殊符号">显示特殊符号</h2>
+
+<ul>
+  <li><a href="https://symbl.cc/cn/">SYMBL</a> - 特殊字符对应的Unicode码查询</li>
+  <li>语法符号，前面加反斜线\即可显示符号本身，例如：</li>
+</ul>
+
+<div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>\\ 反斜杠
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>\* 星号
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>\_ 下划线
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>\{\} 括号
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>\# 井号
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span>\+ 加号
+<span class="line-numbers"><a href="#n7" name="n7">7</a></span>\- 减号
+<span class="line-numbers"><a href="#n8" name="n8">8</a></span>\! 感叹号
+</pre></div>
+</div>
+</div>
+
+<p>演示：</p>
+
+<p>\ 反斜杠
+* 星号
+_ 下划线
+{} 括号
+# 井号
++ 加号
+- 减号
+! 感叹号</p>
+
+<h2 id="添加emoji表情符号">添加emoji表情符号🥰</h2>
+
+<ul>
+  <li><a href="https://www.webfx.com/tools/emoji-cheat-sheet/">Emoji Cheat Sheet</a> - 给你的Markdown文档添加表情🍁</li>
+  <li>去上面的网站即可复制粘贴，需要的表情包🤔</li>
+</ul>
+
+<h2 id="添加字体字号">添加字体字号</h2>
+
+<p>有时侯我们需要修改文字的字体字号，可是我们就会简单的“加粗”“斜体”等，这样子一来又觉得有点单调。<br />其实我们可以用HTML代码来改变Markdown文档的字体字号：</p>
+
+<ul>
+  <li><a href="https://www.jb51.net/css/67658.html">CSS字体</a> - 让你的Markdown文档有更多的字体</li>
+  <li>通过上面的网站查询到的字体名字 <code>&lt;font style="font-family:写入到这里"&gt;&lt;/font&gt;</code></li>
+</ul>
+
+<div class="language-html highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">style</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#606">font-family</span>: <span style="color:#088">STKaiti</span>;<span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>我是华文楷体<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">style</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#606">font-family</span>: <span style="color:#088">STCaiyun</span>;<span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>我是华文彩云体<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">style</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#606">font-family</span>: <span style="color:#088">STXingkai</span>;<span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>我是华文行楷<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
+</pre></div>
+</div>
+</div>
+
+<p>演示：</p>
+
+<font style="font-family: STKaiti;">我是华文楷体</font>
+<p><br /></p>
+<font style="font-family: STCaiyun;">我是华文彩云体</font>
+<p><br /></p>
+<font style="font-family: STXingkai;">我是华文行楷</font>
+
+<h2 id="添加字体颜色和修改字体大小">添加字体颜色和修改字体大小</h2>
+
+<p>通过上面的学习你已经会使用HTML代码来改变Markdown文档的字体字号，同样Markdown文档也是可以通过HTML代码实现字体颜色：</p>
+
+<ul>
+  <li><a href="http://xh.5156edu.com/page/z1015m9220j18754.html">CSS颜色</a> - 让你的Markdown文档字体有更多的颜色</li>
+  <li>通过上面查询到的颜色编码 <code>&lt;font color="写入到这里" size="写入数值改变字体大小"&gt;&lt;/font&gt;</code></li>
+</ul>
+
+<div class="language-html highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">color</span>=<span style="color:#700">LightSkyBlue</span> <span style="color:#b48">size</span>=<span style="color:#700">72</span><span style="color:#070;font-weight:bold">&gt;</span>亮天蓝色<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">color</span>=<span style="color:#700">SpringGreen</span> <span style="color:#b48">size</span>=<span style="color:#700">42</span><span style="color:#070;font-weight:bold">&gt;</span>春绿色<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">color</span>=<span style="color:#700">Red</span> <span style="color:#b48">size</span>=<span style="color:#700">6</span><span style="color:#070;font-weight:bold">&gt;</span>纯红色<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
+</pre></div>
+</div>
+</div>
+
+<p>演示：</p>
+
+<font color="LightSkyBlue" size="72">亮天蓝色</font>
+
+<font color="SpringGreen" size="42">春绿色</font>
+
+<font color="Red" size="6">纯红色</font>
+
+<h2 id="添加文字背景色">添加文字背景色</h2>
+
+<p>Markdown本身不支持背景色设置，需要采用内置html的方式实现。<br />借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。例如：</p>
+
+<ul>
+  <li><a href="http://xh.5156edu.com/page/z1015m9220j18754.html">CSS颜色</a> - 让你的Markdown文档字体有更多的颜色</li>
+  <li>通过上面查询到的颜色编码 <code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor="写入到这里"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></li>
+</ul>
+
+<div class="language-html highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#070;font-weight:bold">&lt;table&gt;</span><span style="color:#070;font-weight:bold">&lt;tr&gt;</span><span style="color:#070;font-weight:bold">&lt;td</span> <span style="color:#b48">bgcolor</span>=<span style="color:#700">LightSkyBlue</span><span style="color:#070;font-weight:bold">&gt;</span>背景色是：亮天蓝色<span style="color:#070;font-weight:bold">&lt;/td&gt;</span><span style="color:#070;font-weight:bold">&lt;/tr&gt;</span><span style="color:#070;font-weight:bold">&lt;/table&gt;</span>
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span><span style="color:#070;font-weight:bold">&lt;table&gt;</span><span style="color:#070;font-weight:bold">&lt;tr&gt;</span><span style="color:#070;font-weight:bold">&lt;td</span> <span style="color:#b48">bgcolor</span>=<span style="color:#700">SpringGreen</span><span style="color:#070;font-weight:bold">&gt;</span>背景色是：春绿色<span style="color:#070;font-weight:bold">&lt;/td&gt;</span><span style="color:#070;font-weight:bold">&lt;/tr&gt;</span><span style="color:#070;font-weight:bold">&lt;/table&gt;</span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span><span style="color:#070;font-weight:bold">&lt;table&gt;</span><span style="color:#070;font-weight:bold">&lt;tr&gt;</span><span style="color:#070;font-weight:bold">&lt;td</span> <span style="color:#b48">bgcolor</span>=<span style="color:#700">Red</span><span style="color:#070;font-weight:bold">&gt;</span>背景色是：纯红色<span style="color:#070;font-weight:bold">&lt;/td&gt;</span><span style="color:#070;font-weight:bold">&lt;/tr&gt;</span><span style="color:#070;font-weight:bold">&lt;/table&gt;</span>
+</pre></div>
+</div>
+</div>
+
+<p>演示：</p>
+
+<table><tr><td bgcolor="LightSkyBlue">背景色是：亮天蓝色</td></tr></table>
+<table><tr><td bgcolor="SpringGreen">背景色是：春绿色</td></tr></table>
+<table><tr><td bgcolor="Red">背景色是：纯红色</td></tr></table>
+
+<h2 id="添加-todo-列表">添加 Todo 列表</h2>
+
+<ul>
+  <li>使用 - [ ] 和 - [x] 语法可以创建复选框，实现 todo-list 等功能</li>
+  <li>输入顺序：- 空格 [ 空格 ] 空格</li>
+</ul>
+
+<div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>- [ ] 未选中状态
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>- [x] 选中状态
+</pre></div>
+</div>
+</div>
+
+<p>演示：</p>
+
+<ul class="task-list">
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />未选中状态</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />选中状态</p>
+  </li>
+</ul>
+
+<h2 id="添加常用数学公式">添加常用数学公式</h2>
+
+<ul>
+  <li>
+    <p><a href="https://blog.csdn.net/mingzhuo_126/article/details/82722455">数学公式</a> - 让你的Markdown文档添加公式</p>
+  </li>
+  <li>
+    <p>公式块 ，输入美元符（$）然后回车，中间输入相应代码，详细代码参考上方网站。例如：</p>
+  </li>
+</ul>
+
+<div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>$$
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>\sin x =2  \sin x \cos
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>$$
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>$$
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span>e^{i\pi} + 1 = 0
+<span class="line-numbers"><a href="#n7" name="n7">7</a></span>$$
+</pre></div>
+</div>
+</div>
+
+<p>演示：</p>
+
+\[\sin x =2  \sin x \cos\]
+
+\[e^{i\pi} + 1 = 0\]
+
+<h2 id="添加注意事项">添加注意事项</h2>
+
+<ul>
+  <li>输入三个反单引号 ``` 再输入 notice 回车即可输入注意事项，例如：</li>
+</ul>
+
+<div class="language-markdown highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>```notice
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>这个是一个注意事项
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>```
+</pre></div>
+</div>
+</div>
+
+<p>演示：</p>
+
+<div class="language-notice highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>这个是一个注意事项
+</pre></div>
+</div>
+</div>
+
+<p><br /></p>
+
+<hr />
+
+<p>参考文章：</p>
+
+<ul>
+  <li><a href="https://www.runoob.com/markdown/md-advance.html">Markdown - 菜鸟教程</a></li>
+</ul>
+
+
+            <!-- 评论 -->
+            
+<!-- 评论 -->
+
+<head>
+    <script type="text/javascript" src="/assets/js/Valine.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/valine.css">
+    <link rel="stylesheet" href="/assets/css/all.css">
+</head>
+
+<body>
+    <br>
+    <p>我要评论</p>
+    <div id="vcomments" style="display: grid"></div>
+    <script>
+        // LeanCloud评论设置
+        new Valine({
+            el: '#vcomments',
+            verify: 'true',
+            appId: 'GQHKkm0dcsXF5pG93TdOlrIR-gzGzoHsz',
+            appKey: 'rIP8P4hi1yd0Kva2xYvRDOs4',
+            placeholder: 'ヾﾉ≧∀≦)o快来评论一下吧!',
+            pageSize: '15',
+            avatar: 'wavatar',
+            tagMeta: ['博主','小伙伴','访客'],
+            master: '[33c0f3680c72dd299d9463a496cc7640]',
+            friends: '[f652e9c510f5948f083d453a189b13bc],[261225df065b70eafdef4c88eecdb55d],',
+            enableQQ: 'true',
+            avatarForce: 'true',
+        });
+
+        // 点击回复直接评论
+        $(document).ready(function () {
+            $("#vcomments").on('click', 'span.vat', function () {
+                $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+                $('textarea#veditor').focus();
+            })
+        });
+    </script>
+</body>
+
+        </div>
+
+        <!-- 文章目录 -->
+        <div class="col-md-4">
+            <!-- 文章目录 -->
+<h3>文章目录</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- 触发跳转的链接 -->
+    <!-- 由下面的 javascript 添加 -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // 获取元素的初始位置
+
+        $(window).scroll(function() {                  // 分配滚动事件监听器
+
+            var currentScroll = $(window).scrollTop(); // 获取当前位置
+
+            if (currentScroll >= fixmeTop) {           // 适用位置:如果你
+                $('#post-directory-module').css({      // 滚动到该元素或其下方
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // 适用位置: 静态
+                $('#post-directory-module').css({      // 如果你在上面滚动
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+        </div>
+
+    <!-- 页脚 -->
+<footer class="container">
+
+    <div class="site-footer">
+
+        <div class="copyright pull-left">
+            <!-- 请不要更改这一行 方便其他人知道模板的来源 谢谢 -->
+            <!-- Please keep this line to let others know where this theme comes from. Thank you :D -->
+            <span>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll" target="_blank">Yummy Jekyll</a> 
+            </span>
+                &
+            <span>
+                Revised by <a href="https://github.com/ChenPeiming52001/ChenPeiming52001.github.io" target="_blank">Chen Peiming</a>.
+            </span>
+        </div>
+        
+        <br>
+        <div class="copyright pull-left">
+            <p>
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </p>
+        </div>
+
+        <a href="https://github.com/ChenPeiming52001" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a>
+
+        <div class="pull-right">
+            <a href="javascript:window.scrollTo(0,0)" target="_self">TOP</a>
+        </div>
+
+    </div>
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/geopattern/js/geopattern.min.js"></script>
+    <script async src="/assets/js/busuanzi.pure.mini.js"></script>
+
+    <!-- 我 JS -->
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+
+    
+
+</footer>
+
+    </body>
+
+</html>

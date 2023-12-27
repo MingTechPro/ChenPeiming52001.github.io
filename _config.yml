@@ -26,11 +26,14 @@ url: https://chenpeiming52001.github.io # 站点的基本主机名和协议
 
 ## Gem
 gems:
-  - jekyll-paginate
-  - jekyll-geo-pattern
   - rouge
   - kramdown
+  - jekyll-paginate
+  - jekyll-geo-pattern
   - jekyll-github-metadata
+
+plugins:
+  - jekyll-paginate
 
 # 建立设置
 markdown: kramdown
@@ -46,7 +49,7 @@ defaults: []
 # kramdown 编译器设置
 kramdown:
   input: GFM
-  enable_coderay: true
+  syntax_highlighter: coderay
   math_engine: mathjax
   footnote_nr: 1
   footnote_backlink: ↩

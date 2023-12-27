@@ -1,0 +1,21 @@
+/* 设置滚动条的宽度 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* 设置滚动轨道 */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; /* 创建内阴影，类似边框 */
+    border-radius: 10px; /* 设置圆角 */
+}
+
+/* 设置滑块样式 */
+::-webkit-scrollbar-thumb {
+    background: #9a9a9a; /* 设置填充颜色 */
+    border-radius: 10px; /* 设置圆角 */
+}
+
+/* 设置悬停时的滑块样式 */
+::-webkit-scrollbar-thumb:hover {
+    background: #757575; /* 更改填充颜色以增加交互效果 */
+}
