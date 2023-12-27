@@ -1,60 +1,85 @@
-<!-- 开源项目 -->
-{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse | where: "fork", "false" %}
+{% assign repos = site.github.public_repositories %}
+{% if repos %}
+{% assign sorted_repos = repos | sort: 'stargazers_count' | reverse | where: "fork", "false" %}
 <div id="container-open-source">
     <section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
         <div class="container">
             <div id="jumbotron-meta-info">
                 <h1>开源项目仓库</h1>
                 <span class="meta-info">
-                    我在 Github 上有 <span class="repo-count badge">{{ sorted_repos.size }}</span> 个开源项目
+                    我在 Github 上有
+                    <span class="repo-count badge">
+                        {{ sorted_repos.size }}
+                    </span> 个开源项目
                 </span>
             </div>
         </div>
     </section>
 
     <section class="container">
-        <div class="repo-list row">
+        <div class="row">
             {% for repo in sorted_repos %}
-            <div class="col-md-4 card text-center">
-                <div class="thumbnail">
-                    <div class="card-image geopattern" data-pattern-id="{{ repo.name }}">
-                        <div class="card-image-cell">
-                            <h3 class="card-title">
-                                <a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a>
-                            </h3>
-                        </div>
+            {% if repo.name and repo.html_url and repo.description %}
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a>
+                        </h5>
+                        <p class="card-text">{{ repo.description }}</p>
                     </div>
-                    <div class="caption">
-                        <div class="card-description">
-                            <p class="card-text">{{ repo.description }}</p>
-                        </div>
-                        <div class="card-text">
-                            <span data-toggle="tooltip" class="meta-info" title="{{ repo.stargazers_count }} stars">
-                                <span class="octicon octicon-star"></span> {{ repo.stargazers_count }}
-                            </span>
-                            <span data-toggle="tooltip" class="meta-info" title="{{ repo.forks_count }} forks">
-                                <span class="octicon octicon-git-branch"></span> {{ repo.forks_count }}
-                            </span>
-                            <span data-toggle="tooltip" class="meta-info" title="Last updated：{{ repo.updated_at }}">
-                                <span class="octicon octicon-clock"></span>
-                                <time datetime="{{ repo.updated_at }}" title="{{ repo.updated_at }}">{{ repo.updated_at | date: '%Y-%m-%d' }}</time>
-                            </span>
-                        </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            <span class="octicon octicon-star"></span> {{ repo.stargazers_count }} &nbsp;&nbsp;&nbsp;
+                            <span class="octicon octicon-git-branch"></span> {{ repo.forks_count }} &nbsp;&nbsp;&nbsp;
+                            <span class="octicon octicon-clock"></span>
+                            <time datetime="{{ repo.updated_at }}" title="{{ repo.updated_at }}">{{ repo.updated_at |
+                                date: '%Y-%m-%d' }}</time>
+                        </small>
                     </div>
                 </div>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </section>
 
 </div>
+{% else %}
+<div id="container-open-source">
+    <section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
+        <div class="container">
+            <div id="jumbotron-meta-info">
+                <h1>开源项目仓库</h1>
+                <span class="meta-info">
+                    我在 Github 上有
+                    <span class="repo-count badge">
+                        0
+                    </span> 个开源项目
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="card text-center" style="margin: 0 auto; width: 33.333333%;">
+            <div class="thumbnail">
+                <h3>暂时没有找到任何开源项目</h3>
+                <p>请稍后再来查看，谢谢！</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+{% endif %}
+
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
 
         // Enable bootstrap tooltip
         $("body").tooltip({ selector: '[data-toggle=tooltip]' });
 
-        $('.geopattern').each(function(){
+        $('.geopattern').each(function () {
             $(this).geopattern($(this).data('pattern-id'));
         });
 

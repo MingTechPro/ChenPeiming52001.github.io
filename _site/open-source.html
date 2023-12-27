@@ -11,7 +11,7 @@
     <!-- 收藏夹图标 -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
 
-    <title>开原项目仓库</title>
+    <title>开源项目仓库</title>
     <meta name="description"
         content="这是ChenPeiming的个人博客">
 
@@ -101,7 +101,45 @@
 
 
         <div class="content">
-            <!-- 开源项目 -->
+            
+<div id="container-open-source">
+    <section class="jumbotron geopattern" data-pattern-id="开源项目仓库">
+        <div class="container">
+            <div id="jumbotron-meta-info">
+                <h1>开源项目仓库</h1>
+                <span class="meta-info">
+                    我在 Github 上有
+                    <span class="repo-count badge">
+                        0
+                    </span> 个开源项目
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="card text-center" style="margin: 0 auto; width: 33.333333%;">
+            <div class="thumbnail">
+                <h3>暂时没有找到任何开源项目</h3>
+                <p>请稍后再来查看，谢谢！</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        // Enable bootstrap tooltip
+        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+
+        $('.geopattern').each(function () {
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
 
 
         </div>
