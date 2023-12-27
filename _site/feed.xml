@@ -5,8 +5,8 @@
     <description>这是ChenPeiming的个人博客</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Dec 2023 02:18:15 +0800</pubDate>
-    <lastBuildDate>Thu, 28 Dec 2023 02:18:15 +0800</lastBuildDate>
+    <pubDate>Thu, 28 Dec 2023 02:32:24 +0800</pubDate>
+    <lastBuildDate>Thu, 28 Dec 2023 02:32:24 +0800</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
