@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'Prawn'
+gem 'rouge'
 gem 'jekyll-paginate'
 gem 'jekyll-geo-pattern'
 gem 'kramdown'
