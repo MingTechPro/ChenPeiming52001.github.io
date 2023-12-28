@@ -45,12 +45,13 @@
     <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
     <script type="text/javascript" src="/assets/js/link.js"></script>
     <!-- 解析数学公式 MathJax 库的引入代码 -->
-    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- 解析流程图 -->
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';</script>
 
 </head>
 
-    <body>
+<body>
 
     <!-- 主页头部信息 -->
 <header class="site-header">
@@ -100,8 +101,8 @@
 </header>
 
 
-        <div class="content">
-            
+    <div class="content">
+        
 <div id="container-open-source">
     <section class="jumbotron geopattern" data-pattern-id="开源项目仓库">
         <div class="container">
@@ -142,7 +143,7 @@
 </script>
 
 
-        </div>
+    </div>
 
     <!-- 页脚 -->
 <footer class="container">
@@ -191,6 +192,6 @@
 
 </footer>
 
-    </body>
-
+</body>
+  
 </html>

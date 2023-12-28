@@ -47,12 +47,13 @@
     <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
     <script type="text/javascript" src="/assets/js/link.js"></script>
     <!-- 解析数学公式 MathJax 库的引入代码 -->
-    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- 解析流程图 -->
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';</script>
 
 </head>
 
-    <body>
+<body>
 
     <!-- 主页头部信息 -->
 <header class="site-header">
@@ -102,8 +103,8 @@
 </header>
 
 
-        <div class="content">
-            <section class="jumbotron">
+    <div class="content">
+        <section class="jumbotron">
     <div class="container">
         <h1>这是ChenPeiming的个人博客</h1>
         <div id="jumbotron-meta-info">
@@ -150,6 +151,7 @@
   添加文字背景色
   添加 Todo 列表
   添加常用数学公式
+  添加流程图、时序图和甘特图
   添加注意事项
                     </p>
                     <p class="post-list-meta">
@@ -317,7 +319,7 @@
 
 <!-- 添加主页诗句 -->
 <script type="text/javascript" src="/assets/js/verse.js"></script>
-        </div>
+    </div>
 
     <!-- 页脚 -->
 <footer class="container">
@@ -364,6 +366,6 @@
 
 </footer>
 
-    </body>
-
+</body>
+  
 </html>

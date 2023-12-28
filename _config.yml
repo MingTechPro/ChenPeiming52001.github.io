@@ -37,22 +37,21 @@ plugins:
 
 # 建立设置
 markdown: kramdown
-highlighter: rouge
 excerpt_separator: "\n\n"
+
+# kramdown 编译器设置
+kramdown:
+  input: GFM
+  highlighter: rouge
+  math_engine: mathjax
+  footnote_nr: 1
+  footnote_backlink: ↩
 
 source:      .
 destination: ./_site
 
 quiet: false
 defaults: []
-
-# kramdown 编译器设置
-kramdown:
-  input: GFM
-  syntax_highlighter: coderay
-  math_engine: mathjax
-  footnote_nr: 1
-  footnote_backlink: ↩
 
 # 分页
 paginate: 10

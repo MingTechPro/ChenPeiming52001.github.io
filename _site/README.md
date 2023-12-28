@@ -1,59 +1,79 @@
+## 欢迎使用 ChenPeiming 个人博客主题
+
+<br>
+
 Power by [Yummy-Jekyll](https://github.com/DONGChuan/Yummy-Jekyll) & Revised by [Chen Peiming](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io).
 
-## 🥰项目地址：
+本主题基于 [Yummy-Jekyll](https://github.com/DONGChuan/Yummy-Jekyll) 进行修改和优化，由 [Chen Peiming](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io) 制作。
 
- - Github仓库 [ChenPeiming52001.github.io](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io)
+---
 
-## 🎥演示:
+### 🥰项目地址
 
- - 🏠[ChenPeiming52001.github.io](https://chenpeiming52001.github.io/)
+- [![Github发行版](https://img.shields.io/badge/发行版-ChenPeiming52001.github.io-gree.svg)](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io/releases)
 
- - 🗂[开源项目仓库](https://chenpeiming52001.github.io/open-source)自动显示您Github的热门项目
+- [![Github仓库](https://img.shields.io/badge/仓库-ChenPeiming52001.github.io-blue.svg)](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io)
 
- - 📑[博客档案](https://chenpeiming52001.github.io/blog)显示您的所有帖子和时间线
+- [![Github更新](https://img.shields.io/badge/Github-版本更新-red.svg)](#🔧版本更新-↩)
 
- - 🔖[书签](https://chenpeiming52001.github.io/bookmark)用于快速标记您喜欢使用的资源库/工具/书籍
+---
 
-## 🎉修改说明
+### 🎥演示
 
-1.把主题完全汉化🍀
+- 🏠 [ChenPeiming52001.github.io](https://chenpeiming52001.github.io/)
 
-2.优化掉一些不必要的页面功能👾
+- 🗂 [开源项目仓库](https://chenpeiming52001.github.io/open-source) - 自动显示您Github的热门项目
 
-3.调整博客页面的设置，使博客设置更为方便💞
+- 📑 [博客档案](https://chenpeiming52001.github.io/blog) - 显示您的所有帖子和时间线
 
-4.添加一些小插件🎊
+- 🔖 [书签](https://chenpeiming52001.github.io/bookmark) - 用于快速标记您喜欢使用的资源库/工具/书籍
 
- - 给所有的页面设置一条好看的滑动条
+---
 
-    [![滑动条](/assets/images/README/readme-1.png)](/assets/images/README/readme-1.png)
+### 🎉修改说明
 
- - 在主页标题添加一条会随着页面刷新而变化的名言名句
+1. 完全汉化主题🍀
 
-    [![名言名句](/assets/images/README/readme-2.png)](/assets/images/README/readme-2.png)
+2. 优化不必要的页面功能👾
 
- - 在主页的文章列表添加分类标签显示和文章作者的署名
+3. 调整博客页面设置，使其更加方便💞
 
-    [![署名](/assets/images/README/readme-3.png)](/assets/images/README/readme-3.png)
+4. 添加小插件🎊
 
- - 在主页的右边添加一个显示最新文章的显示框
+   - 好看的滑动条
+   [![滑动条](/assets/images/README/readme-1.png)](/assets/images/README/readme-1.png)
 
-    [![文章](/assets/images/README/readme-4.png)](/assets/images/README/readme-4.png)
+   - 随机名言名句
+   [![名言名句](/assets/images/README/readme-2.png)](/assets/images/README/readme-2.png)
 
- - 在主页面、文章页面、博客档案页面以及书签页面下方都添加 由 LeanCloud 和魔改的 Valine 开发的评论功能
+   - 主页文章列表添加分类标签显示和文章作者的署名
+   [![署名](/assets/images/README/readme-3.png)](/assets/images/README/readme-3.png)
 
-    [![评论](/assets/images/README/readme-5.png)](/assets/images/README/readme-5.png)
+   - 右侧显示最新文章的显示框
+   [![文章](/assets/images/README/readme-4.png)](/assets/images/README/readme-4.png)
 
- - 在页脚添加文章和总访问量的显示
+   - 主页、文章页面、博客档案页面以及书签页面下方添加了评论功能
+   [![评论](/assets/images/README/readme-5.png)](/assets/images/README/readme-5.png)
 
-    [![访问](/assets/images/README/readme-6.png)](/assets/images/README/readme-6.png)
+   - 页脚添加了文章和总访问量的显示
+   [![访问](/assets/images/README/readme-6.png)](/assets/images/README/readme-6.png)
 
- - 在文章页面标题添加分类标签显示和文章作者的署名
+   - 文章页面标题添加分类标签显示和文章作者的署名
+   [![文章标题](/assets/images/README/readme-7.png)](/assets/images/README/readme-7.png)
 
-    [![文章标题](/assets/images/README/readme-7.png)](/assets/images/README/readme-7.png)
+<br>
 
-<hr><br>
+博客部署参考文章：
+- [使用 Jekyll 在 GitHub 上搭建个人博客](https://chenpeiming52001.github.io/jekyll/2023/12/12/create-blog.html)
+- [Markdown 博客写作指南](https://chenpeiming52001.github.io/markdown/2023/12/13/Blog-Found.html)
+- [Markdown 进阶写作指南](https://chenpeiming52001.github.io/markdown/2023/12/14/Blog-Advanced-Found.html)
 
-博客部署参考文章：[使用 Jekyll 在 GitHub 上搭建个人博客](https://chenpeiming52001.github.io/jekyll/2023/12/12/create-blog.html)
+---
 
-文章编写参考文章：[Markdown 博客写作指南](https://chenpeiming52001.github.io/markdown/2023/12/13/Blog-Found.html)
+### 🔧版本更新 [↩](#欢迎使用-chenpeiming-个人博客主题)
+
+- [![](https://img.shields.io/badge/V2.0.0-2023.12.28更新-blue.svg)](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io/releases/tag/v2023.12.28)
+   - 修复了无法本地部署的bug，并解决了相关页面显示问题。
+
+- [![](https://img.shields.io/badge/V1.0.0-2023.12.22更新-blue.svg)](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io/releases/tag/v2023.12.22)
+   - 打包了完整的 chenpeiming52001.github.io 项目。

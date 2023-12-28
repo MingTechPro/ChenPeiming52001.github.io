@@ -41,6 +41,8 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-diagrams (0.10.0)
+      jekyll (>= 3.8, < 5.0)
     jekyll-geo-pattern (0.4.1)
       geo_pattern (~> 1.2.1)
       jekyll
@@ -91,6 +93,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  jekyll-diagrams
   jekyll-geo-pattern
   jekyll-github-metadata
   jekyll-paginate

@@ -45,12 +45,13 @@
     <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
     <script type="text/javascript" src="/assets/js/link.js"></script>
     <!-- 解析数学公式 MathJax 库的引入代码 -->
-    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- 解析流程图 -->
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';</script>
 
 </head>
 
-    <body>
+<body>
 
     <!-- 主页头部信息 -->
 <header class="site-header">
@@ -100,8 +101,8 @@
 </header>
 
 
-        <div class="content">
-            <!-- 开源项目仓库 博客档案 书签 关于我 页面大轮播图 -->
+    <div class="content">
+        <!-- 开源项目仓库 博客档案 书签 关于我 页面大轮播图 -->
 <section class="jumbotron geopattern" data-pattern-id="使用 Jekyll 在 GitHub 上搭建个人博客">
     <div class="container">
         <div id="jumbotron-meta-info">
@@ -208,7 +209,7 @@
 <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png" alt="Git" /></a></p>
   </li>
   <li>
-    <p>打开下载好的项目，删除根目录里面 .git 文件夹和 _posts 、images 文件夹里面的文件 <br /> <code>懒得删除可以下载打包好的 ChenPeiming52001.github.io 发行版</code>
+    <p>打开下载好的项目，删除根目录里面 .git 文件夹和 _posts 、images 文件夹里面的文件 <br /> <code class="language-plaintext highlighter-rouge">懒得删除可以下载打包好的 ChenPeiming52001.github.io 发行版</code>
 <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png" alt="删除文件" /></a></p>
   </li>
 </ul>
@@ -222,14 +223,14 @@
 <h3 id="设置主页">设置主页</h3>
 
 <ul>
-  <li>title: ChenPeiming	<code>设置自己博客的名称</code></li>
-  <li>location: 广东，广州	<code>设置自己所在的地区</code></li>
-  <li>company: CSDN		<code>设置第三方链接名称</code></li>
-  <li>company_url: https://blog.csdn.net/cpm011023	<code>设置第三方网络地址</code></li>
-  <li>name: ChenPeiming52001	<code>设置自己 GitHub 的名称</code></li>
-  <li>github_url: https://github.com/ChenPeiming52001	<code>设置自己 GitHub 的网络地址</code></li>
-  <li>description: 这是ChenPeiming的个人博客	<code>设置博客的描述</code></li>
-  <li>url: https://chenpeiming52001.github.io	<code>设置个人博客的网络协议</code></li>
+  <li>title: ChenPeiming	<code class="language-plaintext highlighter-rouge">设置自己博客的名称</code></li>
+  <li>location: 广东，广州	<code class="language-plaintext highlighter-rouge">设置自己所在的地区</code></li>
+  <li>company: CSDN		<code class="language-plaintext highlighter-rouge">设置第三方链接名称</code></li>
+  <li>company_url: https://blog.csdn.net/cpm011023	<code class="language-plaintext highlighter-rouge">设置第三方网络地址</code></li>
+  <li>name: ChenPeiming52001	<code class="language-plaintext highlighter-rouge">设置自己 GitHub 的名称</code></li>
+  <li>github_url: https://github.com/ChenPeiming52001	<code class="language-plaintext highlighter-rouge">设置自己 GitHub 的网络地址</code></li>
+  <li>description: 这是ChenPeiming的个人博客	<code class="language-plaintext highlighter-rouge">设置博客的描述</code></li>
+  <li>url: https://chenpeiming52001.github.io	<code class="language-plaintext highlighter-rouge">设置个人博客的网络协议</code></li>
 </ul>
 
 <p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-1.png" alt="设置主页标题" /></a>
@@ -238,12 +239,12 @@
 <h3 id="设置关于页">设置关于页</h3>
 
 <ul>
-  <li>introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。	<code>设置个人介绍</code></li>
-  <li>email: chenpeiming52001@163.com	<code>设置自己的邮箱</code></li>
-  <li>skill_software_keywords: [Java,  Python]		<code>软件开发标签</code></li>
-  <li>skill_j2ee_keywords:		<code>J2EE开发标签</code></li>
-  <li>skill_mobile_app_keywords: 	<code>手机开发标签</code></li>
-  <li>skill_web_keywords: [HTML, CSS, JS, JQuery,SpringBoot, MySQL, MongoDB, PHP]	<code>Web开发标签</code></li>
+  <li>introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。	<code class="language-plaintext highlighter-rouge">设置个人介绍</code></li>
+  <li>email: chenpeiming52001@163.com	<code class="language-plaintext highlighter-rouge">设置自己的邮箱</code></li>
+  <li>skill_software_keywords: [Java,  Python]		<code class="language-plaintext highlighter-rouge">软件开发标签</code></li>
+  <li>skill_j2ee_keywords:		<code class="language-plaintext highlighter-rouge">J2EE开发标签</code></li>
+  <li>skill_mobile_app_keywords: 	<code class="language-plaintext highlighter-rouge">手机开发标签</code></li>
+  <li>skill_web_keywords: [HTML, CSS, JS, JQuery,SpringBoot, MySQL, MongoDB, PHP]	<code class="language-plaintext highlighter-rouge">Web开发标签</code></li>
 </ul>
 
 <p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-1.png" alt="设置关于页" /></a>
@@ -252,19 +253,16 @@
 <h3 id="设置简历">设置简历</h3>
 
 <ul>
-  <li>将简历放在根目录下的 <code>assets\files</code> 件夹中</li>
-  <li>在根目录下 <code>about.md</code> 里面引入简历链接</li>
-  <li><code>ChenPeiming_CH.pdf</code> 替换为己的文件名称</li>
+  <li>将简历放在根目录下的 <code class="language-plaintext highlighter-rouge">assets\files</code> 件夹中</li>
+  <li>在根目录下 <code class="language-plaintext highlighter-rouge">about.md</code> 里面引入简历链接</li>
+  <li><code class="language-plaintext highlighter-rouge">ChenPeiming_CH.pdf</code> 替换为己的文件名称</li>
 </ul>
 
-<div class="language-html highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#070;font-weight:bold">&lt;h3&gt;</span>下载我的简历<span style="color:#070;font-weight:bold">&lt;/h3&gt;</span>
-<span class="line-numbers"><a href="#n2" name="n2">2</a></span><span style="color:#070;font-weight:bold">&lt;a</span> <span style="color:#b48">role</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">button</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">btn btn-primary hvr-grow-shadow</span><span style="color:#710">&quot;</span></span>
-<span class="line-numbers"><a href="#n3" name="n3">3</a></span>   <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/files/ChenPeiming_CH.pdf</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">target</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">_blanks</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-<span class="line-numbers"><a href="#n4" name="n4">4</a></span><span style="color:#070;font-weight:bold">&lt;span</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">flag-icon flag-icon-cn</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/span&gt;</span> 中文 <span style="color:#070;font-weight:bold">&lt;/a&gt;</span>
-</pre></div>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h3&gt;</span>下载我的简历<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary hvr-grow-shadow"</span>
+   <span class="na">href=</span><span class="s">"/assets/files/ChenPeiming_CH.pdf"</span> <span class="na">target=</span><span class="s">"_blanks"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"flag-icon flag-icon-cn"</span><span class="nt">&gt;&lt;/span&gt;</span> 中文 <span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
 
 <p><a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-1.png" alt="设置简历" /></a>
 <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-2.png" alt="设置简历" /></a></p>
@@ -315,14 +313,14 @@
 
 <h3 id="设置魔改-valine">设置魔改 Valine</h3>
 <ul>
-  <li>appId: Evlk9TNDwcQAIW9cC3NVx9bO-gzGzoHsz		 <code>填入刚刚复制的 AppID</code></li>
+  <li>appId: Evlk9TNDwcQAIW9cC3NVx9bO-gzGzoHsz		 <code class="language-plaintext highlighter-rouge">填入刚刚复制的 AppID</code></li>
   <li>
-    <p>appKey: 9TNYPTSFy6BvTeJnmxzBT7H9		<code>填入刚刚复制的 AppKey</code>
+    <p>appKey: 9TNYPTSFy6BvTeJnmxzBT7H9		<code class="language-plaintext highlighter-rouge">填入刚刚复制的 AppKey</code>
   <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-1.png" alt="设置魔改Valine" /></a></p>
   </li>
   <li><a href="https://c.runoob.com/front-end/703/">MD5加密工具</a> 可以将邮箱加密为 MD5</li>
-  <li>master: [‘33c0f3680c72dd299d9463a496cc7640’]		<code>填入 MD5 加密后博主(自己)的邮箱</code></li>
-  <li>friends: [‘f652e9c510f5948f083d453a189b13bc’, ‘261225df065b70eafdef4c88eecdb55d’]		<code>填入 MD5 加密后小伙伴的邮箱</code>
+  <li>master: [‘33c0f3680c72dd299d9463a496cc7640’]		<code class="language-plaintext highlighter-rouge">填入 MD5 加密后博主(自己)的邮箱</code></li>
+  <li>friends: [‘f652e9c510f5948f083d453a189b13bc’, ‘261225df065b70eafdef4c88eecdb55d’]		<code class="language-plaintext highlighter-rouge">填入 MD5 加密后小伙伴的邮箱</code>
   <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-2.png" alt="设置魔改Valine" /></a></li>
 </ul>
 
@@ -333,33 +331,24 @@
 <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-1.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-1.png" alt="上传文件" /></a></li>
 </ul>
 
-<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>git add .
-</pre></div>
-</div>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+</code></pre></div></div>
 
 <ul>
   <li>添加上传添加消息<br />
 <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-2.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-2.png" alt="添加上传添加消息" /></a></li>
 </ul>
 
-<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>git commit -m &quot;部署博客&quot;
-</pre></div>
-</div>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "部署博客"
+</code></pre></div></div>
 
 <ul>
   <li>选择上传分支<br />
 <a href="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-3.png"><img src="/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-3.png" alt="选择上传分支" /></a></li>
 </ul>
 
-<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>git push origin main
-</pre></div>
-</div>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin main
+</code></pre></div></div>
 
 <p><br /></p>
 
@@ -489,7 +478,7 @@
 
 </article>
 
-        </div>
+    </div>
 
     <!-- 页脚 -->
 <footer class="container">
@@ -536,6 +525,6 @@
 
 </footer>
 
-    </body>
-
+</body>
+  
 </html>

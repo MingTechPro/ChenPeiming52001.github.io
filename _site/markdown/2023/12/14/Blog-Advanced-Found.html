@@ -13,7 +13,7 @@
 
     <title>Markdown 进阶写作指南</title>
     <meta name="description"
-        content="8个Markdown文档进阶写作技巧分享：  显示特殊符号  添加emoji表情符号🥰  添加字体字号  添加字体颜色和修改字体大小  添加文字背景色  添加 Todo 列表  添加常用数学公式  添加注意事项">
+        content="8个Markdown文档进阶写作技巧分享：  显示特殊符号  添加emoji表情符号🥰  添加字体字号  添加字体颜色和修改字体大小  添加文字背景色  添加 Todo 列表  添加常用数学公式  添加流程图、时序图和甘特图  添加注意事项">
 
     <link rel="canonical" href="http://localhost:4000/markdown/2023/12/14/Blog-Advanced-Found.html">
     <link rel="alternate" type="application/rss+xml" title="ChenPeiming" href="http://localhost:4000 /feed.xml">
@@ -45,12 +45,13 @@
     <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
     <script type="text/javascript" src="/assets/js/link.js"></script>
     <!-- 解析数学公式 MathJax 库的引入代码 -->
-    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- 解析流程图 -->
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';</script>
 
 </head>
 
-    <body>
+<body>
 
     <!-- 主页头部信息 -->
 <header class="site-header">
@@ -100,8 +101,8 @@
 </header>
 
 
-        <div class="content">
-            <!-- 开源项目仓库 博客档案 书签 关于我 页面大轮播图 -->
+    <div class="content">
+        <!-- 开源项目仓库 博客档案 书签 关于我 页面大轮播图 -->
 <section class="jumbotron geopattern" data-pattern-id="Markdown 进阶写作指南">
     <div class="container">
         <div id="jumbotron-meta-info">
@@ -149,6 +150,7 @@
   <li>添加文字背景色</li>
   <li>添加 Todo 列表</li>
   <li>添加常用数学公式</li>
+  <li>添加流程图、时序图和甘特图</li>
   <li>添加注意事项</li>
 </ul>
 
@@ -159,18 +161,15 @@
   <li>语法符号，前面加反斜线\即可显示符号本身，例如：</li>
 </ul>
 
-<div class="language-markdown highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>\\ 反斜杠
-<span class="line-numbers"><a href="#n2" name="n2">2</a></span>\* 星号
-<span class="line-numbers"><a href="#n3" name="n3">3</a></span>\_ 下划线
-<span class="line-numbers"><a href="#n4" name="n4">4</a></span>\{\} 括号
-<span class="line-numbers"><a href="#n5" name="n5">5</a></span>\# 井号
-<span class="line-numbers"><a href="#n6" name="n6">6</a></span>\+ 加号
-<span class="line-numbers"><a href="#n7" name="n7">7</a></span>\- 减号
-<span class="line-numbers"><a href="#n8" name="n8">8</a></span>\! 感叹号
-</pre></div>
-</div>
-</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="se">\\</span> 反斜杠
+<span class="se">\*</span> 星号
+<span class="se">\_</span> 下划线
+<span class="se">\{\}</span> 括号
+<span class="se">\#</span> 井号
+<span class="se">\+</span> 加号
+<span class="se">\-</span> 减号
+<span class="se">\!</span> 感叹号
+</code></pre></div></div>
 
 <p>演示：</p>
 
@@ -196,16 +195,13 @@ _ 下划线
 
 <ul>
   <li><a href="https://www.jb51.net/css/67658.html">CSS字体</a> - 让你的Markdown文档有更多的字体</li>
-  <li>通过上面的网站查询到的字体名字 <code>&lt;font style="font-family:写入到这里"&gt;&lt;/font&gt;</code></li>
+  <li>通过上面的网站查询到的字体名字 <code class="language-plaintext highlighter-rouge">&lt;font style="font-family:写入到这里"&gt;&lt;/font&gt;</code></li>
 </ul>
 
-<div class="language-html highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">style</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#606">font-family</span>: <span style="color:#088">STKaiti</span>;<span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>我是华文楷体<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
-<span class="line-numbers"><a href="#n2" name="n2">2</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">style</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#606">font-family</span>: <span style="color:#088">STCaiyun</span>;<span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>我是华文彩云体<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
-<span class="line-numbers"><a href="#n3" name="n3">3</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">style</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#606">font-family</span>: <span style="color:#088">STXingkai</span>;<span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>我是华文行楷<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
-</pre></div>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;font</span> <span class="na">style=</span><span class="s">"font-family: STKaiti;"</span><span class="nt">&gt;</span>我是华文楷体<span class="nt">&lt;/font&gt;</span>
+<span class="nt">&lt;font</span> <span class="na">style=</span><span class="s">"font-family: STCaiyun;"</span><span class="nt">&gt;</span>我是华文彩云体<span class="nt">&lt;/font&gt;</span>
+<span class="nt">&lt;font</span> <span class="na">style=</span><span class="s">"font-family: STXingkai;"</span><span class="nt">&gt;</span>我是华文行楷<span class="nt">&lt;/font&gt;</span>
+</code></pre></div></div>
 
 <p>演示：</p>
 
@@ -221,16 +217,13 @@ _ 下划线
 
 <ul>
   <li><a href="http://xh.5156edu.com/page/z1015m9220j18754.html">CSS颜色</a> - 让你的Markdown文档字体有更多的颜色</li>
-  <li>通过上面查询到的颜色编码 <code>&lt;font color="写入到这里" size="写入数值改变字体大小"&gt;&lt;/font&gt;</code></li>
+  <li>通过上面查询到的颜色编码 <code class="language-plaintext highlighter-rouge">&lt;font color="写入到这里" size="写入数值改变字体大小"&gt;&lt;/font&gt;</code></li>
 </ul>
 
-<div class="language-html highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">color</span>=<span style="color:#700">LightSkyBlue</span> <span style="color:#b48">size</span>=<span style="color:#700">72</span><span style="color:#070;font-weight:bold">&gt;</span>亮天蓝色<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
-<span class="line-numbers"><a href="#n2" name="n2">2</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">color</span>=<span style="color:#700">SpringGreen</span> <span style="color:#b48">size</span>=<span style="color:#700">42</span><span style="color:#070;font-weight:bold">&gt;</span>春绿色<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
-<span class="line-numbers"><a href="#n3" name="n3">3</a></span><span style="color:#070;font-weight:bold">&lt;font</span> <span style="color:#b48">color</span>=<span style="color:#700">Red</span> <span style="color:#b48">size</span>=<span style="color:#700">6</span><span style="color:#070;font-weight:bold">&gt;</span>纯红色<span style="color:#070;font-weight:bold">&lt;/font&gt;</span>
-</pre></div>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;font</span> <span class="na">color=</span><span class="s">LightSkyBlue</span> <span class="na">size=</span><span class="s">72</span><span class="nt">&gt;</span>亮天蓝色<span class="nt">&lt;/font&gt;</span>
+<span class="nt">&lt;font</span> <span class="na">color=</span><span class="s">SpringGreen</span> <span class="na">size=</span><span class="s">42</span><span class="nt">&gt;</span>春绿色<span class="nt">&lt;/font&gt;</span>
+<span class="nt">&lt;font</span> <span class="na">color=</span><span class="s">Red</span> <span class="na">size=</span><span class="s">6</span><span class="nt">&gt;</span>纯红色<span class="nt">&lt;/font&gt;</span>
+</code></pre></div></div>
 
 <p>演示：</p>
 
@@ -246,16 +239,13 @@ _ 下划线
 
 <ul>
   <li><a href="http://xh.5156edu.com/page/z1015m9220j18754.html">CSS颜色</a> - 让你的Markdown文档字体有更多的颜色</li>
-  <li>通过上面查询到的颜色编码 <code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor="写入到这里"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></li>
+  <li>通过上面查询到的颜色编码 <code class="language-plaintext highlighter-rouge">&lt;table&gt;&lt;tr&gt;&lt;td bgcolor="写入到这里"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></li>
 </ul>
 
-<div class="language-html highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#070;font-weight:bold">&lt;table&gt;</span><span style="color:#070;font-weight:bold">&lt;tr&gt;</span><span style="color:#070;font-weight:bold">&lt;td</span> <span style="color:#b48">bgcolor</span>=<span style="color:#700">LightSkyBlue</span><span style="color:#070;font-weight:bold">&gt;</span>背景色是：亮天蓝色<span style="color:#070;font-weight:bold">&lt;/td&gt;</span><span style="color:#070;font-weight:bold">&lt;/tr&gt;</span><span style="color:#070;font-weight:bold">&lt;/table&gt;</span>
-<span class="line-numbers"><a href="#n2" name="n2">2</a></span><span style="color:#070;font-weight:bold">&lt;table&gt;</span><span style="color:#070;font-weight:bold">&lt;tr&gt;</span><span style="color:#070;font-weight:bold">&lt;td</span> <span style="color:#b48">bgcolor</span>=<span style="color:#700">SpringGreen</span><span style="color:#070;font-weight:bold">&gt;</span>背景色是：春绿色<span style="color:#070;font-weight:bold">&lt;/td&gt;</span><span style="color:#070;font-weight:bold">&lt;/tr&gt;</span><span style="color:#070;font-weight:bold">&lt;/table&gt;</span>
-<span class="line-numbers"><a href="#n3" name="n3">3</a></span><span style="color:#070;font-weight:bold">&lt;table&gt;</span><span style="color:#070;font-weight:bold">&lt;tr&gt;</span><span style="color:#070;font-weight:bold">&lt;td</span> <span style="color:#b48">bgcolor</span>=<span style="color:#700">Red</span><span style="color:#070;font-weight:bold">&gt;</span>背景色是：纯红色<span style="color:#070;font-weight:bold">&lt;/td&gt;</span><span style="color:#070;font-weight:bold">&lt;/tr&gt;</span><span style="color:#070;font-weight:bold">&lt;/table&gt;</span>
-</pre></div>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table&gt;&lt;tr&gt;&lt;td</span> <span class="na">bgcolor=</span><span class="s">LightSkyBlue</span><span class="nt">&gt;</span>背景色是：亮天蓝色<span class="nt">&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</span>
+<span class="nt">&lt;table&gt;&lt;tr&gt;&lt;td</span> <span class="na">bgcolor=</span><span class="s">SpringGreen</span><span class="nt">&gt;</span>背景色是：春绿色<span class="nt">&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</span>
+<span class="nt">&lt;table&gt;&lt;tr&gt;&lt;td</span> <span class="na">bgcolor=</span><span class="s">Red</span><span class="nt">&gt;</span>背景色是：纯红色<span class="nt">&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</span>
+</code></pre></div></div>
 
 <p>演示：</p>
 
@@ -270,12 +260,9 @@ _ 下划线
   <li>输入顺序：- 空格 [ 空格 ] 空格</li>
 </ul>
 
-<div class="language-markdown highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>- [ ] 未选中状态
-<span class="line-numbers"><a href="#n2" name="n2">2</a></span>- [x] 选中状态
-</pre></div>
-</div>
-</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [ ] 未选中状态
+<span class="p">-</span> [x] 选中状态
+</code></pre></div></div>
 
 <p>演示：</p>
 
@@ -299,17 +286,21 @@ _ 下划线
   </li>
 </ul>
 
-<div class="language-markdown highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>$$
-<span class="line-numbers"><a href="#n2" name="n2">2</a></span>\sin x =2  \sin x \cos
-<span class="line-numbers"><a href="#n3" name="n3">3</a></span>$$
-<span class="line-numbers"><a href="#n4" name="n4">4</a></span>
-<span class="line-numbers"><a href="#n5" name="n5">5</a></span>$$
-<span class="line-numbers"><a href="#n6" name="n6">6</a></span>e^{i\pi} + 1 = 0
-<span class="line-numbers"><a href="#n7" name="n7">7</a></span>$$
-</pre></div>
-</div>
-</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
+<span class="se">\s</span>in x =2  <span class="se">\s</span>in x <span class="se">\c</span>os
+$$
+
+$$
+e^{i<span class="se">\p</span>i} + 1 = 0
+$$
+
+$$
+<span class="se">\b</span>egin{Bmatrix}
+   a &amp; b <span class="se">\\</span>
+   c &amp; d
+<span class="se">\e</span>nd{Bmatrix}
+$$
+</code></pre></div></div>
 
 <p>演示：</p>
 
@@ -317,27 +308,179 @@ _ 下划线
 
 \[e^{i\pi} + 1 = 0\]
 
+\[\begin{Bmatrix}
+   a &amp; b \\
+   c &amp; d
+\end{Bmatrix}\]
+
+<h2 id="添加流程图时序图和甘特图">添加流程图、时序图和甘特图</h2>
+
+<h3 id="横向流程图">横向流程图</h3>
+
+<p>例如：</p>
+
+<pre><code class="language-mermaid">graph LR
+A[方形] --&gt;B(圆角)
+    B --&gt; C{条件a}
+    C --&gt;|a=1| D[结果1]
+    C --&gt;|a=2| E[结果2]
+    F[横向流程图]
+</code></pre>
+
+<p>演示：</p>
+
+<pre class="mermaid">
+graph LR
+A[方形] --&gt;B(圆角)
+    B --&gt; C{条件a}
+    C --&gt;|a=1| D[结果1]
+    C --&gt;|a=2| E[结果2]
+    F[横向流程图]
+</pre>
+
+<h3 id="竖向流程图">竖向流程图</h3>
+
+<p>例如：</p>
+
+<pre><code class="language-mermaid">graph TD
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[竖向流程图]
+</code></pre>
+
+<p>演示：</p>
+
+<pre class="mermaid">
+graph TD
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[竖向流程图]
+</pre>
+
+<h3 id="uml时序图">UML时序图</h3>
+
+<p>例如：</p>
+
+<pre><code class="language-sequence">对象A-&gt;对象B: 对象B你好吗?（请求）
+Note right of 对象B: 对象B的描述
+Note left of 对象A: 对象A的描述(提示)
+对象B--&gt;对象A: 我很好(响应)
+对象A-&gt;对象B: 你真的好吗？
+</code></pre>
+
+<p>演示：</p>
+
+<pre class="mermaid">
+sequenceDiagram
+  对象A-&gt;对象B: 对象B你好吗?（请求）
+  Note right of 对象B: 对象B的描述
+  Note left of 对象A: 对象A的描述(提示)
+  对象B--&gt;对象A: 我很好(响应)
+  对象A-&gt;对象B: 你真的好吗？
+</pre>
+
+<h3 id="uml复杂时序图">UML复杂时序图</h3>
+
+<p>例如：</p>
+
+<pre><code class="language-sequence">Title: 标题：复杂使用
+对象A-&gt;对象B: 对象B你好吗?（请求）
+Note right of 对象B: 对象B的描述
+Note left of 对象A: 对象A的描述(提示)
+对象B--&gt;对象A: 我很好(响应)
+对象B-&gt;小三: 你好吗
+小三--&gt;&gt;对象A: 对象B找我了
+对象A-&gt;对象B: 你真的好吗？
+Note over 小三,对象B: 我们是朋友
+participant C
+Note right of C: 没人陪我玩
+</code></pre>
+
+<p>演示：</p>
+
+<pre class="mermaid">
+sequenceDiagram
+  Title: 标题：复杂使用
+  对象A-&gt;对象B: 对象B你好吗?（请求）
+  Note right of 对象B: 对象B的描述
+  Note left of 对象A: 对象A的描述(提示)
+  对象B--&gt;对象A: 我很好(响应)
+  对象B-&gt;小三: 你好吗
+  小三--&gt;&gt;对象A: 对象B找我了
+  对象A-&gt;对象B: 你真的好吗？
+  Note over 小三,对象B: 我们是朋友
+  participant C
+  Note right of C: 没人陪我玩
+</pre>
+
+<h3 id="甘特图">甘特图</h3>
+
+<p>例如：</p>
+
+<pre><code class="language-mermaid">%% 语法示例
+        gantt
+        dateFormat  YYYY-MM-DD
+        title 软件开发甘特图
+        section 设计
+        需求                      :done,    des1, 2014-01-06,2014-01-08
+        原型                      :active,  des2, 2014-01-09, 3d
+        UI设计                     :         des3, after des2, 5d
+    未来任务                     :         des4, after des3, 5d
+        section 开发
+        学习准备理解需求                      :crit, done, 2014-01-06,24h
+        设计框架                             :crit, done, after des2, 2d
+        开发                                 :crit, active, 3d
+        未来任务                              :crit, 5d
+        耍                                   :2d
+        section 测试
+        功能测试                              :active, a1, after des3, 3d
+        压力测试                               :after a1  , 20h
+        测试报告                               : 48h
+</code></pre>
+
+<p>演示：</p>
+
+<pre class="mermaid">
+%% 语法示例
+        gantt
+        dateFormat  YYYY-MM-DD
+        title 软件开发甘特图
+        section 设计
+        需求                      :done,    des1, 2014-01-06,2014-01-08
+        原型                      :active,  des2, 2014-01-09, 3d
+        UI设计                     :         des3, after des2, 5d
+    未来任务                     :         des4, after des3, 5d
+        section 开发
+        学习准备理解需求                      :crit, done, 2014-01-06,24h
+        设计框架                             :crit, done, after des2, 2d
+        开发                                 :crit, active, 3d
+        未来任务                              :crit, 5d
+        耍                                   :2d
+        section 测试
+        功能测试                              :active, a1, after des3, 3d
+        压力测试                               :after a1  , 20h
+        测试报告                               : 48h
+</pre>
+
 <h2 id="添加注意事项">添加注意事项</h2>
 
 <ul>
   <li>输入三个反单引号 ``` 再输入 notice 回车即可输入注意事项，例如：</li>
 </ul>
 
-<div class="language-markdown highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>```notice
-<span class="line-numbers"><a href="#n2" name="n2">2</a></span>这个是一个注意事项
-<span class="line-numbers"><a href="#n3" name="n3">3</a></span>```
-</pre></div>
-</div>
-</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">notice
+</span><span class="sb">这个是一个注意事项</span>
+<span class="p">```</span>
+</code></pre></div></div>
 
 <p>演示：</p>
 
-<div class="language-notice highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>这个是一个注意事项
-</pre></div>
-</div>
-</div>
+<pre><code class="language-notice">这个是一个注意事项
+</code></pre>
 
 <p><br /></p>
 
@@ -466,7 +609,7 @@ _ 下划线
 
 </article>
 
-        </div>
+    </div>
 
     <!-- 页脚 -->
 <footer class="container">
@@ -513,6 +656,6 @@ _ 下划线
 
 </footer>
 
-    </body>
-
+</body>
+  
 </html>
