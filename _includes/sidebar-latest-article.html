@@ -1,15 +1,21 @@
 <!-- 最新文章 -->
 <h3 class="sidebar-title">最新文章</h3>
 <div class="card text-center">
-    <div class="thumbnail">
-        <div class="caption">
-                
-            <ul class="content-ul" recent>
-                {% for post in site.posts limit: 8 %}
-                    <li class="post-list-title"><a class="hvr-underline-from-center" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-            
-        </div>
-    </div>
+	<div class="thumbnail">
+		<div class="caption">
+
+			{% if site.posts.size > 0 %}
+			<ul class="content-ul" recent>
+				{% for post in site.posts limit: 8 %}
+				<li class="post-list-title"><a class="hvr-underline-from-center"
+						href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+			{% else %}
+			<h3>暂时没有找到任何文章</h3>
+			<p>请稍后再来查看，谢谢！</p>
+			{% endif %}
+
+		</div>
+	</div>
 </div>

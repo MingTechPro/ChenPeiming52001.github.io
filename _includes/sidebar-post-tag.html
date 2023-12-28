@@ -1,20 +1,28 @@
 <!-- 标签 -->
 <h3 class="sidebar-title">标签</h3>
 <div id="blog-categories">
-    <ul class="list-group">
-        {% for category in site.categories %}
-        <li class="list-group-item">
-            {{ category | first }}
-            <span class="badge">{{ category[1].size }}</span>
-        </li>
-        {% endfor %}
-    </ul>
-
+	{% if site.categories.size > 0 %}
+	<ul class="list-group">
+		{% for category in site.categories %}
+		<li class="list-group-item">
+			{{ category | first }}
+			<span class="badge">{{ category[1].size }}</span>
+		</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+	<div class="card text-center">
+		<div class="thumbnail">
+			<div class="caption">
+				<h3>暂时没有找到任何标签</h3>
+				<p>请稍后再来查看，谢谢！</p>
+			</div>
+		</div>
+	</div>
+	{% endif %}
 </div>
 <script type="text/javascript">
-
-    $(document).ready(function(){
-        $("#blog-categories li").css('text-transform','capitalize')
-    });
-
+	$(document).ready(function() {
+		$("#blog-categories li").css('text-transform', 'capitalize')
+	});
 </script>

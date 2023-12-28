@@ -14,7 +14,7 @@ Power by [Yummy-Jekyll](https://github.com/DONGChuan/Yummy-Jekyll) & Revised by 
 
 - [![Github仓库](https://img.shields.io/badge/仓库-ChenPeiming52001.github.io-blue.svg)](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io)
 
-- [![Github更新](https://img.shields.io/badge/Github-版本更新-red.svg)](#🔧版本更新-↩)
+- [![Github更新](https://img.shields.io/badge/Github-版本更新-red.svg)](#user-content-版本更新-)
 
 ---
 
@@ -69,6 +69,7 @@ Power by [Yummy-Jekyll](https://github.com/DONGChuan/Yummy-Jekyll) & Revised by 
 - [Markdown 进阶写作指南](https://chenpeiming52001.github.io/markdown/2023/12/14/Blog-Advanced-Found.html)
 
 ---
+<h6 id="版本更新" style="display: none;">
 
 ### 🔧版本更新 [↩](#欢迎使用-chenpeiming-个人博客主题)
 
