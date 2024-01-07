@@ -5,13 +5,13 @@
     <description>这是ChenPeiming的个人博客</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 29 Dec 2023 00:19:40 +0800</pubDate>
-    <lastBuildDate>Fri, 29 Dec 2023 00:19:40 +0800</lastBuildDate>
-    <generator>Jekyll v4.3.2</generator>
+    <pubDate>Sun, 07 Jan 2024 20:07:30 +0800</pubDate>
+    <lastBuildDate>Sun, 07 Jan 2024 20:07:30 +0800</lastBuildDate>
+    <generator>Jekyll v4.3.3</generator>
     
       <item>
         <title>Markdown 进阶写作指南</title>
-        <description>&lt;p&gt;8个Markdown文档进阶写作技巧分享：&lt;/p&gt;
+        <description>&lt;p&gt;9个Markdown文档进阶写作技巧分享：&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;显示特殊符号&lt;/li&gt;
   &lt;li&gt;添加emoji表情符号🥰&lt;/li&gt;
@@ -363,8 +363,8 @@ sequenceDiagram
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 14 Dec 2023 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/markdown/2023/12/14/Blog-Advanced-Found.html</link>
-        <guid isPermaLink="true">http://localhost:4000/markdown/2023/12/14/Blog-Advanced-Found.html</guid>
+        <link>http://localhost:4000/markdown/2023/12/14/Blog-Advanced-Found</link>
+        <guid isPermaLink="true">http://localhost:4000/markdown/2023/12/14/Blog-Advanced-Found</guid>
         
         <category>Markdown</category>
         
@@ -1178,8 +1178,8 @@ git push origin main
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 13 Dec 2023 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/markdown/2023/12/13/Blog-Found.html</link>
-        <guid isPermaLink="true">http://localhost:4000/markdown/2023/12/13/Blog-Found.html</guid>
+        <link>http://localhost:4000/markdown/2023/12/13/Blog-Found</link>
+        <guid isPermaLink="true">http://localhost:4000/markdown/2023/12/13/Blog-Found</guid>
         
         <category>Markdown</category>
         
@@ -1413,8 +1413,8 @@ git push origin main
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 12 Dec 2023 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/jekyll/2023/12/12/create-blog.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2023/12/12/create-blog.html</guid>
+        <link>http://localhost:4000/jekyll/2023/12/12/create-blog</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2023/12/12/create-blog</guid>
         
         <category>Jekyll</category>
         

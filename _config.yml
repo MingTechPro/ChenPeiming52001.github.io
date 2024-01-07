@@ -47,6 +47,9 @@ kramdown:
   footnote_nr: 1
   footnote_backlink: ↩
 
+# 设置文章链接不带 .html
+permalink: /:categories/:year/:month/:day/:title
+
 source:      .
 destination: ./_site
 
