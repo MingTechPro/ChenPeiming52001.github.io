@@ -19,6 +19,10 @@
     <link rel="alternate" type="application/rss+xml" title="ChenPeiming" href="http://localhost:4000 /feed.xml">
 
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <!--  FancyBox 图片弹出 -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!--  FancyBox 图片弹出 样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
     <!-- 第三方 CSS -->
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -41,13 +45,15 @@
 
     <!-- 第三方 JS -->
     <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- 我的 JS -->
-    <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
-    <script type="text/javascript" src="/assets/js/link.js"></script>
     <!-- 解析数学公式 MathJax 库的引入代码 -->
     <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <!-- 解析流程图 -->
     <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';</script>
+    
+    <!-- 我的 JS -->
+    <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
+    <script type="text/javascript" src="/assets/js/link.js"></script>
+    
 
 </head>
 
@@ -609,6 +615,57 @@ sequenceDiagram
 
 </article>
 
+<script>
+    // 初始化 FancyBox 绑定
+    Fancybox.bind("[data-fancybox='gallery']", {
+        // 自定义选项开始
+        Thumbs: {
+            showOnStart: false, // 在开始时隐藏缩略图
+        },
+        Toolbar: {
+            display: {
+                left: [
+                    "infobar", // 左侧显示信息栏
+                ],
+                middle: [], // 中间无内容显示
+                right: [
+                    "slideshow", // 右侧显示幻灯片按钮
+                    "download", // 右侧显示下载按钮
+                    "thumbs", // 右侧显示缩略图按钮
+                    "close", // 右侧显示关闭按钮
+                ],
+            },
+        },
+    });
+
+    // 给图片加上 data-fancybox 属性
+    // 在页面加载完成后执行函数
+    $(document).ready(function () {
+        // 找到所有带有 .post-content 类的元素下的 img 元素
+        $(".markdown-body img").each(function () {
+            // 获取当前 img 元素的 src 和 alt 属性值
+            var imgSrc = $(this).attr("src");
+            var imgAlt = $(this).attr("alt");
+
+            // 创建一个 a 元素，并设置 href、title 和 data-fancybox 属性值
+            var $a = $(
+                '<a href="' +
+                imgSrc +
+                '" title="' +
+                imgAlt +
+                '" data-fancybox="gallery"></a>'
+            );
+
+            // 将当前 img 元素包裹在创建的 a 元素中
+            $(this).wrap($a);
+
+            // 如果 img 元素有 alt 属性，则将创建的 a 元素的 title 属性值设置为 img 元素的 alt 属性值
+            if (imgAlt) {
+                $a.attr("title", imgAlt);
+            }
+        });
+    });
+</script>
     </div>
 
     <!-- 页脚 -->
