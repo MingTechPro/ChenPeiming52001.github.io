@@ -5,9 +5,243 @@
     <description>这是ChenPeiming的个人博客</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Jan 2024 20:07:30 +0800</pubDate>
-    <lastBuildDate>Sun, 07 Jan 2024 20:07:30 +0800</lastBuildDate>
+    <pubDate>Mon, 08 Jan 2024 21:26:39 +0800</pubDate>
+    <lastBuildDate>Mon, 08 Jan 2024 21:26:39 +0800</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Valine 评论邮件提醒</title>
+        <description>&lt;p&gt;Valine 是一个基于 LeanCloud 的快速、简洁且高效的无后端评论系统。它具有强大的功能和灵活的配置选项，本文将向您介绍如何在 Valine-admin 中设置评论邮件提醒功能，以便及时收到用户对您博客的评论通知。&lt;/p&gt;
+
+&lt;h2 id=&quot;部署流程&quot;&gt;部署流程&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;获取邮箱 SMTP 密钥&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- - 获取 AKisemt 反垃圾邮件服务 --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;获取 valine-admin 项目&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;登录 LeanCloud 部署项目&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;配置项目环境变量&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;设置后台管理&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果在第一次部署时遇到问题，您可以尝试多次部署，可能由于网络波动或其他因素导致第一次部署失败。多次尝试部署有助于解决这个问题。&lt;/p&gt;
+
+&lt;h2 id=&quot;获取邮箱-smtp-密钥&quot;&gt;获取邮箱 SMTP 密钥&lt;/h2&gt;
+
+&lt;p&gt;SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参考以下链接：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://zhidao.baidu.com/question/1457961254794148260.html?fr=search&amp;amp;word=QQ%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95&quot;&gt;QQ 邮箱获取方法&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://zhidao.baidu.com/question/436573565774794892.html?fr=search&amp;amp;word=163%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95&quot;&gt;163 邮箱获取方法&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;其他邮箱的设置方法可以自行搜索。&lt;/p&gt;
+
+&lt;!-- ### 获取 AKisemt 反垃圾邮件服务步骤：
+
+- 1.这个可以不设置，如果你想要注册并使用反垃圾邮件功能，需要先科学上网。
+
+- 2.在 [Akismet](https://wordpress.com/start/account/user-social?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fakismet.com%252Faccount%252F) 上注册并登录账号。
+
+![注册Akismet](/images/2024/Jekyll-Valine/Jekyll-Valine-1-1.png)
+![注册Akismet](/images/2024/Jekyll-Valine/Jekyll-Valine-1-2.png)
+
+- 3.注册后，确认你的邮箱以完成登录。
+
+- 4.进入[服务页面](https://akismet.com/pricing/)，选择适合你的服务。
+
+![选择Akismet服务](/images/2024/Jekyll-Valine/Jekyll-Valine-1-3.png)
+
+- 5.根据你的需求选择付费金额，如果你选择免费版本，请注意不能用于商业活动。
+
+![选择Akismet服务](/images/2024/Jekyll-Valine/Jekyll-Valine-1-4.png)
+
+- 6.我这里选择免费，确认付款信息，然后你就可以获得到 Api 。
+
+![确认服务费用](/images/2024/Jekyll-Valine/Jekyll-Valine-1-5.png)
+![确认服务费用](/images/2024/Jekyll-Valine/Jekyll-Valine-1-6.png) --&gt;
+
+&lt;h2 id=&quot;获取-valine-admin-项目&quot;&gt;获取 valine-admin 项目&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/bin862324915/valine-admin&quot;&gt;项目地址&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;复制此链接以备后用：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://github.com/bin862324915/valine-admin&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;记住分支以备后用：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;登录-leancloud-并部署项目&quot;&gt;登录 LeanCloud 并部署项目&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;1.在 &lt;a href=&quot;https://console.leancloud.cn/&quot;&gt;LeanCloud&lt;/a&gt; 上登录并创建云引擎&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-2-1.png&quot; alt=&quot;创建云引擎&quot; /&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-2-2.png&quot; alt=&quot;创建云引擎&quot; /&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-2-3.png&quot; alt=&quot;创建云引擎&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;2.通过 Git 方式部署项目&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-3-1.png&quot; alt=&quot;部署项目&quot; /&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-3-2.png&quot; alt=&quot;部署项目&quot; /&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-3-3.png&quot; alt=&quot;部署项目&quot; /&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-3-4.png&quot; alt=&quot;部署项目&quot; /&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-3-5.png&quot; alt=&quot;部署项目&quot; /&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-3-6.png&quot; alt=&quot;部署项目&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;配置项目环境变量&quot;&gt;配置项目环境变量&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-4-1.png&quot; alt=&quot;环境变量&quot; /&gt;
+  &lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-4-2.png&quot; alt=&quot;环境变量&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;请按照以下表格填写相应的项目环境变量：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;变量名&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;说明&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;示例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SENDER_NAME&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;寄件人名称&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ChenPeiming – 评论提醒&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SITE_NAME&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[必填]网站名称&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ChenPeiming&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SITE_URL&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[必填]网站地址，地址后方不带 /&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;https://chenpeiming52001.github.io&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SMTP_SERVICE&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[必填]邮件服务提供商，支持 QQ、163、126 等&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;QQ&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SMTP_USER&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[必填]SMTP 服务用户名，及邮箱地址&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;123@qq.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SMTP_PASS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[必填]SMTP 密码，及授权码&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;123&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;TEMPLATE_NAME&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;邮件模板，默认 default，可以选 rainbow&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;rainbow&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;TO_EMAIL&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;自定义博主收件人&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;chenpeiming52001@163.com&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;设置后台管理&quot;&gt;设置后台管理&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;添加 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;email&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;password&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;username&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;请注意，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;email&lt;/code&gt; 必须是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SMTP_USER&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TO_EMAIL&lt;/code&gt; 中的一个&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-5-1.png&quot; alt=&quot;后台管理&quot; /&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-5-1.png&quot; alt=&quot;后台管理&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;配置访问域名（需要注册有域名）&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-6-1.png&quot; alt=&quot;后台管理&quot; /&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-6-2.png&quot; alt=&quot;后台管理&quot; /&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-6-3.png&quot; alt=&quot;后台管理&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;绑定好后就可以登录后台管理评论信息，我没有域名就不做相关的演示了&lt;/p&gt;
+
+&lt;h2 id=&quot;邮件展示&quot;&gt;邮件展示&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;邮件模板：default&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;评论&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/images//2024/Jekyll-Valine/Jekyll-Valine-7-1.png&quot; alt=&quot;default&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;回复评论&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/images//2024/Jekyll-Valine/Jekyll-Valine-7-2.png&quot; alt=&quot;default&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;邮件模板：rainbow&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;评论&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/images//2024/Jekyll-Valine/Jekyll-Valine-7-3.png&quot; alt=&quot;rainbow&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;回复评论&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/images//2024/Jekyll-Valine/Jekyll-Valine-7-4.png&quot; alt=&quot;rainbow&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 07 Jan 2024 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/jekyll/2024/01/07/Jekyll-Valine</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2024/01/07/Jekyll-Valine</guid>
+        
+        <category>Jekyll</category>
+        
+        <category>博客</category>
+        
+        
+        <category>Jekyll</category>
+        
+      </item>
     
       <item>
         <title>Markdown 进阶写作指南</title>
@@ -1209,14 +1443,13 @@ git push origin main
   &lt;li&gt;下载 &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git官网&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://blog.csdn.net/m0_72983118/article/details/130546429&quot;&gt;Git 安装配置参考以下教程&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-1.png&quot; alt=&quot;完成测试&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&quot;/images/2023/create-blog/create-blog-1.png&quot; alt=&quot;完成测试&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;github-创建公共仓库&quot;&gt;GitHub 创建公共仓库&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;创建仓库名结尾为 * .github.io 的公共仓库&lt;/li&gt;
   &lt;li&gt;示范：ChenPeiming52001.github.io
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-2.png&quot; alt=&quot;仓库创建&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-2.png&quot; alt=&quot;仓库创建&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;克隆本地仓库&quot;&gt;克隆本地仓库&lt;/h2&gt;
@@ -1228,15 +1461,15 @@ git push origin main
     &lt;ol&gt;
       &lt;li&gt;
         &lt;p&gt;复制仓库中的 HTTPS 地址
-  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-3.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-3.png&quot; alt=&quot;HTTPS&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;img src=&quot;/images/2023/create-blog/create-blog-3.png&quot; alt=&quot;HTTPS&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;在需要克隆的本地文件夹打开 Git 终端，粘贴的地址命令行并回车
-  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-4.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-4.png&quot; alt=&quot;Git&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;img src=&quot;/images/2023/create-blog/create-blog-4.png&quot; alt=&quot;Git&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;等待克隆完毕 &lt;br /&gt;
-  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-5.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-5.png&quot; alt=&quot;克隆完毕&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;img src=&quot;/images/2023/create-blog/create-blog-5.png&quot; alt=&quot;克隆完毕&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
@@ -1253,15 +1486,15 @@ git push origin main
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;复制仓库中的 HTTPS 地址
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-6.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-6.png&quot; alt=&quot;博客模板&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-6.png&quot; alt=&quot;博客模板&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;通过 Git 终端 克隆到本地  &lt;br /&gt;
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-7.png&quot; alt=&quot;Git&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-7.png&quot; alt=&quot;Git&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;打开下载好的项目，删除根目录里面 .git 文件夹和 _posts 、images 文件夹里面的文件 &lt;br /&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;懒得删除可以下载打包好的 ChenPeiming52001.github.io 发行版&lt;/code&gt;
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-8.png&quot; alt=&quot;删除文件&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-8.png&quot; alt=&quot;删除文件&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1284,8 +1517,8 @@ git push origin main
   &lt;li&gt;url: https://chenpeiming52001.github.io	&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;设置个人博客的网络协议&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-1.png&quot; alt=&quot;设置主页标题&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-9-2.png&quot; alt=&quot;设置主页标题&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2023/create-blog/create-blog-9-1.png&quot; alt=&quot;设置主页标题&quot; /&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-9-2.png&quot; alt=&quot;设置主页标题&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;设置关于页&quot;&gt;设置关于页&lt;/h3&gt;
 
@@ -1298,8 +1531,8 @@ git push origin main
   &lt;li&gt;skill_web_keywords: [HTML, CSS, JS, JQuery,SpringBoot, MySQL, MongoDB, PHP]	&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Web开发标签&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-1.png&quot; alt=&quot;设置关于页&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-10-2.png&quot; alt=&quot;设置关于页&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2023/create-blog/create-blog-10-1.png&quot; alt=&quot;设置关于页&quot; /&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-10-2.png&quot; alt=&quot;设置关于页&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;设置简历&quot;&gt;设置简历&lt;/h3&gt;
 
@@ -1315,8 +1548,8 @@ git push origin main
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;flag-icon flag-icon-cn&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt; 中文 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-1.png&quot; alt=&quot;设置简历&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-11-2.png&quot; alt=&quot;设置简历&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2023/create-blog/create-blog-11-1.png&quot; alt=&quot;设置简历&quot; /&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-11-2.png&quot; alt=&quot;设置简历&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;设置书签&quot;&gt;设置书签&lt;/h3&gt;
 
@@ -1329,9 +1562,9 @@ git push origin main
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-1.png&quot; alt=&quot;设置书签&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2023/create-blog/create-blog-12-1.png&quot; alt=&quot;设置书签&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-12-2.png&quot; alt=&quot;设置书签&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2023/create-blog/create-blog-12-2.png&quot; alt=&quot;设置书签&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;设置评论功能&quot;&gt;设置评论功能&lt;/h2&gt;
 
@@ -1341,24 +1574,24 @@ git push origin main
 
 &lt;h3 id=&quot;注册-leancloud-账号&quot;&gt;注册 &lt;a href=&quot;https://console-e1.leancloud.cn/register&quot;&gt;LeanCloud&lt;/a&gt; 账号&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13.png&quot; alt=&quot;注册LeanCloud账号&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2023/create-blog/create-blog-13.png&quot; alt=&quot;注册LeanCloud账号&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;创建-leancloud--应用&quot;&gt;创建 LeanCloud  应用&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-1.png&quot; alt=&quot;创建 LeanCloud  应用&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-13-2.png&quot; alt=&quot;创建 LeanCloud  应用&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2023/create-blog/create-blog-13-1.png&quot; alt=&quot;创建 LeanCloud  应用&quot; /&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-13-2.png&quot; alt=&quot;创建 LeanCloud  应用&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;设置-leancloud--应用&quot;&gt;设置 LeanCloud  应用&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;设置 Web 安全域名
-  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-1.png&quot; alt=&quot;设置Web安全域名&quot; /&gt;&lt;/a&gt;
-  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-14-2.png&quot; alt=&quot;设置Web安全域名&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;img src=&quot;/images/2023/create-blog/create-blog-14-1.png&quot; alt=&quot;设置Web安全域名&quot; /&gt;
+  &lt;img src=&quot;/images/2023/create-blog/create-blog-14-2.png&quot; alt=&quot;设置Web安全域名&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;获取 LeanCloud  应用凭证 AppID &amp;amp; AppKey
-  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-1.png&quot; alt=&quot;AppID&quot; /&gt;&lt;/a&gt;
-  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-15-2.png&quot; alt=&quot;AppKey&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;img src=&quot;/images/2023/create-blog/create-blog-15-1.png&quot; alt=&quot;AppID&quot; /&gt;
+  &lt;img src=&quot;/images/2023/create-blog/create-blog-15-2.png&quot; alt=&quot;AppKey&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1367,19 +1600,19 @@ git push origin main
   &lt;li&gt;appId: Evlk9TNDwcQAIW9cC3NVx9bO-gzGzoHsz		 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;填入刚刚复制的 AppID&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;appKey: 9TNYPTSFy6BvTeJnmxzBT7H9		&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;填入刚刚复制的 AppKey&lt;/code&gt;
-  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-1.png&quot; alt=&quot;设置魔改Valine&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;img src=&quot;/images/2023/create-blog/create-blog-16-1.png&quot; alt=&quot;设置魔改Valine&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://c.runoob.com/front-end/703/&quot;&gt;MD5加密工具&lt;/a&gt; 可以将邮箱加密为 MD5&lt;/li&gt;
   &lt;li&gt;master: [‘33c0f3680c72dd299d9463a496cc7640’]		&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;填入 MD5 加密后博主(自己)的邮箱&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;friends: [‘f652e9c510f5948f083d453a189b13bc’, ‘261225df065b70eafdef4c88eecdb55d’]		&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;填入 MD5 加密后小伙伴的邮箱&lt;/code&gt;
-  &lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-16-2.png&quot; alt=&quot;设置魔改Valine&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;img src=&quot;/images/2023/create-blog/create-blog-16-2.png&quot; alt=&quot;设置魔改Valine&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;上传-github&quot;&gt;上传 GitHub&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;上传文件 &lt;br /&gt;
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-1.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-1.png&quot; alt=&quot;上传文件&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-17-1.png&quot; alt=&quot;上传文件&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
@@ -1387,7 +1620,7 @@ git push origin main
 
 &lt;ul&gt;
   &lt;li&gt;添加上传添加消息&lt;br /&gt;
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-2.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-2.png&quot; alt=&quot;添加上传添加消息&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-17-2.png&quot; alt=&quot;添加上传添加消息&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;部署博客&quot;
@@ -1395,7 +1628,7 @@ git push origin main
 
 &lt;ul&gt;
   &lt;li&gt;选择上传分支&lt;br /&gt;
-&lt;a href=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-3.png&quot;&gt;&lt;img src=&quot;/images/2023/2023-12-12-create-blog/2023-12-12-create-blog-17-3.png&quot; alt=&quot;选择上传分支&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;img src=&quot;/images/2023/create-blog/create-blog-17-3.png&quot; alt=&quot;选择上传分支&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin main

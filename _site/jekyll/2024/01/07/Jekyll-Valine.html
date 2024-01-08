@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 头部信息 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 收藏夹图标 -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <title>Valine 评论邮件提醒</title>
+    <meta name="description"
+        content="Valine 是一个基于 LeanCloud 的快速、简洁且高效的无后端评论系统。它具有强大的功能和灵活的配置选项，本文将向您介绍如何在 Valine-admin 中设置评论邮件提醒功能，以便及时收到用户对您博客的评论通知。">
+
+    <link rel="canonical" href="http://localhost:4000/jekyll/2024/01/07/Jekyll-Valine">
+    <link rel="alternate" type="application/rss+xml" title="ChenPeiming" href="http://localhost:4000 /feed.xml">
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- 第三方 CSS -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <!-- 我的 CSS -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/slider.css">
+
+    <!-- CSS 设置页面 -->
+    
+
+    <!-- CSS 设置布局 -->
+    
+    <link rel="stylesheet" href="/assets/css/sidebar-post-nav.css">
+    
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 我的 JS -->
+    <!-- 给所有页面 <a> 标签上添加了 target='_blank' 属性 -->
+    <script type="text/javascript" src="/assets/js/link.js"></script>
+    <!-- 解析数学公式 MathJax 库的引入代码 -->
+    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- 解析流程图 -->
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';</script>
+
+</head>
+
+<body>
+
+    <!-- 主页头部信息 -->
+<header class="site-header">
+    <div class="container">
+        <a id="site-header-brand" href="/" target="_self" title="ChenPeiming">
+            <span class="octicon octicon-mark-github"></span> ChenPeiming
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <a href="/"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="主页">
+                主页
+            </a>
+            
+            <a href="/open-source"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="开源项目仓库">
+                开源项目仓库
+            </a>
+            
+            <a href="/blog"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="博客档案">
+                博客档案
+            </a>
+            
+            <a href="/bookmark"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="书签">
+                书签
+            </a>
+            
+            <a href="/about"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="关于我">
+                关于我
+            </a>
+            
+        </nav>
+    </div>
+</header>
+
+
+    <div class="content">
+        <!-- 开源项目仓库 博客档案 书签 关于我 页面大轮播图 -->
+<section class="jumbotron geopattern" data-pattern-id="Valine 评论邮件提醒">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>Valine 评论邮件提醒</h1>
+            <span class="meta-info">
+                
+                
+                <span class="octicon octicon-calendar"></span> 2024/01/07 &emsp;
+                
+                
+                <span class="octicon octicon-tag">标签：Jekyll, 博客</span> &emsp;
+                
+                
+                <span> 类别：Jekyll </span> &emsp;
+                
+                
+                <span> 作者：ChenPeiming </span>
+                
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-8 markdown-body">
+
+            <p>Valine 是一个基于 LeanCloud 的快速、简洁且高效的无后端评论系统。它具有强大的功能和灵活的配置选项，本文将向您介绍如何在 Valine-admin 中设置评论邮件提醒功能，以便及时收到用户对您博客的评论通知。</p>
+
+<h2 id="部署流程">部署流程</h2>
+
+<ul>
+  <li>获取邮箱 SMTP 密钥</li>
+</ul>
+
+<!-- - 获取 AKisemt 反垃圾邮件服务 -->
+
+<ul>
+  <li>
+    <p>获取 valine-admin 项目</p>
+  </li>
+  <li>
+    <p>登录 LeanCloud 部署项目</p>
+  </li>
+  <li>
+    <p>配置项目环境变量</p>
+  </li>
+  <li>
+    <p>设置后台管理</p>
+  </li>
+</ul>
+
+<p>如果在第一次部署时遇到问题，您可以尝试多次部署，可能由于网络波动或其他因素导致第一次部署失败。多次尝试部署有助于解决这个问题。</p>
+
+<h2 id="获取邮箱-smtp-密钥">获取邮箱 SMTP 密钥</h2>
+
+<p>SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参考以下链接：</p>
+
+<ul>
+  <li>
+    <p><a href="https://zhidao.baidu.com/question/1457961254794148260.html?fr=search&amp;word=QQ%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95">QQ 邮箱获取方法</a></p>
+  </li>
+  <li>
+    <p><a href="https://zhidao.baidu.com/question/436573565774794892.html?fr=search&amp;word=163%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95">163 邮箱获取方法</a></p>
+  </li>
+</ul>
+
+<p>其他邮箱的设置方法可以自行搜索。</p>
+
+<!-- ### 获取 AKisemt 反垃圾邮件服务步骤：
+
+- 1.这个可以不设置，如果你想要注册并使用反垃圾邮件功能，需要先科学上网。
+
+- 2.在 [Akismet](https://wordpress.com/start/account/user-social?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fakismet.com%252Faccount%252F) 上注册并登录账号。
+
+![注册Akismet](/images/2024/Jekyll-Valine/Jekyll-Valine-1-1.png)
+![注册Akismet](/images/2024/Jekyll-Valine/Jekyll-Valine-1-2.png)
+
+- 3.注册后，确认你的邮箱以完成登录。
+
+- 4.进入[服务页面](https://akismet.com/pricing/)，选择适合你的服务。
+
+![选择Akismet服务](/images/2024/Jekyll-Valine/Jekyll-Valine-1-3.png)
+
+- 5.根据你的需求选择付费金额，如果你选择免费版本，请注意不能用于商业活动。
+
+![选择Akismet服务](/images/2024/Jekyll-Valine/Jekyll-Valine-1-4.png)
+
+- 6.我这里选择免费，确认付款信息，然后你就可以获得到 Api 。
+
+![确认服务费用](/images/2024/Jekyll-Valine/Jekyll-Valine-1-5.png)
+![确认服务费用](/images/2024/Jekyll-Valine/Jekyll-Valine-1-6.png) -->
+
+<h2 id="获取-valine-admin-项目">获取 valine-admin 项目</h2>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/bin862324915/valine-admin">项目地址</a></p>
+  </li>
+  <li>
+    <p>复制此链接以备后用：<code class="language-plaintext highlighter-rouge">https://github.com/bin862324915/valine-admin</code></p>
+  </li>
+  <li>
+    <p>记住分支以备后用：<code class="language-plaintext highlighter-rouge">main</code></p>
+  </li>
+</ul>
+
+<h2 id="登录-leancloud-并部署项目">登录 LeanCloud 并部署项目</h2>
+
+<ul>
+  <li>
+    <p>1.在 <a href="https://console.leancloud.cn/">LeanCloud</a> 上登录并创建云引擎</p>
+
+    <p><img src="/images/2024/Jekyll-Valine/Jekyll-Valine-2-1.png" alt="创建云引擎" />
+<img src="/images/2024/Jekyll-Valine/Jekyll-Valine-2-2.png" alt="创建云引擎" />
+<img src="/images/2024/Jekyll-Valine/Jekyll-Valine-2-3.png" alt="创建云引擎" /></p>
+  </li>
+  <li>
+    <p>2.通过 Git 方式部署项目</p>
+
+    <p><img src="/images/2024/Jekyll-Valine/Jekyll-Valine-3-1.png" alt="部署项目" />
+<img src="/images/2024/Jekyll-Valine/Jekyll-Valine-3-2.png" alt="部署项目" />
+<img src="/images/2024/Jekyll-Valine/Jekyll-Valine-3-3.png" alt="部署项目" />
+<img src="/images/2024/Jekyll-Valine/Jekyll-Valine-3-4.png" alt="部署项目" />
+<img src="/images/2024/Jekyll-Valine/Jekyll-Valine-3-5.png" alt="部署项目" />
+<img src="/images/2024/Jekyll-Valine/Jekyll-Valine-3-6.png" alt="部署项目" /></p>
+  </li>
+</ul>
+
+<h2 id="配置项目环境变量">配置项目环境变量</h2>
+
+<p><img src="/images/2024/Jekyll-Valine/Jekyll-Valine-4-1.png" alt="环境变量" />
+  <img src="/images/2024/Jekyll-Valine/Jekyll-Valine-4-2.png" alt="环境变量" /></p>
+
+<p>请按照以下表格填写相应的项目环境变量：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">变量名</th>
+      <th style="text-align: center">说明</th>
+      <th style="text-align: center">示例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">SENDER_NAME</td>
+      <td style="text-align: center">寄件人名称</td>
+      <td style="text-align: center">ChenPeiming – 评论提醒</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">SITE_NAME</td>
+      <td style="text-align: center">[必填]网站名称</td>
+      <td style="text-align: center">ChenPeiming</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">SITE_URL</td>
+      <td style="text-align: center">[必填]网站地址，地址后方不带 /</td>
+      <td style="text-align: center">https://chenpeiming52001.github.io</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">SMTP_SERVICE</td>
+      <td style="text-align: center">[必填]邮件服务提供商，支持 QQ、163、126 等</td>
+      <td style="text-align: center">QQ</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">SMTP_USER</td>
+      <td style="text-align: center">[必填]SMTP 服务用户名，及邮箱地址</td>
+      <td style="text-align: center">123@qq.com</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">SMTP_PASS</td>
+      <td style="text-align: center">[必填]SMTP 密码，及授权码</td>
+      <td style="text-align: center">123</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">TEMPLATE_NAME</td>
+      <td style="text-align: center">邮件模板，默认 default，可以选 rainbow</td>
+      <td style="text-align: center">rainbow</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">TO_EMAIL</td>
+      <td style="text-align: center">自定义博主收件人</td>
+      <td style="text-align: center">chenpeiming52001@163.com</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="设置后台管理">设置后台管理</h2>
+
+<ul>
+  <li>
+    <p>添加 <code class="language-plaintext highlighter-rouge">email</code>、<code class="language-plaintext highlighter-rouge">password</code> 和 <code class="language-plaintext highlighter-rouge">username</code></p>
+  </li>
+  <li>
+    <p>请注意，<code class="language-plaintext highlighter-rouge">email</code> 必须是 <code class="language-plaintext highlighter-rouge">SMTP_USER</code> 或 <code class="language-plaintext highlighter-rouge">TO_EMAIL</code> 中的一个</p>
+
+    <p><img src="/images/2024/Jekyll-Valine/Jekyll-Valine-5-1.png" alt="后台管理" />
+<img src="/images/2024/Jekyll-Valine/Jekyll-Valine-5-1.png" alt="后台管理" /></p>
+  </li>
+  <li>
+    <p>配置访问域名（需要注册有域名）</p>
+
+    <p><img src="/images/2024/Jekyll-Valine/Jekyll-Valine-6-1.png" alt="后台管理" />
+<img src="/images/2024/Jekyll-Valine/Jekyll-Valine-6-2.png" alt="后台管理" />
+<img src="/images/2024/Jekyll-Valine/Jekyll-Valine-6-3.png" alt="后台管理" /></p>
+  </li>
+</ul>
+
+<p>绑定好后就可以登录后台管理评论信息，我没有域名就不做相关的演示了</p>
+
+<h2 id="邮件展示">邮件展示</h2>
+
+<ul>
+  <li>
+    <p>邮件模板：default</p>
+
+    <ul>
+      <li>评论</li>
+    </ul>
+
+    <p><img src="/images//2024/Jekyll-Valine/Jekyll-Valine-7-1.png" alt="default" /></p>
+
+    <ul>
+      <li>回复评论</li>
+    </ul>
+
+    <p><img src="/images//2024/Jekyll-Valine/Jekyll-Valine-7-2.png" alt="default" /></p>
+  </li>
+  <li>
+    <p>邮件模板：rainbow</p>
+
+    <ul>
+      <li>评论</li>
+    </ul>
+
+    <p><img src="/images//2024/Jekyll-Valine/Jekyll-Valine-7-3.png" alt="rainbow" /></p>
+
+    <ul>
+      <li>回复评论</li>
+    </ul>
+
+    <p><img src="/images//2024/Jekyll-Valine/Jekyll-Valine-7-4.png" alt="rainbow" /></p>
+  </li>
+</ul>
+
+
+            <!-- 评论 -->
+            
+<!-- 评论 -->
+
+<head>
+    <script type="text/javascript" src="/assets/js/Valine.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/valine.css">
+    <link rel="stylesheet" href="/assets/css/all.css">
+</head>
+
+<body>
+    <br>
+    <p>我要评论</p>
+    <div id="vcomments" style="display: grid"></div>
+    <script>
+        // LeanCloud评论设置
+        new Valine({
+            el: '#vcomments',
+            verify: 'true',
+            appId: 'GQHKkm0dcsXF5pG93TdOlrIR-gzGzoHsz',
+            appKey: 'rIP8P4hi1yd0Kva2xYvRDOs4',
+            placeholder: 'ヾﾉ≧∀≦)o快来评论一下吧!',
+            pageSize: '15',
+            avatar: 'wavatar',
+            tagMeta: ['博主','小伙伴','访客'],
+            master: '[33c0f3680c72dd299d9463a496cc7640]',
+            friends: '[f652e9c510f5948f083d453a189b13bc],[261225df065b70eafdef4c88eecdb55d],',
+            enableQQ: 'true',
+            avatarForce: 'true',
+        });
+
+        // 点击回复直接评论
+        $(document).ready(function () {
+            $("#vcomments").on('click', 'span.vat', function () {
+                $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+                $('textarea#veditor').focus();
+            })
+        });
+    </script>
+</body>
+
+        </div>
+
+        <!-- 文章目录 -->
+        <div class="col-md-4">
+            <!-- 文章目录 -->
+<h3>文章目录</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- 触发跳转的链接 -->
+    <!-- 由下面的 javascript 添加 -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // 获取元素的初始位置
+
+        $(window).scroll(function() {                  // 分配滚动事件监听器
+
+            var currentScroll = $(window).scrollTop(); // 获取当前位置
+
+            if (currentScroll >= fixmeTop) {           // 适用位置:如果你
+                $('#post-directory-module').css({      // 滚动到该元素或其下方
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // 适用位置: 静态
+                $('#post-directory-module').css({      // 如果你在上面滚动
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+    </div>
+
+    <!-- 页脚 -->
+<footer class="container">
+
+    <div class="site-footer">
+
+        <div class="copyright pull-left">
+            <!-- 请不要更改这一行 方便其他人知道模板的来源 谢谢 -->
+            <!-- Please keep this line to let others know where this theme comes from. Thank you :D -->
+            <span>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll" target="_blank">Yummy Jekyll</a> 
+            </span>
+                &
+            <span>
+                Revised by <a href="https://github.com/ChenPeiming52001/ChenPeiming52001.github.io" target="_blank">Chen Peiming</a>.
+            </span>
+        </div>
+        
+        <br>
+        <div class="copyright pull-left">
+            <p>
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </p>
+        </div>
+
+        <a href="https://github.com/ChenPeiming52001" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a>
+
+        <div class="pull-right">
+            <a href="javascript:window.scrollTo(0,0)" target="_self">TOP</a>
+        </div>
+
+    </div>
+
+    <!-- 第三方 JS -->
+    <script type="text/javascript" src="/bower_components/geopattern/js/geopattern.min.js"></script>
+    <script async src="/assets/js/busuanzi.pure.mini.js"></script>
+
+    <!-- 我 JS -->
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+
+    
+
+</footer>
+
+</body>
+  
+</html>
