@@ -72,7 +72,7 @@ Power by [Yummy-Jekyll](https://github.com/DONGChuan/Yummy-Jekyll) & Revised by 
 
 ### 🔧版本更新 [↩](#欢迎使用-chenpeiming-个人博客主题)
 
-- [![](https://img.shields.io/badge/V2.1.0-2024.1.8更新-blue.svg)](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io/releases/tag/v2024.1.8)
+- [![](https://img.shields.io/badge/V3.0.0-2024.1.8更新-blue.svg)](https://github.com/ChenPeiming52001/ChenPeiming52001.github.io/releases/tag/v2024.1.8)
    - 更新文章图片查看功能
 
    - 非常感谢您对 "JourneyPages" 项目的关注！我很高兴地告诉您，虽然主体构建已经完成，但还有一些页面的相关逻辑需要实现。
