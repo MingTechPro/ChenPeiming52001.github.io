@@ -11,6 +11,8 @@ tags:
 
 Valine 是一个基于 LeanCloud 的快速、简洁且高效的无后端评论系统。它具有强大的功能和灵活的配置选项，本文将向您介绍如何在 Valine-admin 中设置评论邮件提醒功能，以便及时收到用户对您博客的评论通知。
 
+
+
 ## 部署流程
 
 - 获取邮箱 SMTP 密钥
@@ -88,8 +90,8 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 
 ## 配置项目环境变量
 
-  ![环境变量](/images/2024/Jekyll-Valine/Jekyll-Valine-4-1.png)
-  ![环境变量](/images/2024/Jekyll-Valine/Jekyll-Valine-4-2.png)
+![环境变量](/images/2024/Jekyll-Valine/Jekyll-Valine-4-1.png)
+![环境变量](/images/2024/Jekyll-Valine/Jekyll-Valine-4-2.png)
 
 请按照以下表格填写相应的项目环境变量：
 
@@ -142,3 +144,11 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
   - 回复评论
 
   ![rainbow](/images//2024/Jekyll-Valine/Jekyll-Valine-7-4.png)
+
+<br>
+
+---
+
+往期文章推荐：
+
+- [使用 Jekyll 在 GitHub 上搭建个人博客](/jekyll/2023/12/12/create-blog)

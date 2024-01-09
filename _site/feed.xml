@@ -5,8 +5,8 @@
     <description>这是ChenPeiming的个人博客</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Jan 2024 22:08:15 +0800</pubDate>
-    <lastBuildDate>Mon, 08 Jan 2024 22:08:15 +0800</lastBuildDate>
+    <pubDate>Tue, 09 Jan 2024 12:31:29 +0800</pubDate>
+    <lastBuildDate>Tue, 09 Jan 2024 12:31:29 +0800</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -116,7 +116,7 @@
 &lt;h2 id=&quot;配置项目环境变量&quot;&gt;配置项目环境变量&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-4-1.png&quot; alt=&quot;环境变量&quot; /&gt;
-  &lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-4-2.png&quot; alt=&quot;环境变量&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/2024/Jekyll-Valine/Jekyll-Valine-4-2.png&quot; alt=&quot;环境变量&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;请按照以下表格填写相应的项目环境变量：&lt;/p&gt;
 
@@ -228,6 +228,16 @@
 
     &lt;p&gt;&lt;img src=&quot;/images//2024/Jekyll-Valine/Jekyll-Valine-7-4.png&quot; alt=&quot;rainbow&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;往期文章推荐：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/jekyll/2023/12/12/create-blog&quot;&gt;使用 Jekyll 在 GitHub 上搭建个人博客&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 07 Jan 2024 00:00:00 +0800</pubDate>
