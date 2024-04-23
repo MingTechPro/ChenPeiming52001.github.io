@@ -6,7 +6,7 @@
         </a>
         <nav class="site-header-nav" role="navigation">
             {% for nav in site.navs %}
-            <a href="{{ nav.href }}"
+            <a href="/ChenPeiming52001.github.io{{ nav.href }}"
                class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item hvr-underline-from-center"
                target="{{ nav.target | default: _self }}"
                title="{{ nav.label }}">
