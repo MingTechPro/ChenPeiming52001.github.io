@@ -60,8 +60,8 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 
 - 6.我这里选择免费，确认付款信息，然后你就可以获得到 Api 。
 
-![确认服务费用](/images/2024/Jekyll-Valine/Jekyll-Valine-1-5.png)
-![确认服务费用](/images/2024/Jekyll-Valine/Jekyll-Valine-1-6.png) -->
+![确认服务费用](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-1-5.png)
+![确认服务费用](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-1-6.png) -->
 
 ## 获取 valine-admin 项目
 
@@ -75,23 +75,23 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 
 - 1.在 [LeanCloud](https://console.leancloud.cn/) 上登录并创建云引擎
 
-  ![创建云引擎](/images/2024/Jekyll-Valine/Jekyll-Valine-2-1.png)
-  ![创建云引擎](/images/2024/Jekyll-Valine/Jekyll-Valine-2-2.png)
-  ![创建云引擎](/images/2024/Jekyll-Valine/Jekyll-Valine-2-3.png)
+  ![创建云引擎](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-2-1.png)
+  ![创建云引擎](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-2-2.png)
+  ![创建云引擎](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-2-3.png)
 
 - 2.通过 Git 方式部署项目
 
-  ![部署项目](/images/2024/Jekyll-Valine/Jekyll-Valine-3-1.png)
-  ![部署项目](/images/2024/Jekyll-Valine/Jekyll-Valine-3-2.png)
-  ![部署项目](/images/2024/Jekyll-Valine/Jekyll-Valine-3-3.png)
-  ![部署项目](/images/2024/Jekyll-Valine/Jekyll-Valine-3-4.png)
-  ![部署项目](/images/2024/Jekyll-Valine/Jekyll-Valine-3-5.png)
-  ![部署项目](/images/2024/Jekyll-Valine/Jekyll-Valine-3-6.png)
+  ![部署项目](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-3-1.png)
+  ![部署项目](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-3-2.png)
+  ![部署项目](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-3-3.png)
+  ![部署项目](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-3-4.png)
+  ![部署项目](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-3-5.png)
+  ![部署项目](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-3-6.png)
 
 ## 配置项目环境变量
 
-![环境变量](/images/2024/Jekyll-Valine/Jekyll-Valine-4-1.png)
-![环境变量](/images/2024/Jekyll-Valine/Jekyll-Valine-4-2.png)
+![环境变量](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-4-1.png)
+![环境变量](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-4-2.png)
 
 请按照以下表格填写相应的项目环境变量：
 
@@ -112,14 +112,14 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 
 - 请注意，`email` 必须是 `SMTP_USER` 或 `TO_EMAIL` 中的一个
 
-  ![后台管理](/images/2024/Jekyll-Valine/Jekyll-Valine-5-1.png)
-  ![后台管理](/images/2024/Jekyll-Valine/Jekyll-Valine-5-1.png)
+  ![后台管理](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-5-1.png)
+  ![后台管理](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-5-1.png)
 
 - 配置访问域名（需要注册有域名）
 
-  ![后台管理](/images/2024/Jekyll-Valine/Jekyll-Valine-6-1.png)
-  ![后台管理](/images/2024/Jekyll-Valine/Jekyll-Valine-6-2.png)
-  ![后台管理](/images/2024/Jekyll-Valine/Jekyll-Valine-6-3.png)
+  ![后台管理](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-6-1.png)
+  ![后台管理](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-6-2.png)
+  ![后台管理](/ChenPeiming52001.github.io/images/2024/Jekyll-Valine/Jekyll-Valine-6-3.png)
 
 绑定好后就可以登录后台管理评论信息，我没有域名就不做相关的演示了
 
@@ -129,21 +129,21 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 
   - 评论
 
-  ![default](/images//2024/Jekyll-Valine/Jekyll-Valine-7-1.png)
+  ![default](/ChenPeiming52001.github.io/images//2024/Jekyll-Valine/Jekyll-Valine-7-1.png)
 
   - 回复评论
 
-  ![default](/images//2024/Jekyll-Valine/Jekyll-Valine-7-2.png)
+  ![default](/ChenPeiming52001.github.io/images//2024/Jekyll-Valine/Jekyll-Valine-7-2.png)
 
 - 邮件模板：rainbow
 
   - 评论
 
-  ![rainbow](/images//2024/Jekyll-Valine/Jekyll-Valine-7-3.png)
+  ![rainbow](/ChenPeiming52001.github.io/images//2024/Jekyll-Valine/Jekyll-Valine-7-3.png)
 
   - 回复评论
 
-  ![rainbow](/images//2024/Jekyll-Valine/Jekyll-Valine-7-4.png)
+  ![rainbow](/ChenPeiming52001.github.io/images//2024/Jekyll-Valine/Jekyll-Valine-7-4.png)
 
 <br>
 
@@ -151,4 +151,4 @@ SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参
 
 往期文章推荐：
 
-- [使用 Jekyll 在 GitHub 上搭建个人博客](/jekyll/2023/12/12/create-blog)
+- [使用 Jekyll 在 GitHub 上搭建个人博客](/ChenPeiming52001.github.io/jekyll/2023/12/12/create-blog)
