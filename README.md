@@ -22,11 +22,11 @@ Power by [Yummy-Jekyll](https://github.com/DONGChuan/Yummy-Jekyll) & Revised by 
 
 - 🏠 [ChenPeiming52001.github.io](https://chenpeiming.mingtechpro.top)
 
-- 🗂 [开源项目仓库](https:/chenpeiming.mingtechpro.top/open-source) - 自动显示您Github的热门项目
+- 🗂 [开源项目仓库](https://chenpeiming.mingtechpro.top/open-source) - 自动显示您Github的热门项目
 
-- 📑 [博客档案](https:/chenpeiming.mingtechpro.top/blog) - 显示您的所有帖子和时间线
+- 📑 [博客档案](https://chenpeiming.mingtechpro.top/blog) - 显示您的所有帖子和时间线
 
-- 🔖 [书签](https:/chenpeiming.mingtechpro.top/bookmark) - 用于快速标记您喜欢使用的资源库/工具/书籍
+- 🔖 [书签](https://chenpeiming.mingtechpro.top/bookmark) - 用于快速标记您喜欢使用的资源库/工具/书籍
 
 ---
 
