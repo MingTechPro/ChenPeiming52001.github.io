@@ -22,7 +22,7 @@ description: 这是ChenPeiming的个人博客
 # 图标 可以自定义你想要的图标
 favicon: favicon.png # Image必须在assets/images中
 
-url: https://mingtechpro.github.io/ChenPeiming52001.github.io # 站点的基本主机名和协议
+url: https://chenpeiming.mingtechpro.top # 站点的基本主机名和协议
 
 ## Gem
 gems:
